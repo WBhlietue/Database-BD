@@ -49,14 +49,16 @@ create table CustomerOrderRegister
 
 
 
-create table EmpReg(
+create table EmpReg
+(
     empReg_code char(12) primary key,
     dep_code char(3),
     empReg_date char(10),
     foreign key (dep_code) references Depart(dep_code)
 )
 
-create table EmployeeRegister(
+create table EmployeeRegister
+(
     empReg_code char(12) ,
     emp_code char(7),
     workTime integer,
@@ -73,14 +75,16 @@ create table Finance
     foreign key (dep_code) references Depart(dep_code)
 )
 
-create table Input(
+create table Input
+(
     finance_code char(12),
     input_name varchar(50),
     input_value integer,
     foreign key (finance_code) references Finance(finance_code)
 )
 
-create table Output(
+create table Output
+(
     finance_code char(12),
     output_name varchar(50),
     output_value integer,
@@ -88,19 +92,21 @@ create table Output(
 )
 
 
-create table SalaryR(
+create table Salary
+(
     salary_code char(12) primary key,
     dep_code char(3),
     salary_date char(10),
     foreign key (dep_code) references Depart(dep_code)
 )
 
-create table SalaryRegister(
+create table SalaryRegister
+(
     salary_code char(12),
     emp_code char(7),
     workTime integer,
     bonus integer,
-    foreign key (salary_code ) references SalaryR(salary_code),
+    foreign key (salary_code ) references Salary(salary_code),
     foreign key (emp_code) references Employee(emp_code)
 )
 
