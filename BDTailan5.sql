@@ -1,6 +1,6 @@
 -- Ajilchdiin tsagiin huvaari
 
-alter proc GetTimeTable
+create proc GetTimeTable
     (@empCode char(7))
 as
 begin

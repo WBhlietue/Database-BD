@@ -245,18 +245,16 @@ INSERT INTO Finance VALUES
 ('S20221217003', '003', '2022/12/17'),
 ('S20221217004', '004', '2022/12/17');
 
-
-INSERT INTO Input VALUES
+delete from Output
+INSERT INTO Output VALUES
 ('S20221212002', 'tog', 120000),
 ('S20221213003', 'ayga', 20000),
 ('S20221213004', 'coffee chanagch', 140000),
-('S20221213001', 'baraa materialin hudaldan awalt', 300000),
 ('S20221214005', 'tog', 130000),
-('S20221214006', 'baraa materialin hudaldan awalt', 340000),
 ('S20221215001', 'mini hurgugch', 400000),
 ('S20221215002', 'halbaga seree', 30000),
 ('S20221215003', 'salfetka', 20000),
-('S20221216001', 'coffeenii ur', 50000),
+('S20221216001', 'coffeenii ur', 50000)
 
 insert into Salary
 values
