@@ -248,7 +248,6 @@ values
     ('S20221217004', '004', '2022/12/17');
 
 
-<<<<<<< HEAD
 insert into Input
 values
     ('S20221212001', 'baraa materialin hudaldan awalt', 1000000),
@@ -271,7 +270,6 @@ values
     ('S20221216002',     ),
     ('S20221217003',     ),
     ('S20221217004',     );
-=======
 INSERT INTO Finance VALUES
 
 ('S20221212001', '001', '2022/12/12'),
@@ -318,5 +316,3 @@ INSERT INTO Input VALUES
 ('S20221217003', 'mixer', 250000),
 ('S20221217004', 'tawag', 20000);
 
-
->>>>>>> 3f74236403d72a5087f1f9f318fabf383764fe5e
