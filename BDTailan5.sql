@@ -1,6 +1,6 @@
 -- Ajilchdiin tsagiin huvaari
 
-create proc GetTimeTable
+alter proc GetTimeTable
     (@empCode char(7))
 as
 begin
@@ -16,6 +16,7 @@ begin
     from EmployeeRegister
         join EmpReg on EmployeeRegister.empReg_code = EmpReg.empReg_code
     where emp_code = @empCode
+    order by empReg_date
 end
 
 use DB;
