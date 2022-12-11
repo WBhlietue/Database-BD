@@ -3692,7 +3692,6 @@ values
 
 
 
-
 insert into SalaryRegister
 values('T20221208001', 'U001001', 8, 400)
 insert into SalaryRegister
