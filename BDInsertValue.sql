@@ -32,296 +32,4839 @@ values
     ('S001', 'COOCKIE', 2500),
     ('S002', 'BROWNIE', 4500),
     ('S003', 'CHEESECAKE', 6500)
-
-insert into EMPLOYEE
+insert into Employee
 values
-    ('Z001001', 'USUKHBAYR', 'SAIKHANTAMIR', 'UP03112210', 'ZAHIRAL', 1500000),
-    ('Z002001', 'MUNKHBADRAL', 'JARGALSAIKHAN', 'MY03272611', 'ZAHIRAL', 1500000),
-    ('Z003001', 'DEVJREKH', 'TSOGZOL', 'UP03251105', 'ZAHIRAL', 1500000),
-    ('Z004001', 'AMIRLAN', 'AMIRLANGUI', 'UP03320115', 'ZAHIRAL', 1500000),
-    ('Z005001', 'TUVSHINJARGAL', 'BATBAYR', 'UJ03252611', 'ZAHIRAL', 1500000),
-    ('Z006001', 'BOLORERDENE', 'SUKHBAATAR', 'UO04230204', 'ZAHIRAL', 2000000),
-    ('M001001', 'GANBOLOR', 'GURRAGCHAA', 'UK03251948', 'MANAGER', 1300000),
-    ('M002001', 'MUNKHJIN', 'MYANGANBAYR', 'DD03261548', 'MANAGER', 1300000),
-    ('M003001', 'OYUNZAYA', 'GERELCHULUUN', 'MD03211359', 'MANAGER', 1300000),
-    ('M004001', 'ERKHEMBAYR', 'DAVAADORJ', 'ET03321563', 'MANAGER', 1300000),
-    ('M005001', 'TUSHIGERDENE', 'JAMIYANSUREN', 'HI03211124', 'MANAGER', 1300000),
-    ('M006001', 'TUVSHINTUR', 'GANBAYR', 'MB03261579', 'MANAGER', 1300000),
-    ('N001001', 'EGSHIGLEN', 'ZORIG', 'UK03262311', 'NYAGTLAN', 1200000),
-    ('N002001', 'MARGAD', 'DAMID', 'MK03184977', 'NYAGTLAN', 1200000),
-    ('N003001', 'TUSHIGBAYR', 'MUNGUNKHULEG', 'UD95154872', 'NYAGTLAN', 1200000),
-    ('N004001', 'SARANTUYA', 'TSERENNYAM', 'MD89152633', 'NYAGTLAN', 1200000),
-    ('N005001', 'CHIMGEE', 'TSERENNYAM', 'OK96154758', 'NYAGTLAN', 1200000),
-    ('N006001', 'GANBAT', 'BATBAATAR', 'YU05261342', 'NYAGTLAN', 1200000),
-    ('U001001', 'OTGONDELGER', 'GANBOLD', 'KK04154326', 'UNDSEN AJILTAN', 900000),
-    ('U002001', 'BAYRTSETSEG', 'TSERENOCHIR', 'BH02351242', 'UNDSEN AJILTAN', 900000),
-    ('U003001', 'ENKHJIN', 'BATSUURI', 'KJ01154236', 'UNDSEN AJILTAN', 900000),
-    ('U004001', 'ENKHJIN', 'BATHUYG', 'DT98354512', 'UNDSEN AJILTAN', 900000),
-    ('T001001', 'ENKHSUVD', 'BAYTHUYG', 'TE99320212', 'TSAGIIN AJILTAN', 700000),
-    ('T001002', 'CHIMEDBADRAKH', 'BATHUYG', 'GH00361542', 'TSAGIIN AJILTAN', 700000),
-    ('T002001', 'NOMINERDENE', 'SUKHBAATAR', 'FF00235315', 'TSAGIIN AJILTAN', 700000),
-    ('T002002', 'BATTUVSHIN', 'CHIMEDBADRAKH', 'AD00362514', 'TSAGIIN AJILTAN', 700000)
+    ('Z001001', 'USUKHBAYR', 'SAIKHANTAMIR', 'UP03112210', 'ZAHIRAL', 20000),
+    ('Z002001', 'MUNKHBADRAL', 'JARGALSAIKHAN', 'MY03272611', 'ZAHIRAL', 20000),
+    ('Z003001', 'DEVJREKH', 'TSOGZOL', 'UP03251105', 'ZAHIRAL', 20000),
+    ('Z004001', 'AMIRLAN', 'AMIRLANGUI', 'UP03320115', 'ZAHIRAL', 20000),
+    ('Z005001', 'TUVSHINJARGAL', 'BATBAYR', 'UJ03252611', 'ZAHIRAL', 20000),
+    ('Z006001', 'BOLORERDENE', 'SUKHBAATAR', 'UO04230204', 'ZAHIRAL', 20000),
+    ('M001001', 'GANBOLOR', 'GURRAGCHAA', 'UK03251948', 'MANAGER', 15000),
+    ('M002001', 'MUNKHJIN', 'MYANGANBAYR', 'DD03261548', 'MANAGER', 15000),
+    ('M003001', 'OYUNZAYA', 'GERELCHULUUN', 'MD03211359', 'MANAGER', 15000),
+    ('M004001', 'ERKHEMBAYR', 'DAVAADORJ', 'ET03321563', 'MANAGER', 15000),
+    ('M005001', 'TUSHIGERDENE', 'JAMIYANSUREN', 'HI03211124', 'MANAGER', 15000),
+    ('M006001', 'TUVSHINTUR', 'GANBAYR', 'MB03261579', 'MANAGER', 15000),
+    ('N001001', 'EGSHIGLEN', 'ZORIG', 'UK03262311', 'NYAGTLAN', 10000),
+    ('N002001', 'MARGAD', 'DAMID', 'MK03184977', 'NYAGTLAN', 10000),
+    ('N003001', 'TUSHIGBAYR', 'MUNGUNKHULEG', 'UD95154872', 'NYAGTLAN', 10000),
+    ('N004001', 'SARANTUYA', 'TSERENNYAM', 'MD89152633', 'NYAGTLAN', 10000),
+    ('N005001', 'CHIMGEE', 'TSERENNYAM', 'OK96154758', 'NYAGTLAN', 10000),
+    ('N006001', 'GANBAT', 'BATBAATAR', 'YU05261342', 'NYAGTLAN', 10000),
+    ('U001001', 'OTGONDELGER', 'GANBOLD', 'KK04154326', 'UNDSEN AJILTAN', 6000),
+    ('U001002', 'BAYRTSETSEG', 'TSERENOCHIR', 'BH02351242', 'UNDSEN AJILTAN', 6000),
+    ('U002001', 'ENKHJIN', 'BATSUURI', 'KJ01154236', 'UNDSEN AJILTAN', 6000),
+    ('U002002', 'ENKHJIN', 'BATHUYG', 'DT98354512', 'UNDSEN AJILTAN', 6000),
+    ('T001001', 'ENKHSUVD', 'BAYTHUYG', 'TE99320212', 'TSAGIIN AJILTAN', 5000),
+    ('T001002', 'CHIMEDBADRAKH', 'BATHUYG', 'GH00361542', 'TSAGIIN AJILTAN', 5000),
+    ('T002001', 'NOMINERDENE', 'SUKHBAATAR', 'FF00235315', 'TSAGIIN AJILTAN', 5000),
+    ('T002002', 'BATTUVSHIN', 'CHIMEDBADRAKH', 'AD00362514', 'TSAGIIN AJILTAN', 5000)
+
+insert into Finance
+values
+
+    ('S20221208001', '001', '2022/12/08'),
+    ('S20221208002', '002', '2022/12/08'),
+    ('S20221209001', '001', '2022/12/09'),
+    ('S20221209002', '002', '2022/12/09'),
+    ('S20221210001', '001', '2022/12/10'),
+    ('S20221210002', '002', '2022/12/10'),
+    ('S20221211001', '001', '2022/12/11'),
+    ('S20221211002', '002', '2022/12/11')
 
 insert into CusOrder
 values
     ('Z20221208001001', '001', 'U001001', '2022/12/08'),
     ('Z20221208001002', '001', 'U001001', '2022/12/08'),
     ('Z20221208001003', '001', 'U001001', '2022/12/08'),
+    ('Z20221208001004', '001', 'U001002', '2022/12/08'),
+    ('Z20221208001005', '001', 'U001002', '2022/12/08'),
+    ('Z20221208001006', '001', 'U001002', '2022/12/08'),
+    ('Z20221208001007', '001', 'T001001', '2022/12/08'),
+    ('Z20221208001008', '001', 'T001001', '2022/12/08'),
+    ('Z20221208001009', '001', 'T001002', '2022/12/08'),
+    ('Z20221208001010', '001', 'T001002', '2022/12/08'),
+    ('Z20221209001001', '001', 'U001001', '2022/12/09'),
+    ('Z20221209001002', '001', 'U001001', '2022/12/09'),
+    ('Z20221209001003', '001', 'U001001', '2022/12/09'),
+    ('Z20221209001004', '001', 'U001002', '2022/12/09'),
+    ('Z20221209001005', '001', 'U001002', '2022/12/09'),
+    ('Z20221209001006', '001', 'U001002', '2022/12/09'),
+    ('Z20221209001007', '001', 'T001001', '2022/12/09'),
+    ('Z20221209001008', '001', 'T001001', '2022/12/09'),
+    ('Z20221209001009', '001', 'T001002', '2022/12/09'),
+    ('Z20221209001010', '001', 'T001002', '2022/12/09'),
+    ('Z20221210001001', '001', 'U001001', '2022/12/10'),
+    ('Z20221210001002', '001', 'U001001', '2022/12/10'),
+    ('Z20221210001003', '001', 'U001001', '2022/12/10'),
+    ('Z20221210001004', '001', 'U001002', '2022/12/10'),
+    ('Z20221210001005', '001', 'U001002', '2022/12/10'),
+    ('Z20221210001006', '001', 'U001002', '2022/12/10'),
+    ('Z20221210001007', '001', 'T001001', '2022/12/10'),
+    ('Z20221210001008', '001', 'T001001', '2022/12/10'),
+    ('Z20221210001009', '001', 'T001002', '2022/12/10'),
+    ('Z20221210001010', '001', 'T001002', '2022/12/10'),
+    ('Z20221211001001', '001', 'U001001', '2022/12/11'),
+    ('Z20221211001002', '001', 'U001001', '2022/12/11'),
+    ('Z20221211001003', '001', 'U001001', '2022/12/11'),
+    ('Z20221211001004', '001', 'U001002', '2022/12/11'),
+    ('Z20221211001005', '001', 'U001002', '2022/12/11'),
+    ('Z20221211001006', '001', 'U001002', '2022/12/11'),
+    ('Z20221211001007', '001', 'T001001', '2022/12/11'),
+    ('Z20221211001008', '001', 'T001001', '2022/12/11'),
+    ('Z20221211001009', '001', 'T001002', '2022/12/11'),
+    ('Z20221211001010', '001', 'T001002', '2022/12/11')
+
+insert into CusOrder
+values
     ('Z20221208002001', '002', 'U002001', '2022/12/08'),
     ('Z20221208002002', '002', 'U002001', '2022/12/08'),
     ('Z20221208002003', '002', 'U002001', '2022/12/08'),
-    ('Z20221208003001', '003', 'U003001', '2022/12/08'),
-    ('Z20221208003002', '003', 'U003001', '2022/12/08'),
-    ('Z20221208003003', '003', 'U003001', '2022/12/08'),
-    ('Z20221208004001', '004', 'U004001', '2022/12/08'),
-    ('Z20221208004002', '004', 'U004001', '2022/12/08'),
-    ('Z20221208004003', '004', 'U004001', '2022/12/08'),
-    ('Z20221209001001', '001', 'U001001', '2022/12/09'),
-    ('Z20221209001002', '001', 'U001001', '2022/12/09'),
-    ('Z20221209003001', '003', 'U003001', '2022/12/09'),
-    ('Z20221209003003', '003', 'U003001', '2022/12/09'),
+    ('Z20221208002004', '002', 'U002002', '2022/12/08'),
+    ('Z20221208002005', '002', 'U002002', '2022/12/08'),
+    ('Z20221208002006', '002', 'U002002', '2022/12/08'),
+    ('Z20221208002007', '002', 'T002001', '2022/12/08'),
+    ('Z20221208002008', '002', 'T002001', '2022/12/08'),
+    ('Z20221208002009', '002', 'T002002', '2022/12/08'),
+    ('Z20221208002010', '002', 'T002002', '2022/12/08'),
     ('Z20221209002001', '002', 'U002001', '2022/12/09'),
     ('Z20221209002002', '002', 'U002001', '2022/12/09'),
-    ('Z20221209004001', '004', 'U004001', '2022/12/09'),
-    ('Z20221209004002', '004', 'U004001', '2022/12/09'),
-    ('Z20221209004003', '004', 'U004001', '2022/12/09');
+    ('Z20221209002003', '002', 'U002001', '2022/12/09'),
+    ('Z20221209002004', '002', 'U002002', '2022/12/09'),
+    ('Z20221209002005', '002', 'U002002', '2022/12/09'),
+    ('Z20221209002006', '002', 'U002002', '2022/12/09'),
+    ('Z20221209002007', '002', 'T002001', '2022/12/09'),
+    ('Z20221209002008', '002', 'T002001', '2022/12/09'),
+    ('Z20221209002009', '002', 'T002002', '2022/12/09'),
+    ('Z20221209002010', '002', 'T002002', '2022/12/09'),
+    ('Z20221210002001', '002', 'U002001', '2022/12/10'),
+    ('Z20221210002002', '002', 'U002001', '2022/12/10'),
+    ('Z20221210002003', '002', 'U002001', '2022/12/10'),
+    ('Z20221210002004', '002', 'U002002', '2022/12/10'),
+    ('Z20221210002005', '002', 'U002002', '2022/12/10'),
+    ('Z20221210002006', '002', 'U002002', '2022/12/10'),
+    ('Z20221210002007', '002', 'T002001', '2022/12/10'),
+    ('Z20221210002008', '002', 'T002001', '2022/12/10'),
+    ('Z20221210002009', '002', 'T002002', '2022/12/10'),
+    ('Z20221210002010', '002', 'T002002', '2022/12/10'),
+    ('Z20221211002001', '002', 'U002001', '2022/12/11'),
+    ('Z20221211002002', '002', 'U002001', '2022/12/11'),
+    ('Z20221211002003', '002', 'U002001', '2022/12/11'),
+    ('Z20221211002004', '002', 'U002002', '2022/12/11'),
+    ('Z20221211002005', '002', 'U002002', '2022/12/11'),
+    ('Z20221211002006', '002', 'U002002', '2022/12/11'),
+    ('Z20221211002007', '002', 'T002001', '2022/12/11'),
+    ('Z20221211002008', '002', 'T002001', '2022/12/11'),
+    ('Z20221211002009', '002', 'T002002', '2022/12/11'),
+    ('Z20221211002010', '002', 'T002002', '2022/12/11')
+
 
 insert into CustomerOrderRegister
-values
-    ('Z20221208001001', 'C001', 2),
-    ('Z20221208001001', 'C002', 2),
-    ('Z20221208001001', 'C002', 3),
-    ('Z20221208002002', 'C003', 1),
-    ('Z20221208002002', 'C004', 2),
-    ('Z20221208002002', 'C006', 3),
-    ('Z20221208002002', 'C008', 2),
-    ('Z20221208003003', 'C007', 1),
-    ('Z20221208003003', 'T001', 2),
-    ('Z20221208003003', 'W001', 2),
-    ('Z20221209004003', 'B001', 1),
-    ('Z20221209004003', 'B001', 4),
-    ('Z20221209004003', 'F001', 2),
-    ('Z20221209001001', 'F002', 3),
-    ('Z20221209001001', 'F003', 1),
-    ('Z20221209001001', 'F004', 2),
-    ('Z20221209002002', 'S001', 3),
-    ('Z20221209002002', 'S002', 2),
-    ('Z20221209003003', 'S003', 2);
+values('Z20221208001001', 'C001', 19);
+insert into CustomerOrderRegister
+values('Z20221208001001', 'C002', 3);
+insert into CustomerOrderRegister
+values('Z20221208001001', 'C003', 22);
+insert into CustomerOrderRegister
+values('Z20221208001001', 'C004', 27);
+insert into CustomerOrderRegister
+values('Z20221208001001', 'C005', 12);
+insert into CustomerOrderRegister
+values('Z20221208001001', 'C006', 24);
+insert into CustomerOrderRegister
+values('Z20221208001001', 'C007', 15);
+insert into CustomerOrderRegister
+values('Z20221208001001', 'C008', 26);
+insert into CustomerOrderRegister
+values('Z20221208001001', 'C009', 6);
+insert into CustomerOrderRegister
+values('Z20221208001001', 'T001', 15);
+insert into CustomerOrderRegister
+values('Z20221208001001', 'W001', 19);
+insert into CustomerOrderRegister
+values('Z20221208001001', 'W002', 10);
+insert into CustomerOrderRegister
+values('Z20221208001001', 'B001', 3);
+insert into CustomerOrderRegister
+values('Z20221208001001', 'B002', 5);
+insert into CustomerOrderRegister
+values('Z20221208001001', 'F001', 26);
+insert into CustomerOrderRegister
+values('Z20221208001001', 'F002', 8);
+insert into CustomerOrderRegister
+values('Z20221208001001', 'F003', 17);
+insert into CustomerOrderRegister
+values('Z20221208001001', 'F004', 10);
+insert into CustomerOrderRegister
+values('Z20221208001001', 'S001', 18);
+insert into CustomerOrderRegister
+values('Z20221208001001', 'S002', 17);
+insert into CustomerOrderRegister
+values('Z20221208001001', 'S003', 20);
+
+insert into CustomerOrderRegister
+values('Z20221208001002', 'C001', 9);
+insert into CustomerOrderRegister
+values('Z20221208001002', 'C002', 9);
+insert into CustomerOrderRegister
+values('Z20221208001002', 'C003', 3);
+insert into CustomerOrderRegister
+values('Z20221208001002', 'C004', 5);
+insert into CustomerOrderRegister
+values('Z20221208001002', 'C005', 3);
+insert into CustomerOrderRegister
+values('Z20221208001002', 'C006', 28);
+insert into CustomerOrderRegister
+values('Z20221208001002', 'C007', 3);
+insert into CustomerOrderRegister
+values('Z20221208001002', 'C008', 14);
+insert into CustomerOrderRegister
+values('Z20221208001002', 'C009', 12);
+insert into CustomerOrderRegister
+values('Z20221208001002', 'T001', 21);
+insert into CustomerOrderRegister
+values('Z20221208001002', 'W001', 14);
+insert into CustomerOrderRegister
+values('Z20221208001002', 'W002', 15);
+insert into CustomerOrderRegister
+values('Z20221208001002', 'B001', 6);
+insert into CustomerOrderRegister
+values('Z20221208001002', 'B002', 13);
+insert into CustomerOrderRegister
+values('Z20221208001002', 'F001', 25);
+insert into CustomerOrderRegister
+values('Z20221208001002', 'F002', 22);
+insert into CustomerOrderRegister
+values('Z20221208001002', 'F003', 30);
+insert into CustomerOrderRegister
+values('Z20221208001002', 'F004', 22);
+insert into CustomerOrderRegister
+values('Z20221208001002', 'S001', 7);
+insert into CustomerOrderRegister
+values('Z20221208001002', 'S002', 14);
+insert into CustomerOrderRegister
+values('Z20221208001002', 'S003', 6);
+
+insert into CustomerOrderRegister
+values('Z20221208001003', 'C001', 28);
+insert into CustomerOrderRegister
+values('Z20221208001003', 'C002', 22);
+insert into CustomerOrderRegister
+values('Z20221208001003', 'C003', 26);
+insert into CustomerOrderRegister
+values('Z20221208001003', 'C004', 1);
+insert into CustomerOrderRegister
+values('Z20221208001003', 'C005', 20);
+insert into CustomerOrderRegister
+values('Z20221208001003', 'C006', 7);
+insert into CustomerOrderRegister
+values('Z20221208001003', 'C007', 7);
+insert into CustomerOrderRegister
+values('Z20221208001003', 'C008', 8);
+insert into CustomerOrderRegister
+values('Z20221208001003', 'C009', 19);
+insert into CustomerOrderRegister
+values('Z20221208001003', 'T001', 16);
+insert into CustomerOrderRegister
+values('Z20221208001003', 'W001', 13);
+insert into CustomerOrderRegister
+values('Z20221208001003', 'W002', 29);
+insert into CustomerOrderRegister
+values('Z20221208001003', 'B001', 7);
+insert into CustomerOrderRegister
+values('Z20221208001003', 'B002', 26);
+insert into CustomerOrderRegister
+values('Z20221208001003', 'F001', 20);
+insert into CustomerOrderRegister
+values('Z20221208001003', 'F002', 2);
+insert into CustomerOrderRegister
+values('Z20221208001003', 'F003', 28);
+insert into CustomerOrderRegister
+values('Z20221208001003', 'F004', 29);
+insert into CustomerOrderRegister
+values('Z20221208001003', 'S001', 8);
+insert into CustomerOrderRegister
+values('Z20221208001003', 'S002', 27);
+insert into CustomerOrderRegister
+values('Z20221208001003', 'S003', 19);
+
+insert into CustomerOrderRegister
+values('Z20221208001004', 'C001', 26);
+insert into CustomerOrderRegister
+values('Z20221208001004', 'C002', 2);
+insert into CustomerOrderRegister
+values('Z20221208001004', 'C003', 28);
+insert into CustomerOrderRegister
+values('Z20221208001004', 'C004', 23);
+insert into CustomerOrderRegister
+values('Z20221208001004', 'C005', 19);
+insert into CustomerOrderRegister
+values('Z20221208001004', 'C006', 28);
+insert into CustomerOrderRegister
+values('Z20221208001004', 'C007', 25);
+insert into CustomerOrderRegister
+values('Z20221208001004', 'C008', 17);
+insert into CustomerOrderRegister
+values('Z20221208001004', 'C009', 26);
+insert into CustomerOrderRegister
+values('Z20221208001004', 'T001', 11);
+insert into CustomerOrderRegister
+values('Z20221208001004', 'W001', 22);
+insert into CustomerOrderRegister
+values('Z20221208001004', 'W002', 30);
+insert into CustomerOrderRegister
+values('Z20221208001004', 'B001', 13);
+insert into CustomerOrderRegister
+values('Z20221208001004', 'B002', 28);
+insert into CustomerOrderRegister
+values('Z20221208001004', 'F001', 2);
+insert into CustomerOrderRegister
+values('Z20221208001004', 'F002', 5);
+insert into CustomerOrderRegister
+values('Z20221208001004', 'F003', 16);
+insert into CustomerOrderRegister
+values('Z20221208001004', 'F004', 29);
+insert into CustomerOrderRegister
+values('Z20221208001004', 'S001', 24);
+insert into CustomerOrderRegister
+values('Z20221208001004', 'S002', 7);
+insert into CustomerOrderRegister
+values('Z20221208001004', 'S003', 14);
+
+insert into CustomerOrderRegister
+values('Z20221208001005', 'C001', 20);
+insert into CustomerOrderRegister
+values('Z20221208001005', 'C002', 2);
+insert into CustomerOrderRegister
+values('Z20221208001005', 'C003', 29);
+insert into CustomerOrderRegister
+values('Z20221208001005', 'C004', 27);
+insert into CustomerOrderRegister
+values('Z20221208001005', 'C005', 26);
+insert into CustomerOrderRegister
+values('Z20221208001005', 'C006', 17);
+insert into CustomerOrderRegister
+values('Z20221208001005', 'C007', 17);
+insert into CustomerOrderRegister
+values('Z20221208001005', 'C008', 5);
+insert into CustomerOrderRegister
+values('Z20221208001005', 'C009', 25);
+insert into CustomerOrderRegister
+values('Z20221208001005', 'T001', 15);
+insert into CustomerOrderRegister
+values('Z20221208001005', 'W001', 16);
+insert into CustomerOrderRegister
+values('Z20221208001005', 'W002', 24);
+insert into CustomerOrderRegister
+values('Z20221208001005', 'B001', 26);
+insert into CustomerOrderRegister
+values('Z20221208001005', 'B002', 11);
+insert into CustomerOrderRegister
+values('Z20221208001005', 'F001', 9);
+insert into CustomerOrderRegister
+values('Z20221208001005', 'F002', 2);
+insert into CustomerOrderRegister
+values('Z20221208001005', 'F003', 1);
+insert into CustomerOrderRegister
+values('Z20221208001005', 'F004', 9);
+insert into CustomerOrderRegister
+values('Z20221208001005', 'S001', 10);
+insert into CustomerOrderRegister
+values('Z20221208001005', 'S002', 22);
+insert into CustomerOrderRegister
+values('Z20221208001005', 'S003', 29);
+
+insert into CustomerOrderRegister
+values('Z20221208001006', 'C001', 29);
+insert into CustomerOrderRegister
+values('Z20221208001006', 'C002', 2);
+insert into CustomerOrderRegister
+values('Z20221208001006', 'C003', 19);
+insert into CustomerOrderRegister
+values('Z20221208001006', 'C004', 13);
+insert into CustomerOrderRegister
+values('Z20221208001006', 'C005', 27);
+insert into CustomerOrderRegister
+values('Z20221208001006', 'C006', 2);
+insert into CustomerOrderRegister
+values('Z20221208001006', 'C007', 24);
+insert into CustomerOrderRegister
+values('Z20221208001006', 'C008', 3);
+insert into CustomerOrderRegister
+values('Z20221208001006', 'C009', 23);
+insert into CustomerOrderRegister
+values('Z20221208001006', 'T001', 1);
+insert into CustomerOrderRegister
+values('Z20221208001006', 'W001', 14);
+insert into CustomerOrderRegister
+values('Z20221208001006', 'W002', 4);
+insert into CustomerOrderRegister
+values('Z20221208001006', 'B001', 15);
+insert into CustomerOrderRegister
+values('Z20221208001006', 'B002', 20);
+insert into CustomerOrderRegister
+values('Z20221208001006', 'F001', 27);
+insert into CustomerOrderRegister
+values('Z20221208001006', 'F002', 12);
+insert into CustomerOrderRegister
+values('Z20221208001006', 'F003', 28);
+insert into CustomerOrderRegister
+values('Z20221208001006', 'F004', 8);
+insert into CustomerOrderRegister
+values('Z20221208001006', 'S001', 12);
+insert into CustomerOrderRegister
+values('Z20221208001006', 'S002', 8);
+insert into CustomerOrderRegister
+values('Z20221208001006', 'S003', 28);
+
+insert into CustomerOrderRegister
+values('Z20221208001007', 'C001', 13);
+insert into CustomerOrderRegister
+values('Z20221208001007', 'C002', 22);
+insert into CustomerOrderRegister
+values('Z20221208001007', 'C003', 7);
+insert into CustomerOrderRegister
+values('Z20221208001007', 'C004', 23);
+insert into CustomerOrderRegister
+values('Z20221208001007', 'C005', 12);
+insert into CustomerOrderRegister
+values('Z20221208001007', 'C006', 22);
+insert into CustomerOrderRegister
+values('Z20221208001007', 'C007', 5);
+insert into CustomerOrderRegister
+values('Z20221208001007', 'C008', 5);
+insert into CustomerOrderRegister
+values('Z20221208001007', 'C009', 1);
+insert into CustomerOrderRegister
+values('Z20221208001007', 'T001', 6);
+insert into CustomerOrderRegister
+values('Z20221208001007', 'W001', 12);
+insert into CustomerOrderRegister
+values('Z20221208001007', 'W002', 17);
+insert into CustomerOrderRegister
+values('Z20221208001007', 'B001', 30);
+insert into CustomerOrderRegister
+values('Z20221208001007', 'B002', 5);
+insert into CustomerOrderRegister
+values('Z20221208001007', 'F001', 24);
+insert into CustomerOrderRegister
+values('Z20221208001007', 'F002', 19);
+insert into CustomerOrderRegister
+values('Z20221208001007', 'F003', 11);
+insert into CustomerOrderRegister
+values('Z20221208001007', 'F004', 25);
+insert into CustomerOrderRegister
+values('Z20221208001007', 'S001', 20);
+insert into CustomerOrderRegister
+values('Z20221208001007', 'S002', 29);
+insert into CustomerOrderRegister
+values('Z20221208001007', 'S003', 5);
+
+insert into CustomerOrderRegister
+values('Z20221208001008', 'C001', 12);
+insert into CustomerOrderRegister
+values('Z20221208001008', 'C002', 5);
+insert into CustomerOrderRegister
+values('Z20221208001008', 'C003', 18);
+insert into CustomerOrderRegister
+values('Z20221208001008', 'C004', 14);
+insert into CustomerOrderRegister
+values('Z20221208001008', 'C005', 21);
+insert into CustomerOrderRegister
+values('Z20221208001008', 'C006', 18);
+insert into CustomerOrderRegister
+values('Z20221208001008', 'C007', 5);
+insert into CustomerOrderRegister
+values('Z20221208001008', 'C008', 24);
+insert into CustomerOrderRegister
+values('Z20221208001008', 'C009', 25);
+insert into CustomerOrderRegister
+values('Z20221208001008', 'T001', 26);
+insert into CustomerOrderRegister
+values('Z20221208001008', 'W001', 20);
+insert into CustomerOrderRegister
+values('Z20221208001008', 'W002', 15);
+insert into CustomerOrderRegister
+values('Z20221208001008', 'B001', 5);
+insert into CustomerOrderRegister
+values('Z20221208001008', 'B002', 17);
+insert into CustomerOrderRegister
+values('Z20221208001008', 'F001', 29);
+insert into CustomerOrderRegister
+values('Z20221208001008', 'F002', 11);
+insert into CustomerOrderRegister
+values('Z20221208001008', 'F003', 3);
+insert into CustomerOrderRegister
+values('Z20221208001008', 'F004', 15);
+insert into CustomerOrderRegister
+values('Z20221208001008', 'S001', 1);
+insert into CustomerOrderRegister
+values('Z20221208001008', 'S002', 21);
+insert into CustomerOrderRegister
+values('Z20221208001008', 'S003', 18);
+
+insert into CustomerOrderRegister
+values('Z20221208001009', 'C001', 4);
+insert into CustomerOrderRegister
+values('Z20221208001009', 'C002', 21);
+insert into CustomerOrderRegister
+values('Z20221208001009', 'C003', 21);
+insert into CustomerOrderRegister
+values('Z20221208001009', 'C004', 28);
+insert into CustomerOrderRegister
+values('Z20221208001009', 'C005', 20);
+insert into CustomerOrderRegister
+values('Z20221208001009', 'C006', 9);
+insert into CustomerOrderRegister
+values('Z20221208001009', 'C007', 17);
+insert into CustomerOrderRegister
+values('Z20221208001009', 'C008', 9);
+insert into CustomerOrderRegister
+values('Z20221208001009', 'C009', 1);
+insert into CustomerOrderRegister
+values('Z20221208001009', 'T001', 16);
+insert into CustomerOrderRegister
+values('Z20221208001009', 'W001', 11);
+insert into CustomerOrderRegister
+values('Z20221208001009', 'W002', 11);
+insert into CustomerOrderRegister
+values('Z20221208001009', 'B001', 28);
+insert into CustomerOrderRegister
+values('Z20221208001009', 'B002', 17);
+insert into CustomerOrderRegister
+values('Z20221208001009', 'F001', 8);
+insert into CustomerOrderRegister
+values('Z20221208001009', 'F002', 27);
+insert into CustomerOrderRegister
+values('Z20221208001009', 'F003', 8);
+insert into CustomerOrderRegister
+values('Z20221208001009', 'F004', 19);
+insert into CustomerOrderRegister
+values('Z20221208001009', 'S001', 3);
+insert into CustomerOrderRegister
+values('Z20221208001009', 'S002', 10);
+insert into CustomerOrderRegister
+values('Z20221208001009', 'S003', 29);
+
+insert into CustomerOrderRegister
+values('Z20221208001010', 'C001', 22);
+insert into CustomerOrderRegister
+values('Z20221208001010', 'C002', 25);
+insert into CustomerOrderRegister
+values('Z20221208001010', 'C003', 16);
+insert into CustomerOrderRegister
+values('Z20221208001010', 'C004', 10);
+insert into CustomerOrderRegister
+values('Z20221208001010', 'C005', 5);
+insert into CustomerOrderRegister
+values('Z20221208001010', 'C006', 26);
+insert into CustomerOrderRegister
+values('Z20221208001010', 'C007', 16);
+insert into CustomerOrderRegister
+values('Z20221208001010', 'C008', 19);
+insert into CustomerOrderRegister
+values('Z20221208001010', 'C009', 15);
+insert into CustomerOrderRegister
+values('Z20221208001010', 'T001', 25);
+insert into CustomerOrderRegister
+values('Z20221208001010', 'W001', 2);
+insert into CustomerOrderRegister
+values('Z20221208001010', 'W002', 5);
+insert into CustomerOrderRegister
+values('Z20221208001010', 'B001', 26);
+insert into CustomerOrderRegister
+values('Z20221208001010', 'B002', 2);
+insert into CustomerOrderRegister
+values('Z20221208001010', 'F001', 12);
+insert into CustomerOrderRegister
+values('Z20221208001010', 'F002', 15);
+insert into CustomerOrderRegister
+values('Z20221208001010', 'F003', 3);
+insert into CustomerOrderRegister
+values('Z20221208001010', 'F004', 28);
+insert into CustomerOrderRegister
+values('Z20221208001010', 'S001', 30);
+insert into CustomerOrderRegister
+values('Z20221208001010', 'S002', 9);
+insert into CustomerOrderRegister
+values('Z20221208001010', 'S003', 18);
 
 
-delete from EmpReg
+insert into CustomerOrderRegister
+values('Z20221209001001', 'C001', 29);
+insert into CustomerOrderRegister
+values('Z20221209001001', 'C002', 27);
+insert into CustomerOrderRegister
+values('Z20221209001001', 'C003', 7);
+insert into CustomerOrderRegister
+values('Z20221209001001', 'C004', 24);
+insert into CustomerOrderRegister
+values('Z20221209001001', 'C005', 7);
+insert into CustomerOrderRegister
+values('Z20221209001001', 'C006', 12);
+insert into CustomerOrderRegister
+values('Z20221209001001', 'C007', 28);
+insert into CustomerOrderRegister
+values('Z20221209001001', 'C008', 13);
+insert into CustomerOrderRegister
+values('Z20221209001001', 'C009', 3);
+insert into CustomerOrderRegister
+values('Z20221209001001', 'T001', 1);
+insert into CustomerOrderRegister
+values('Z20221209001001', 'W001', 9);
+insert into CustomerOrderRegister
+values('Z20221209001001', 'W002', 16);
+insert into CustomerOrderRegister
+values('Z20221209001001', 'B001', 10);
+insert into CustomerOrderRegister
+values('Z20221209001001', 'B002', 8);
+insert into CustomerOrderRegister
+values('Z20221209001001', 'F001', 18);
+insert into CustomerOrderRegister
+values('Z20221209001001', 'F002', 21);
+insert into CustomerOrderRegister
+values('Z20221209001001', 'F003', 12);
+insert into CustomerOrderRegister
+values('Z20221209001001', 'F004', 6);
+insert into CustomerOrderRegister
+values('Z20221209001001', 'S001', 25);
+insert into CustomerOrderRegister
+values('Z20221209001001', 'S002', 14);
+insert into CustomerOrderRegister
+values('Z20221209001001', 'S003', 9);
+
+insert into CustomerOrderRegister
+values('Z20221209001002', 'C001', 13);
+insert into CustomerOrderRegister
+values('Z20221209001002', 'C002', 11);
+insert into CustomerOrderRegister
+values('Z20221209001002', 'C003', 26);
+insert into CustomerOrderRegister
+values('Z20221209001002', 'C004', 24);
+insert into CustomerOrderRegister
+values('Z20221209001002', 'C005', 22);
+insert into CustomerOrderRegister
+values('Z20221209001002', 'C006', 11);
+insert into CustomerOrderRegister
+values('Z20221209001002', 'C007', 19);
+insert into CustomerOrderRegister
+values('Z20221209001002', 'C008', 21);
+insert into CustomerOrderRegister
+values('Z20221209001002', 'C009', 4);
+insert into CustomerOrderRegister
+values('Z20221209001002', 'T001', 19);
+insert into CustomerOrderRegister
+values('Z20221209001002', 'W001', 11);
+insert into CustomerOrderRegister
+values('Z20221209001002', 'W002', 6);
+insert into CustomerOrderRegister
+values('Z20221209001002', 'B001', 3);
+insert into CustomerOrderRegister
+values('Z20221209001002', 'B002', 3);
+insert into CustomerOrderRegister
+values('Z20221209001002', 'F001', 2);
+insert into CustomerOrderRegister
+values('Z20221209001002', 'F002', 8);
+insert into CustomerOrderRegister
+values('Z20221209001002', 'F003', 21);
+insert into CustomerOrderRegister
+values('Z20221209001002', 'F004', 8);
+insert into CustomerOrderRegister
+values('Z20221209001002', 'S001', 17);
+insert into CustomerOrderRegister
+values('Z20221209001002', 'S002', 27);
+insert into CustomerOrderRegister
+values('Z20221209001002', 'S003', 18);
+
+insert into CustomerOrderRegister
+values('Z20221209001003', 'C001', 4);
+insert into CustomerOrderRegister
+values('Z20221209001003', 'C002', 25);
+insert into CustomerOrderRegister
+values('Z20221209001003', 'C003', 4);
+insert into CustomerOrderRegister
+values('Z20221209001003', 'C004', 30);
+insert into CustomerOrderRegister
+values('Z20221209001003', 'C005', 29);
+insert into CustomerOrderRegister
+values('Z20221209001003', 'C006', 10);
+insert into CustomerOrderRegister
+values('Z20221209001003', 'C007', 14);
+insert into CustomerOrderRegister
+values('Z20221209001003', 'C008', 25);
+insert into CustomerOrderRegister
+values('Z20221209001003', 'C009', 26);
+insert into CustomerOrderRegister
+values('Z20221209001003', 'T001', 4);
+insert into CustomerOrderRegister
+values('Z20221209001003', 'W001', 7);
+insert into CustomerOrderRegister
+values('Z20221209001003', 'W002', 14);
+insert into CustomerOrderRegister
+values('Z20221209001003', 'B001', 12);
+insert into CustomerOrderRegister
+values('Z20221209001003', 'B002', 7);
+insert into CustomerOrderRegister
+values('Z20221209001003', 'F001', 24);
+insert into CustomerOrderRegister
+values('Z20221209001003', 'F002', 3);
+insert into CustomerOrderRegister
+values('Z20221209001003', 'F003', 4);
+insert into CustomerOrderRegister
+values('Z20221209001003', 'F004', 4);
+insert into CustomerOrderRegister
+values('Z20221209001003', 'S001', 5);
+insert into CustomerOrderRegister
+values('Z20221209001003', 'S002', 9);
+insert into CustomerOrderRegister
+values('Z20221209001003', 'S003', 19);
+
+insert into CustomerOrderRegister
+values('Z20221209001004', 'C001', 24);
+insert into CustomerOrderRegister
+values('Z20221209001004', 'C002', 28);
+insert into CustomerOrderRegister
+values('Z20221209001004', 'C003', 20);
+insert into CustomerOrderRegister
+values('Z20221209001004', 'C004', 20);
+insert into CustomerOrderRegister
+values('Z20221209001004', 'C005', 10);
+insert into CustomerOrderRegister
+values('Z20221209001004', 'C006', 1);
+insert into CustomerOrderRegister
+values('Z20221209001004', 'C007', 18);
+insert into CustomerOrderRegister
+values('Z20221209001004', 'C008', 21);
+insert into CustomerOrderRegister
+values('Z20221209001004', 'C009', 27);
+insert into CustomerOrderRegister
+values('Z20221209001004', 'T001', 5);
+insert into CustomerOrderRegister
+values('Z20221209001004', 'W001', 21);
+insert into CustomerOrderRegister
+values('Z20221209001004', 'W002', 2);
+insert into CustomerOrderRegister
+values('Z20221209001004', 'B001', 5);
+insert into CustomerOrderRegister
+values('Z20221209001004', 'B002', 18);
+insert into CustomerOrderRegister
+values('Z20221209001004', 'F001', 18);
+insert into CustomerOrderRegister
+values('Z20221209001004', 'F002', 11);
+insert into CustomerOrderRegister
+values('Z20221209001004', 'F003', 2);
+insert into CustomerOrderRegister
+values('Z20221209001004', 'F004', 9);
+insert into CustomerOrderRegister
+values('Z20221209001004', 'S001', 4);
+insert into CustomerOrderRegister
+values('Z20221209001004', 'S002', 10);
+insert into CustomerOrderRegister
+values('Z20221209001004', 'S003', 15);
+
+insert into CustomerOrderRegister
+values('Z20221209001005', 'C001', 4);
+insert into CustomerOrderRegister
+values('Z20221209001005', 'C002', 22);
+insert into CustomerOrderRegister
+values('Z20221209001005', 'C003', 1);
+insert into CustomerOrderRegister
+values('Z20221209001005', 'C004', 11);
+insert into CustomerOrderRegister
+values('Z20221209001005', 'C005', 9);
+insert into CustomerOrderRegister
+values('Z20221209001005', 'C006', 17);
+insert into CustomerOrderRegister
+values('Z20221209001005', 'C007', 22);
+insert into CustomerOrderRegister
+values('Z20221209001005', 'C008', 18);
+insert into CustomerOrderRegister
+values('Z20221209001005', 'C009', 10);
+insert into CustomerOrderRegister
+values('Z20221209001005', 'T001', 14);
+insert into CustomerOrderRegister
+values('Z20221209001005', 'W001', 18);
+insert into CustomerOrderRegister
+values('Z20221209001005', 'W002', 20);
+insert into CustomerOrderRegister
+values('Z20221209001005', 'B001', 20);
+insert into CustomerOrderRegister
+values('Z20221209001005', 'B002', 12);
+insert into CustomerOrderRegister
+values('Z20221209001005', 'F001', 20);
+insert into CustomerOrderRegister
+values('Z20221209001005', 'F002', 8);
+insert into CustomerOrderRegister
+values('Z20221209001005', 'F003', 16);
+insert into CustomerOrderRegister
+values('Z20221209001005', 'F004', 4);
+insert into CustomerOrderRegister
+values('Z20221209001005', 'S001', 7);
+insert into CustomerOrderRegister
+values('Z20221209001005', 'S002', 22);
+insert into CustomerOrderRegister
+values('Z20221209001005', 'S003', 28);
+
+insert into CustomerOrderRegister
+values('Z20221209001006', 'C001', 24);
+insert into CustomerOrderRegister
+values('Z20221209001006', 'C002', 16);
+insert into CustomerOrderRegister
+values('Z20221209001006', 'C003', 26);
+insert into CustomerOrderRegister
+values('Z20221209001006', 'C004', 13);
+insert into CustomerOrderRegister
+values('Z20221209001006', 'C005', 12);
+insert into CustomerOrderRegister
+values('Z20221209001006', 'C006', 11);
+insert into CustomerOrderRegister
+values('Z20221209001006', 'C007', 12);
+insert into CustomerOrderRegister
+values('Z20221209001006', 'C008', 12);
+insert into CustomerOrderRegister
+values('Z20221209001006', 'C009', 16);
+insert into CustomerOrderRegister
+values('Z20221209001006', 'T001', 13);
+insert into CustomerOrderRegister
+values('Z20221209001006', 'W001', 24);
+insert into CustomerOrderRegister
+values('Z20221209001006', 'W002', 20);
+insert into CustomerOrderRegister
+values('Z20221209001006', 'B001', 5);
+insert into CustomerOrderRegister
+values('Z20221209001006', 'B002', 22);
+insert into CustomerOrderRegister
+values('Z20221209001006', 'F001', 25);
+insert into CustomerOrderRegister
+values('Z20221209001006', 'F002', 28);
+insert into CustomerOrderRegister
+values('Z20221209001006', 'F003', 25);
+insert into CustomerOrderRegister
+values('Z20221209001006', 'F004', 14);
+insert into CustomerOrderRegister
+values('Z20221209001006', 'S001', 9);
+insert into CustomerOrderRegister
+values('Z20221209001006', 'S002', 29);
+insert into CustomerOrderRegister
+values('Z20221209001006', 'S003', 10);
+
+insert into CustomerOrderRegister
+values('Z20221209001007', 'C001', 14);
+insert into CustomerOrderRegister
+values('Z20221209001007', 'C002', 9);
+insert into CustomerOrderRegister
+values('Z20221209001007', 'C003', 2);
+insert into CustomerOrderRegister
+values('Z20221209001007', 'C004', 22);
+insert into CustomerOrderRegister
+values('Z20221209001007', 'C005', 25);
+insert into CustomerOrderRegister
+values('Z20221209001007', 'C006', 26);
+insert into CustomerOrderRegister
+values('Z20221209001007', 'C007', 19);
+insert into CustomerOrderRegister
+values('Z20221209001007', 'C008', 8);
+insert into CustomerOrderRegister
+values('Z20221209001007', 'C009', 21);
+insert into CustomerOrderRegister
+values('Z20221209001007', 'T001', 18);
+insert into CustomerOrderRegister
+values('Z20221209001007', 'W001', 13);
+insert into CustomerOrderRegister
+values('Z20221209001007', 'W002', 2);
+insert into CustomerOrderRegister
+values('Z20221209001007', 'B001', 6);
+insert into CustomerOrderRegister
+values('Z20221209001007', 'B002', 15);
+insert into CustomerOrderRegister
+values('Z20221209001007', 'F001', 30);
+insert into CustomerOrderRegister
+values('Z20221209001007', 'F002', 1);
+insert into CustomerOrderRegister
+values('Z20221209001007', 'F003', 29);
+insert into CustomerOrderRegister
+values('Z20221209001007', 'F004', 22);
+insert into CustomerOrderRegister
+values('Z20221209001007', 'S001', 2);
+insert into CustomerOrderRegister
+values('Z20221209001007', 'S002', 19);
+insert into CustomerOrderRegister
+values('Z20221209001007', 'S003', 5);
+
+insert into CustomerOrderRegister
+values('Z20221209001008', 'C001', 19);
+insert into CustomerOrderRegister
+values('Z20221209001008', 'C002', 30);
+insert into CustomerOrderRegister
+values('Z20221209001008', 'C003', 17);
+insert into CustomerOrderRegister
+values('Z20221209001008', 'C004', 6);
+insert into CustomerOrderRegister
+values('Z20221209001008', 'C005', 27);
+insert into CustomerOrderRegister
+values('Z20221209001008', 'C006', 15);
+insert into CustomerOrderRegister
+values('Z20221209001008', 'C007', 26);
+insert into CustomerOrderRegister
+values('Z20221209001008', 'C008', 18);
+insert into CustomerOrderRegister
+values('Z20221209001008', 'C009', 16);
+insert into CustomerOrderRegister
+values('Z20221209001008', 'T001', 26);
+insert into CustomerOrderRegister
+values('Z20221209001008', 'W001', 26);
+insert into CustomerOrderRegister
+values('Z20221209001008', 'W002', 28);
+insert into CustomerOrderRegister
+values('Z20221209001008', 'B001', 9);
+insert into CustomerOrderRegister
+values('Z20221209001008', 'B002', 11);
+insert into CustomerOrderRegister
+values('Z20221209001008', 'F001', 19);
+insert into CustomerOrderRegister
+values('Z20221209001008', 'F002', 17);
+insert into CustomerOrderRegister
+values('Z20221209001008', 'F003', 26);
+insert into CustomerOrderRegister
+values('Z20221209001008', 'F004', 24);
+insert into CustomerOrderRegister
+values('Z20221209001008', 'S001', 14);
+insert into CustomerOrderRegister
+values('Z20221209001008', 'S002', 9);
+insert into CustomerOrderRegister
+values('Z20221209001008', 'S003', 17);
+
+insert into CustomerOrderRegister
+values('Z20221209001009', 'C001', 29);
+insert into CustomerOrderRegister
+values('Z20221209001009', 'C002', 10);
+insert into CustomerOrderRegister
+values('Z20221209001009', 'C003', 6);
+insert into CustomerOrderRegister
+values('Z20221209001009', 'C004', 16);
+insert into CustomerOrderRegister
+values('Z20221209001009', 'C005', 30);
+insert into CustomerOrderRegister
+values('Z20221209001009', 'C006', 16);
+insert into CustomerOrderRegister
+values('Z20221209001009', 'C007', 11);
+insert into CustomerOrderRegister
+values('Z20221209001009', 'C008', 18);
+insert into CustomerOrderRegister
+values('Z20221209001009', 'C009', 8);
+insert into CustomerOrderRegister
+values('Z20221209001009', 'T001', 26);
+insert into CustomerOrderRegister
+values('Z20221209001009', 'W001', 10);
+insert into CustomerOrderRegister
+values('Z20221209001009', 'W002', 1);
+insert into CustomerOrderRegister
+values('Z20221209001009', 'B001', 11);
+insert into CustomerOrderRegister
+values('Z20221209001009', 'B002', 4);
+insert into CustomerOrderRegister
+values('Z20221209001009', 'F001', 4);
+insert into CustomerOrderRegister
+values('Z20221209001009', 'F002', 7);
+insert into CustomerOrderRegister
+values('Z20221209001009', 'F003', 3);
+insert into CustomerOrderRegister
+values('Z20221209001009', 'F004', 24);
+insert into CustomerOrderRegister
+values('Z20221209001009', 'S001', 10);
+insert into CustomerOrderRegister
+values('Z20221209001009', 'S002', 29);
+insert into CustomerOrderRegister
+values('Z20221209001009', 'S003', 18);
+
+insert into CustomerOrderRegister
+values('Z20221209001010', 'C001', 28);
+insert into CustomerOrderRegister
+values('Z20221209001010', 'C002', 26);
+insert into CustomerOrderRegister
+values('Z20221209001010', 'C003', 23);
+insert into CustomerOrderRegister
+values('Z20221209001010', 'C004', 22);
+insert into CustomerOrderRegister
+values('Z20221209001010', 'C005', 7);
+insert into CustomerOrderRegister
+values('Z20221209001010', 'C006', 30);
+insert into CustomerOrderRegister
+values('Z20221209001010', 'C007', 3);
+insert into CustomerOrderRegister
+values('Z20221209001010', 'C008', 30);
+insert into CustomerOrderRegister
+values('Z20221209001010', 'C009', 20);
+insert into CustomerOrderRegister
+values('Z20221209001010', 'T001', 8);
+insert into CustomerOrderRegister
+values('Z20221209001010', 'W001', 22);
+insert into CustomerOrderRegister
+values('Z20221209001010', 'W002', 9);
+insert into CustomerOrderRegister
+values('Z20221209001010', 'B001', 15);
+insert into CustomerOrderRegister
+values('Z20221209001010', 'B002', 9);
+insert into CustomerOrderRegister
+values('Z20221209001010', 'F001', 11);
+insert into CustomerOrderRegister
+values('Z20221209001010', 'F002', 10);
+insert into CustomerOrderRegister
+values('Z20221209001010', 'F003', 27);
+insert into CustomerOrderRegister
+values('Z20221209001010', 'F004', 7);
+insert into CustomerOrderRegister
+values('Z20221209001010', 'S001', 29);
+insert into CustomerOrderRegister
+values('Z20221209001010', 'S002', 26);
+insert into CustomerOrderRegister
+values('Z20221209001010', 'S003', 8);
+
+
+insert into CustomerOrderRegister
+values('Z20221210001001', 'C001', 11);
+insert into CustomerOrderRegister
+values('Z20221210001001', 'C002', 30);
+insert into CustomerOrderRegister
+values('Z20221210001001', 'C003', 6);
+insert into CustomerOrderRegister
+values('Z20221210001001', 'C004', 22);
+insert into CustomerOrderRegister
+values('Z20221210001001', 'C005', 22);
+insert into CustomerOrderRegister
+values('Z20221210001001', 'C006', 26);
+insert into CustomerOrderRegister
+values('Z20221210001001', 'C007', 1);
+insert into CustomerOrderRegister
+values('Z20221210001001', 'C008', 3);
+insert into CustomerOrderRegister
+values('Z20221210001001', 'C009', 10);
+insert into CustomerOrderRegister
+values('Z20221210001001', 'T001', 27);
+insert into CustomerOrderRegister
+values('Z20221210001001', 'W001', 7);
+insert into CustomerOrderRegister
+values('Z20221210001001', 'W002', 14);
+insert into CustomerOrderRegister
+values('Z20221210001001', 'B001', 19);
+insert into CustomerOrderRegister
+values('Z20221210001001', 'B002', 13);
+insert into CustomerOrderRegister
+values('Z20221210001001', 'F001', 28);
+insert into CustomerOrderRegister
+values('Z20221210001001', 'F002', 23);
+insert into CustomerOrderRegister
+values('Z20221210001001', 'F003', 4);
+insert into CustomerOrderRegister
+values('Z20221210001001', 'F004', 5);
+insert into CustomerOrderRegister
+values('Z20221210001001', 'S001', 29);
+insert into CustomerOrderRegister
+values('Z20221210001001', 'S002', 25);
+insert into CustomerOrderRegister
+values('Z20221210001001', 'S003', 4);
+
+insert into CustomerOrderRegister
+values('Z20221210001002', 'C001', 17);
+insert into CustomerOrderRegister
+values('Z20221210001002', 'C002', 15);
+insert into CustomerOrderRegister
+values('Z20221210001002', 'C003', 25);
+insert into CustomerOrderRegister
+values('Z20221210001002', 'C004', 17);
+insert into CustomerOrderRegister
+values('Z20221210001002', 'C005', 7);
+insert into CustomerOrderRegister
+values('Z20221210001002', 'C006', 7);
+insert into CustomerOrderRegister
+values('Z20221210001002', 'C007', 21);
+insert into CustomerOrderRegister
+values('Z20221210001002', 'C008', 5);
+insert into CustomerOrderRegister
+values('Z20221210001002', 'C009', 22);
+insert into CustomerOrderRegister
+values('Z20221210001002', 'T001', 1);
+insert into CustomerOrderRegister
+values('Z20221210001002', 'W001', 21);
+insert into CustomerOrderRegister
+values('Z20221210001002', 'W002', 27);
+insert into CustomerOrderRegister
+values('Z20221210001002', 'B001', 10);
+insert into CustomerOrderRegister
+values('Z20221210001002', 'B002', 30);
+insert into CustomerOrderRegister
+values('Z20221210001002', 'F001', 25);
+insert into CustomerOrderRegister
+values('Z20221210001002', 'F002', 28);
+insert into CustomerOrderRegister
+values('Z20221210001002', 'F003', 10);
+insert into CustomerOrderRegister
+values('Z20221210001002', 'F004', 6);
+insert into CustomerOrderRegister
+values('Z20221210001002', 'S001', 18);
+insert into CustomerOrderRegister
+values('Z20221210001002', 'S002', 14);
+insert into CustomerOrderRegister
+values('Z20221210001002', 'S003', 12);
+
+insert into CustomerOrderRegister
+values('Z20221210001003', 'C001', 16);
+insert into CustomerOrderRegister
+values('Z20221210001003', 'C002', 3);
+insert into CustomerOrderRegister
+values('Z20221210001003', 'C003', 6);
+insert into CustomerOrderRegister
+values('Z20221210001003', 'C004', 29);
+insert into CustomerOrderRegister
+values('Z20221210001003', 'C005', 20);
+insert into CustomerOrderRegister
+values('Z20221210001003', 'C006', 30);
+insert into CustomerOrderRegister
+values('Z20221210001003', 'C007', 24);
+insert into CustomerOrderRegister
+values('Z20221210001003', 'C008', 20);
+insert into CustomerOrderRegister
+values('Z20221210001003', 'C009', 4);
+insert into CustomerOrderRegister
+values('Z20221210001003', 'T001', 10);
+insert into CustomerOrderRegister
+values('Z20221210001003', 'W001', 23);
+insert into CustomerOrderRegister
+values('Z20221210001003', 'W002', 28);
+insert into CustomerOrderRegister
+values('Z20221210001003', 'B001', 24);
+insert into CustomerOrderRegister
+values('Z20221210001003', 'B002', 6);
+insert into CustomerOrderRegister
+values('Z20221210001003', 'F001', 13);
+insert into CustomerOrderRegister
+values('Z20221210001003', 'F002', 20);
+insert into CustomerOrderRegister
+values('Z20221210001003', 'F003', 3);
+insert into CustomerOrderRegister
+values('Z20221210001003', 'F004', 3);
+insert into CustomerOrderRegister
+values('Z20221210001003', 'S001', 29);
+insert into CustomerOrderRegister
+values('Z20221210001003', 'S002', 13);
+insert into CustomerOrderRegister
+values('Z20221210001003', 'S003', 28);
+
+insert into CustomerOrderRegister
+values('Z20221210001004', 'C001', 14);
+insert into CustomerOrderRegister
+values('Z20221210001004', 'C002', 2);
+insert into CustomerOrderRegister
+values('Z20221210001004', 'C003', 18);
+insert into CustomerOrderRegister
+values('Z20221210001004', 'C004', 6);
+insert into CustomerOrderRegister
+values('Z20221210001004', 'C005', 25);
+insert into CustomerOrderRegister
+values('Z20221210001004', 'C006', 24);
+insert into CustomerOrderRegister
+values('Z20221210001004', 'C007', 14);
+insert into CustomerOrderRegister
+values('Z20221210001004', 'C008', 13);
+insert into CustomerOrderRegister
+values('Z20221210001004', 'C009', 6);
+insert into CustomerOrderRegister
+values('Z20221210001004', 'T001', 16);
+insert into CustomerOrderRegister
+values('Z20221210001004', 'W001', 2);
+insert into CustomerOrderRegister
+values('Z20221210001004', 'W002', 18);
+insert into CustomerOrderRegister
+values('Z20221210001004', 'B001', 12);
+insert into CustomerOrderRegister
+values('Z20221210001004', 'B002', 23);
+insert into CustomerOrderRegister
+values('Z20221210001004', 'F001', 4);
+insert into CustomerOrderRegister
+values('Z20221210001004', 'F002', 13);
+insert into CustomerOrderRegister
+values('Z20221210001004', 'F003', 4);
+insert into CustomerOrderRegister
+values('Z20221210001004', 'F004', 10);
+insert into CustomerOrderRegister
+values('Z20221210001004', 'S001', 1);
+insert into CustomerOrderRegister
+values('Z20221210001004', 'S002', 7);
+insert into CustomerOrderRegister
+values('Z20221210001004', 'S003', 2);
+
+insert into CustomerOrderRegister
+values('Z20221210001005', 'C001', 20);
+insert into CustomerOrderRegister
+values('Z20221210001005', 'C002', 26);
+insert into CustomerOrderRegister
+values('Z20221210001005', 'C003', 16);
+insert into CustomerOrderRegister
+values('Z20221210001005', 'C004', 3);
+insert into CustomerOrderRegister
+values('Z20221210001005', 'C005', 2);
+insert into CustomerOrderRegister
+values('Z20221210001005', 'C006', 22);
+insert into CustomerOrderRegister
+values('Z20221210001005', 'C007', 19);
+insert into CustomerOrderRegister
+values('Z20221210001005', 'C008', 11);
+insert into CustomerOrderRegister
+values('Z20221210001005', 'C009', 11);
+insert into CustomerOrderRegister
+values('Z20221210001005', 'T001', 3);
+insert into CustomerOrderRegister
+values('Z20221210001005', 'W001', 8);
+insert into CustomerOrderRegister
+values('Z20221210001005', 'W002', 18);
+insert into CustomerOrderRegister
+values('Z20221210001005', 'B001', 19);
+insert into CustomerOrderRegister
+values('Z20221210001005', 'B002', 22);
+insert into CustomerOrderRegister
+values('Z20221210001005', 'F001', 25);
+insert into CustomerOrderRegister
+values('Z20221210001005', 'F002', 8);
+insert into CustomerOrderRegister
+values('Z20221210001005', 'F003', 4);
+insert into CustomerOrderRegister
+values('Z20221210001005', 'F004', 28);
+insert into CustomerOrderRegister
+values('Z20221210001005', 'S001', 11);
+insert into CustomerOrderRegister
+values('Z20221210001005', 'S002', 14);
+insert into CustomerOrderRegister
+values('Z20221210001005', 'S003', 30);
+
+insert into CustomerOrderRegister
+values('Z20221210001006', 'C001', 8);
+insert into CustomerOrderRegister
+values('Z20221210001006', 'C002', 8);
+insert into CustomerOrderRegister
+values('Z20221210001006', 'C003', 14);
+insert into CustomerOrderRegister
+values('Z20221210001006', 'C004', 21);
+insert into CustomerOrderRegister
+values('Z20221210001006', 'C005', 22);
+insert into CustomerOrderRegister
+values('Z20221210001006', 'C006', 14);
+insert into CustomerOrderRegister
+values('Z20221210001006', 'C007', 28);
+insert into CustomerOrderRegister
+values('Z20221210001006', 'C008', 22);
+insert into CustomerOrderRegister
+values('Z20221210001006', 'C009', 16);
+insert into CustomerOrderRegister
+values('Z20221210001006', 'T001', 2);
+insert into CustomerOrderRegister
+values('Z20221210001006', 'W001', 9);
+insert into CustomerOrderRegister
+values('Z20221210001006', 'W002', 15);
+insert into CustomerOrderRegister
+values('Z20221210001006', 'B001', 11);
+insert into CustomerOrderRegister
+values('Z20221210001006', 'B002', 22);
+insert into CustomerOrderRegister
+values('Z20221210001006', 'F001', 25);
+insert into CustomerOrderRegister
+values('Z20221210001006', 'F002', 30);
+insert into CustomerOrderRegister
+values('Z20221210001006', 'F003', 22);
+insert into CustomerOrderRegister
+values('Z20221210001006', 'F004', 2);
+insert into CustomerOrderRegister
+values('Z20221210001006', 'S001', 20);
+insert into CustomerOrderRegister
+values('Z20221210001006', 'S002', 18);
+insert into CustomerOrderRegister
+values('Z20221210001006', 'S003', 29);
+
+insert into CustomerOrderRegister
+values('Z20221210001007', 'C001', 28);
+insert into CustomerOrderRegister
+values('Z20221210001007', 'C002', 1);
+insert into CustomerOrderRegister
+values('Z20221210001007', 'C003', 10);
+insert into CustomerOrderRegister
+values('Z20221210001007', 'C004', 25);
+insert into CustomerOrderRegister
+values('Z20221210001007', 'C005', 19);
+insert into CustomerOrderRegister
+values('Z20221210001007', 'C006', 16);
+insert into CustomerOrderRegister
+values('Z20221210001007', 'C007', 21);
+insert into CustomerOrderRegister
+values('Z20221210001007', 'C008', 18);
+insert into CustomerOrderRegister
+values('Z20221210001007', 'C009', 11);
+insert into CustomerOrderRegister
+values('Z20221210001007', 'T001', 7);
+insert into CustomerOrderRegister
+values('Z20221210001007', 'W001', 10);
+insert into CustomerOrderRegister
+values('Z20221210001007', 'W002', 22);
+insert into CustomerOrderRegister
+values('Z20221210001007', 'B001', 11);
+insert into CustomerOrderRegister
+values('Z20221210001007', 'B002', 18);
+insert into CustomerOrderRegister
+values('Z20221210001007', 'F001', 28);
+insert into CustomerOrderRegister
+values('Z20221210001007', 'F002', 10);
+insert into CustomerOrderRegister
+values('Z20221210001007', 'F003', 17);
+insert into CustomerOrderRegister
+values('Z20221210001007', 'F004', 6);
+insert into CustomerOrderRegister
+values('Z20221210001007', 'S001', 6);
+insert into CustomerOrderRegister
+values('Z20221210001007', 'S002', 24);
+insert into CustomerOrderRegister
+values('Z20221210001007', 'S003', 9);
+
+insert into CustomerOrderRegister
+values('Z20221210001008', 'C001', 22);
+insert into CustomerOrderRegister
+values('Z20221210001008', 'C002', 27);
+insert into CustomerOrderRegister
+values('Z20221210001008', 'C003', 22);
+insert into CustomerOrderRegister
+values('Z20221210001008', 'C004', 16);
+insert into CustomerOrderRegister
+values('Z20221210001008', 'C005', 3);
+insert into CustomerOrderRegister
+values('Z20221210001008', 'C006', 2);
+insert into CustomerOrderRegister
+values('Z20221210001008', 'C007', 25);
+insert into CustomerOrderRegister
+values('Z20221210001008', 'C008', 3);
+insert into CustomerOrderRegister
+values('Z20221210001008', 'C009', 5);
+insert into CustomerOrderRegister
+values('Z20221210001008', 'T001', 13);
+insert into CustomerOrderRegister
+values('Z20221210001008', 'W001', 6);
+insert into CustomerOrderRegister
+values('Z20221210001008', 'W002', 5);
+insert into CustomerOrderRegister
+values('Z20221210001008', 'B001', 3);
+insert into CustomerOrderRegister
+values('Z20221210001008', 'B002', 3);
+insert into CustomerOrderRegister
+values('Z20221210001008', 'F001', 21);
+insert into CustomerOrderRegister
+values('Z20221210001008', 'F002', 9);
+insert into CustomerOrderRegister
+values('Z20221210001008', 'F003', 28);
+insert into CustomerOrderRegister
+values('Z20221210001008', 'F004', 11);
+insert into CustomerOrderRegister
+values('Z20221210001008', 'S001', 21);
+insert into CustomerOrderRegister
+values('Z20221210001008', 'S002', 2);
+insert into CustomerOrderRegister
+values('Z20221210001008', 'S003', 29);
+
+insert into CustomerOrderRegister
+values('Z20221210001009', 'C001', 20);
+insert into CustomerOrderRegister
+values('Z20221210001009', 'C002', 25);
+insert into CustomerOrderRegister
+values('Z20221210001009', 'C003', 15);
+insert into CustomerOrderRegister
+values('Z20221210001009', 'C004', 16);
+insert into CustomerOrderRegister
+values('Z20221210001009', 'C005', 29);
+insert into CustomerOrderRegister
+values('Z20221210001009', 'C006', 18);
+insert into CustomerOrderRegister
+values('Z20221210001009', 'C007', 5);
+insert into CustomerOrderRegister
+values('Z20221210001009', 'C008', 1);
+insert into CustomerOrderRegister
+values('Z20221210001009', 'C009', 20);
+insert into CustomerOrderRegister
+values('Z20221210001009', 'T001', 30);
+insert into CustomerOrderRegister
+values('Z20221210001009', 'W001', 6);
+insert into CustomerOrderRegister
+values('Z20221210001009', 'W002', 24);
+insert into CustomerOrderRegister
+values('Z20221210001009', 'B001', 9);
+insert into CustomerOrderRegister
+values('Z20221210001009', 'B002', 19);
+insert into CustomerOrderRegister
+values('Z20221210001009', 'F001', 5);
+insert into CustomerOrderRegister
+values('Z20221210001009', 'F002', 11);
+insert into CustomerOrderRegister
+values('Z20221210001009', 'F003', 22);
+insert into CustomerOrderRegister
+values('Z20221210001009', 'F004', 29);
+insert into CustomerOrderRegister
+values('Z20221210001009', 'S001', 21);
+insert into CustomerOrderRegister
+values('Z20221210001009', 'S002', 22);
+insert into CustomerOrderRegister
+values('Z20221210001009', 'S003', 18);
+
+insert into CustomerOrderRegister
+values('Z20221210001010', 'C001', 28);
+insert into CustomerOrderRegister
+values('Z20221210001010', 'C002', 26);
+insert into CustomerOrderRegister
+values('Z20221210001010', 'C003', 21);
+insert into CustomerOrderRegister
+values('Z20221210001010', 'C004', 2);
+insert into CustomerOrderRegister
+values('Z20221210001010', 'C005', 22);
+insert into CustomerOrderRegister
+values('Z20221210001010', 'C006', 11);
+insert into CustomerOrderRegister
+values('Z20221210001010', 'C007', 1);
+insert into CustomerOrderRegister
+values('Z20221210001010', 'C008', 10);
+insert into CustomerOrderRegister
+values('Z20221210001010', 'C009', 15);
+insert into CustomerOrderRegister
+values('Z20221210001010', 'T001', 25);
+insert into CustomerOrderRegister
+values('Z20221210001010', 'W001', 30);
+insert into CustomerOrderRegister
+values('Z20221210001010', 'W002', 3);
+insert into CustomerOrderRegister
+values('Z20221210001010', 'B001', 29);
+insert into CustomerOrderRegister
+values('Z20221210001010', 'B002', 15);
+insert into CustomerOrderRegister
+values('Z20221210001010', 'F001', 2);
+insert into CustomerOrderRegister
+values('Z20221210001010', 'F002', 16);
+insert into CustomerOrderRegister
+values('Z20221210001010', 'F003', 4);
+insert into CustomerOrderRegister
+values('Z20221210001010', 'F004', 3);
+insert into CustomerOrderRegister
+values('Z20221210001010', 'S001', 4);
+insert into CustomerOrderRegister
+values('Z20221210001010', 'S002', 6);
+insert into CustomerOrderRegister
+values('Z20221210001010', 'S003', 5);
+
+
+insert into CustomerOrderRegister
+values('Z20221211001001', 'C001', 2);
+insert into CustomerOrderRegister
+values('Z20221211001001', 'C002', 11);
+insert into CustomerOrderRegister
+values('Z20221211001001', 'C003', 11);
+insert into CustomerOrderRegister
+values('Z20221211001001', 'C004', 26);
+insert into CustomerOrderRegister
+values('Z20221211001001', 'C005', 2);
+insert into CustomerOrderRegister
+values('Z20221211001001', 'C006', 25);
+insert into CustomerOrderRegister
+values('Z20221211001001', 'C007', 21);
+insert into CustomerOrderRegister
+values('Z20221211001001', 'C008', 18);
+insert into CustomerOrderRegister
+values('Z20221211001001', 'C009', 3);
+insert into CustomerOrderRegister
+values('Z20221211001001', 'T001', 15);
+insert into CustomerOrderRegister
+values('Z20221211001001', 'W001', 30);
+insert into CustomerOrderRegister
+values('Z20221211001001', 'W002', 2);
+insert into CustomerOrderRegister
+values('Z20221211001001', 'B001', 24);
+insert into CustomerOrderRegister
+values('Z20221211001001', 'B002', 24);
+insert into CustomerOrderRegister
+values('Z20221211001001', 'F001', 9);
+insert into CustomerOrderRegister
+values('Z20221211001001', 'F002', 9);
+insert into CustomerOrderRegister
+values('Z20221211001001', 'F003', 27);
+insert into CustomerOrderRegister
+values('Z20221211001001', 'F004', 24);
+insert into CustomerOrderRegister
+values('Z20221211001001', 'S001', 18);
+insert into CustomerOrderRegister
+values('Z20221211001001', 'S002', 29);
+insert into CustomerOrderRegister
+values('Z20221211001001', 'S003', 20);
+
+insert into CustomerOrderRegister
+values('Z20221211001002', 'C001', 9);
+insert into CustomerOrderRegister
+values('Z20221211001002', 'C002', 3);
+insert into CustomerOrderRegister
+values('Z20221211001002', 'C003', 16);
+insert into CustomerOrderRegister
+values('Z20221211001002', 'C004', 29);
+insert into CustomerOrderRegister
+values('Z20221211001002', 'C005', 13);
+insert into CustomerOrderRegister
+values('Z20221211001002', 'C006', 24);
+insert into CustomerOrderRegister
+values('Z20221211001002', 'C007', 13);
+insert into CustomerOrderRegister
+values('Z20221211001002', 'C008', 10);
+insert into CustomerOrderRegister
+values('Z20221211001002', 'C009', 15);
+insert into CustomerOrderRegister
+values('Z20221211001002', 'T001', 18);
+insert into CustomerOrderRegister
+values('Z20221211001002', 'W001', 27);
+insert into CustomerOrderRegister
+values('Z20221211001002', 'W002', 4);
+insert into CustomerOrderRegister
+values('Z20221211001002', 'B001', 12);
+insert into CustomerOrderRegister
+values('Z20221211001002', 'B002', 28);
+insert into CustomerOrderRegister
+values('Z20221211001002', 'F001', 20);
+insert into CustomerOrderRegister
+values('Z20221211001002', 'F002', 14);
+insert into CustomerOrderRegister
+values('Z20221211001002', 'F003', 29);
+insert into CustomerOrderRegister
+values('Z20221211001002', 'F004', 9);
+insert into CustomerOrderRegister
+values('Z20221211001002', 'S001', 22);
+insert into CustomerOrderRegister
+values('Z20221211001002', 'S002', 2);
+insert into CustomerOrderRegister
+values('Z20221211001002', 'S003', 25);
+
+insert into CustomerOrderRegister
+values('Z20221211001003', 'C001', 13);
+insert into CustomerOrderRegister
+values('Z20221211001003', 'C002', 4);
+insert into CustomerOrderRegister
+values('Z20221211001003', 'C003', 4);
+insert into CustomerOrderRegister
+values('Z20221211001003', 'C004', 1);
+insert into CustomerOrderRegister
+values('Z20221211001003', 'C005', 25);
+insert into CustomerOrderRegister
+values('Z20221211001003', 'C006', 20);
+insert into CustomerOrderRegister
+values('Z20221211001003', 'C007', 2);
+insert into CustomerOrderRegister
+values('Z20221211001003', 'C008', 15);
+insert into CustomerOrderRegister
+values('Z20221211001003', 'C009', 7);
+insert into CustomerOrderRegister
+values('Z20221211001003', 'T001', 15);
+insert into CustomerOrderRegister
+values('Z20221211001003', 'W001', 2);
+insert into CustomerOrderRegister
+values('Z20221211001003', 'W002', 11);
+insert into CustomerOrderRegister
+values('Z20221211001003', 'B001', 6);
+insert into CustomerOrderRegister
+values('Z20221211001003', 'B002', 7);
+insert into CustomerOrderRegister
+values('Z20221211001003', 'F001', 3);
+insert into CustomerOrderRegister
+values('Z20221211001003', 'F002', 24);
+insert into CustomerOrderRegister
+values('Z20221211001003', 'F003', 14);
+insert into CustomerOrderRegister
+values('Z20221211001003', 'F004', 29);
+insert into CustomerOrderRegister
+values('Z20221211001003', 'S001', 29);
+insert into CustomerOrderRegister
+values('Z20221211001003', 'S002', 11);
+insert into CustomerOrderRegister
+values('Z20221211001003', 'S003', 26);
+
+insert into CustomerOrderRegister
+values('Z20221211001004', 'C001', 10);
+insert into CustomerOrderRegister
+values('Z20221211001004', 'C002', 21);
+insert into CustomerOrderRegister
+values('Z20221211001004', 'C003', 11);
+insert into CustomerOrderRegister
+values('Z20221211001004', 'C004', 11);
+insert into CustomerOrderRegister
+values('Z20221211001004', 'C005', 7);
+insert into CustomerOrderRegister
+values('Z20221211001004', 'C006', 2);
+insert into CustomerOrderRegister
+values('Z20221211001004', 'C007', 1);
+insert into CustomerOrderRegister
+values('Z20221211001004', 'C008', 20);
+insert into CustomerOrderRegister
+values('Z20221211001004', 'C009', 5);
+insert into CustomerOrderRegister
+values('Z20221211001004', 'T001', 17);
+insert into CustomerOrderRegister
+values('Z20221211001004', 'W001', 1);
+insert into CustomerOrderRegister
+values('Z20221211001004', 'W002', 7);
+insert into CustomerOrderRegister
+values('Z20221211001004', 'B001', 24);
+insert into CustomerOrderRegister
+values('Z20221211001004', 'B002', 20);
+insert into CustomerOrderRegister
+values('Z20221211001004', 'F001', 16);
+insert into CustomerOrderRegister
+values('Z20221211001004', 'F002', 10);
+insert into CustomerOrderRegister
+values('Z20221211001004', 'F003', 23);
+insert into CustomerOrderRegister
+values('Z20221211001004', 'F004', 23);
+insert into CustomerOrderRegister
+values('Z20221211001004', 'S001', 18);
+insert into CustomerOrderRegister
+values('Z20221211001004', 'S002', 5);
+insert into CustomerOrderRegister
+values('Z20221211001004', 'S003', 27);
+
+insert into CustomerOrderRegister
+values('Z20221211001005', 'C001', 18);
+insert into CustomerOrderRegister
+values('Z20221211001005', 'C002', 2);
+insert into CustomerOrderRegister
+values('Z20221211001005', 'C003', 8);
+insert into CustomerOrderRegister
+values('Z20221211001005', 'C004', 4);
+insert into CustomerOrderRegister
+values('Z20221211001005', 'C005', 12);
+insert into CustomerOrderRegister
+values('Z20221211001005', 'C006', 11);
+insert into CustomerOrderRegister
+values('Z20221211001005', 'C007', 1);
+insert into CustomerOrderRegister
+values('Z20221211001005', 'C008', 8);
+insert into CustomerOrderRegister
+values('Z20221211001005', 'C009', 21);
+insert into CustomerOrderRegister
+values('Z20221211001005', 'T001', 18);
+insert into CustomerOrderRegister
+values('Z20221211001005', 'W001', 28);
+insert into CustomerOrderRegister
+values('Z20221211001005', 'W002', 30);
+insert into CustomerOrderRegister
+values('Z20221211001005', 'B001', 9);
+insert into CustomerOrderRegister
+values('Z20221211001005', 'B002', 1);
+insert into CustomerOrderRegister
+values('Z20221211001005', 'F001', 3);
+insert into CustomerOrderRegister
+values('Z20221211001005', 'F002', 24);
+insert into CustomerOrderRegister
+values('Z20221211001005', 'F003', 12);
+insert into CustomerOrderRegister
+values('Z20221211001005', 'F004', 1);
+insert into CustomerOrderRegister
+values('Z20221211001005', 'S001', 22);
+insert into CustomerOrderRegister
+values('Z20221211001005', 'S002', 27);
+insert into CustomerOrderRegister
+values('Z20221211001005', 'S003', 11);
+
+insert into CustomerOrderRegister
+values('Z20221211001006', 'C001', 20);
+insert into CustomerOrderRegister
+values('Z20221211001006', 'C002', 19);
+insert into CustomerOrderRegister
+values('Z20221211001006', 'C003', 21);
+insert into CustomerOrderRegister
+values('Z20221211001006', 'C004', 1);
+insert into CustomerOrderRegister
+values('Z20221211001006', 'C005', 13);
+insert into CustomerOrderRegister
+values('Z20221211001006', 'C006', 7);
+insert into CustomerOrderRegister
+values('Z20221211001006', 'C007', 27);
+insert into CustomerOrderRegister
+values('Z20221211001006', 'C008', 14);
+insert into CustomerOrderRegister
+values('Z20221211001006', 'C009', 2);
+insert into CustomerOrderRegister
+values('Z20221211001006', 'T001', 10);
+insert into CustomerOrderRegister
+values('Z20221211001006', 'W001', 18);
+insert into CustomerOrderRegister
+values('Z20221211001006', 'W002', 9);
+insert into CustomerOrderRegister
+values('Z20221211001006', 'B001', 13);
+insert into CustomerOrderRegister
+values('Z20221211001006', 'B002', 29);
+insert into CustomerOrderRegister
+values('Z20221211001006', 'F001', 13);
+insert into CustomerOrderRegister
+values('Z20221211001006', 'F002', 19);
+insert into CustomerOrderRegister
+values('Z20221211001006', 'F003', 25);
+insert into CustomerOrderRegister
+values('Z20221211001006', 'F004', 24);
+insert into CustomerOrderRegister
+values('Z20221211001006', 'S001', 11);
+insert into CustomerOrderRegister
+values('Z20221211001006', 'S002', 13);
+insert into CustomerOrderRegister
+values('Z20221211001006', 'S003', 7);
+
+insert into CustomerOrderRegister
+values('Z20221211001007', 'C001', 29);
+insert into CustomerOrderRegister
+values('Z20221211001007', 'C002', 10);
+insert into CustomerOrderRegister
+values('Z20221211001007', 'C003', 21);
+insert into CustomerOrderRegister
+values('Z20221211001007', 'C004', 1);
+insert into CustomerOrderRegister
+values('Z20221211001007', 'C005', 3);
+insert into CustomerOrderRegister
+values('Z20221211001007', 'C006', 7);
+insert into CustomerOrderRegister
+values('Z20221211001007', 'C007', 19);
+insert into CustomerOrderRegister
+values('Z20221211001007', 'C008', 15);
+insert into CustomerOrderRegister
+values('Z20221211001007', 'C009', 1);
+insert into CustomerOrderRegister
+values('Z20221211001007', 'T001', 6);
+insert into CustomerOrderRegister
+values('Z20221211001007', 'W001', 30);
+insert into CustomerOrderRegister
+values('Z20221211001007', 'W002', 28);
+insert into CustomerOrderRegister
+values('Z20221211001007', 'B001', 23);
+insert into CustomerOrderRegister
+values('Z20221211001007', 'B002', 11);
+insert into CustomerOrderRegister
+values('Z20221211001007', 'F001', 2);
+insert into CustomerOrderRegister
+values('Z20221211001007', 'F002', 26);
+insert into CustomerOrderRegister
+values('Z20221211001007', 'F003', 4);
+insert into CustomerOrderRegister
+values('Z20221211001007', 'F004', 4);
+insert into CustomerOrderRegister
+values('Z20221211001007', 'S001', 21);
+insert into CustomerOrderRegister
+values('Z20221211001007', 'S002', 24);
+insert into CustomerOrderRegister
+values('Z20221211001007', 'S003', 2);
+
+insert into CustomerOrderRegister
+values('Z20221211001008', 'C001', 24);
+insert into CustomerOrderRegister
+values('Z20221211001008', 'C002', 22);
+insert into CustomerOrderRegister
+values('Z20221211001008', 'C003', 15);
+insert into CustomerOrderRegister
+values('Z20221211001008', 'C004', 9);
+insert into CustomerOrderRegister
+values('Z20221211001008', 'C005', 24);
+insert into CustomerOrderRegister
+values('Z20221211001008', 'C006', 18);
+insert into CustomerOrderRegister
+values('Z20221211001008', 'C007', 8);
+insert into CustomerOrderRegister
+values('Z20221211001008', 'C008', 21);
+insert into CustomerOrderRegister
+values('Z20221211001008', 'C009', 6);
+insert into CustomerOrderRegister
+values('Z20221211001008', 'T001', 12);
+insert into CustomerOrderRegister
+values('Z20221211001008', 'W001', 9);
+insert into CustomerOrderRegister
+values('Z20221211001008', 'W002', 29);
+insert into CustomerOrderRegister
+values('Z20221211001008', 'B001', 3);
+insert into CustomerOrderRegister
+values('Z20221211001008', 'B002', 22);
+insert into CustomerOrderRegister
+values('Z20221211001008', 'F001', 1);
+insert into CustomerOrderRegister
+values('Z20221211001008', 'F002', 7);
+insert into CustomerOrderRegister
+values('Z20221211001008', 'F003', 24);
+insert into CustomerOrderRegister
+values('Z20221211001008', 'F004', 2);
+insert into CustomerOrderRegister
+values('Z20221211001008', 'S001', 23);
+insert into CustomerOrderRegister
+values('Z20221211001008', 'S002', 28);
+insert into CustomerOrderRegister
+values('Z20221211001008', 'S003', 10);
+
+insert into CustomerOrderRegister
+values('Z20221211001009', 'C001', 21);
+insert into CustomerOrderRegister
+values('Z20221211001009', 'C002', 14);
+insert into CustomerOrderRegister
+values('Z20221211001009', 'C003', 8);
+insert into CustomerOrderRegister
+values('Z20221211001009', 'C004', 14);
+insert into CustomerOrderRegister
+values('Z20221211001009', 'C005', 28);
+insert into CustomerOrderRegister
+values('Z20221211001009', 'C006', 2);
+insert into CustomerOrderRegister
+values('Z20221211001009', 'C007', 26);
+insert into CustomerOrderRegister
+values('Z20221211001009', 'C008', 10);
+insert into CustomerOrderRegister
+values('Z20221211001009', 'C009', 9);
+insert into CustomerOrderRegister
+values('Z20221211001009', 'T001', 15);
+insert into CustomerOrderRegister
+values('Z20221211001009', 'W001', 13);
+insert into CustomerOrderRegister
+values('Z20221211001009', 'W002', 21);
+insert into CustomerOrderRegister
+values('Z20221211001009', 'B001', 6);
+insert into CustomerOrderRegister
+values('Z20221211001009', 'B002', 14);
+insert into CustomerOrderRegister
+values('Z20221211001009', 'F001', 2);
+insert into CustomerOrderRegister
+values('Z20221211001009', 'F002', 22);
+insert into CustomerOrderRegister
+values('Z20221211001009', 'F003', 21);
+insert into CustomerOrderRegister
+values('Z20221211001009', 'F004', 11);
+insert into CustomerOrderRegister
+values('Z20221211001009', 'S001', 29);
+insert into CustomerOrderRegister
+values('Z20221211001009', 'S002', 25);
+insert into CustomerOrderRegister
+values('Z20221211001009', 'S003', 29);
+
+insert into CustomerOrderRegister
+values('Z20221211001010', 'C001', 14);
+insert into CustomerOrderRegister
+values('Z20221211001010', 'C002', 30);
+insert into CustomerOrderRegister
+values('Z20221211001010', 'C003', 18);
+insert into CustomerOrderRegister
+values('Z20221211001010', 'C004', 13);
+insert into CustomerOrderRegister
+values('Z20221211001010', 'C005', 5);
+insert into CustomerOrderRegister
+values('Z20221211001010', 'C006', 12);
+insert into CustomerOrderRegister
+values('Z20221211001010', 'C007', 4);
+insert into CustomerOrderRegister
+values('Z20221211001010', 'C008', 12);
+insert into CustomerOrderRegister
+values('Z20221211001010', 'C009', 11);
+insert into CustomerOrderRegister
+values('Z20221211001010', 'T001', 30);
+insert into CustomerOrderRegister
+values('Z20221211001010', 'W001', 19);
+insert into CustomerOrderRegister
+values('Z20221211001010', 'W002', 23);
+insert into CustomerOrderRegister
+values('Z20221211001010', 'B001', 11);
+insert into CustomerOrderRegister
+values('Z20221211001010', 'B002', 8);
+insert into CustomerOrderRegister
+values('Z20221211001010', 'F001', 4);
+insert into CustomerOrderRegister
+values('Z20221211001010', 'F002', 14);
+insert into CustomerOrderRegister
+values('Z20221211001010', 'F003', 19);
+insert into CustomerOrderRegister
+values('Z20221211001010', 'F004', 3);
+insert into CustomerOrderRegister
+values('Z20221211001010', 'S001', 26);
+insert into CustomerOrderRegister
+values('Z20221211001010', 'S002', 26);
+insert into CustomerOrderRegister
+values('Z20221211001010', 'S003', 21);
+
+
+
+
+
+insert into CustomerOrderRegister
+values('Z20221208002001', 'C001', 23);
+insert into CustomerOrderRegister
+values('Z20221208002001', 'C002', 8);
+insert into CustomerOrderRegister
+values('Z20221208002001', 'C003', 8);
+insert into CustomerOrderRegister
+values('Z20221208002001', 'C004', 23);
+insert into CustomerOrderRegister
+values('Z20221208002001', 'C005', 5);
+insert into CustomerOrderRegister
+values('Z20221208002001', 'C006', 10);
+insert into CustomerOrderRegister
+values('Z20221208002001', 'C007', 18);
+insert into CustomerOrderRegister
+values('Z20221208002001', 'C008', 26);
+insert into CustomerOrderRegister
+values('Z20221208002001', 'C009', 29);
+insert into CustomerOrderRegister
+values('Z20221208002001', 'T001', 28);
+insert into CustomerOrderRegister
+values('Z20221208002001', 'W001', 27);
+insert into CustomerOrderRegister
+values('Z20221208002001', 'W002', 10);
+insert into CustomerOrderRegister
+values('Z20221208002001', 'B001', 2);
+insert into CustomerOrderRegister
+values('Z20221208002001', 'B002', 10);
+insert into CustomerOrderRegister
+values('Z20221208002001', 'F001', 2);
+insert into CustomerOrderRegister
+values('Z20221208002001', 'F002', 27);
+insert into CustomerOrderRegister
+values('Z20221208002001', 'F003', 9);
+insert into CustomerOrderRegister
+values('Z20221208002001', 'F004', 9);
+insert into CustomerOrderRegister
+values('Z20221208002001', 'S001', 28);
+insert into CustomerOrderRegister
+values('Z20221208002001', 'S002', 2);
+insert into CustomerOrderRegister
+values('Z20221208002001', 'S003', 21);
+
+insert into CustomerOrderRegister
+values('Z20221208002002', 'C001', 27);
+insert into CustomerOrderRegister
+values('Z20221208002002', 'C002', 28);
+insert into CustomerOrderRegister
+values('Z20221208002002', 'C003', 29);
+insert into CustomerOrderRegister
+values('Z20221208002002', 'C004', 16);
+insert into CustomerOrderRegister
+values('Z20221208002002', 'C005', 16);
+insert into CustomerOrderRegister
+values('Z20221208002002', 'C006', 1);
+insert into CustomerOrderRegister
+values('Z20221208002002', 'C007', 26);
+insert into CustomerOrderRegister
+values('Z20221208002002', 'C008', 4);
+insert into CustomerOrderRegister
+values('Z20221208002002', 'C009', 30);
+insert into CustomerOrderRegister
+values('Z20221208002002', 'T001', 3);
+insert into CustomerOrderRegister
+values('Z20221208002002', 'W001', 13);
+insert into CustomerOrderRegister
+values('Z20221208002002', 'W002', 14);
+insert into CustomerOrderRegister
+values('Z20221208002002', 'B001', 18);
+insert into CustomerOrderRegister
+values('Z20221208002002', 'B002', 18);
+insert into CustomerOrderRegister
+values('Z20221208002002', 'F001', 14);
+insert into CustomerOrderRegister
+values('Z20221208002002', 'F002', 19);
+insert into CustomerOrderRegister
+values('Z20221208002002', 'F003', 25);
+insert into CustomerOrderRegister
+values('Z20221208002002', 'F004', 27);
+insert into CustomerOrderRegister
+values('Z20221208002002', 'S001', 4);
+insert into CustomerOrderRegister
+values('Z20221208002002', 'S002', 14);
+insert into CustomerOrderRegister
+values('Z20221208002002', 'S003', 21);
+
+insert into CustomerOrderRegister
+values('Z20221208002003', 'C001', 29);
+insert into CustomerOrderRegister
+values('Z20221208002003', 'C002', 1);
+insert into CustomerOrderRegister
+values('Z20221208002003', 'C003', 15);
+insert into CustomerOrderRegister
+values('Z20221208002003', 'C004', 19);
+insert into CustomerOrderRegister
+values('Z20221208002003', 'C005', 28);
+insert into CustomerOrderRegister
+values('Z20221208002003', 'C006', 7);
+insert into CustomerOrderRegister
+values('Z20221208002003', 'C007', 11);
+insert into CustomerOrderRegister
+values('Z20221208002003', 'C008', 14);
+insert into CustomerOrderRegister
+values('Z20221208002003', 'C009', 19);
+insert into CustomerOrderRegister
+values('Z20221208002003', 'T001', 4);
+insert into CustomerOrderRegister
+values('Z20221208002003', 'W001', 17);
+insert into CustomerOrderRegister
+values('Z20221208002003', 'W002', 15);
+insert into CustomerOrderRegister
+values('Z20221208002003', 'B001', 9);
+insert into CustomerOrderRegister
+values('Z20221208002003', 'B002', 1);
+insert into CustomerOrderRegister
+values('Z20221208002003', 'F001', 28);
+insert into CustomerOrderRegister
+values('Z20221208002003', 'F002', 16);
+insert into CustomerOrderRegister
+values('Z20221208002003', 'F003', 23);
+insert into CustomerOrderRegister
+values('Z20221208002003', 'F004', 7);
+insert into CustomerOrderRegister
+values('Z20221208002003', 'S001', 10);
+insert into CustomerOrderRegister
+values('Z20221208002003', 'S002', 5);
+insert into CustomerOrderRegister
+values('Z20221208002003', 'S003', 17);
+
+insert into CustomerOrderRegister
+values('Z20221208002004', 'C001', 15);
+insert into CustomerOrderRegister
+values('Z20221208002004', 'C002', 4);
+insert into CustomerOrderRegister
+values('Z20221208002004', 'C003', 17);
+insert into CustomerOrderRegister
+values('Z20221208002004', 'C004', 21);
+insert into CustomerOrderRegister
+values('Z20221208002004', 'C005', 2);
+insert into CustomerOrderRegister
+values('Z20221208002004', 'C006', 7);
+insert into CustomerOrderRegister
+values('Z20221208002004', 'C007', 28);
+insert into CustomerOrderRegister
+values('Z20221208002004', 'C008', 12);
+insert into CustomerOrderRegister
+values('Z20221208002004', 'C009', 11);
+insert into CustomerOrderRegister
+values('Z20221208002004', 'T001', 22);
+insert into CustomerOrderRegister
+values('Z20221208002004', 'W001', 10);
+insert into CustomerOrderRegister
+values('Z20221208002004', 'W002', 3);
+insert into CustomerOrderRegister
+values('Z20221208002004', 'B001', 6);
+insert into CustomerOrderRegister
+values('Z20221208002004', 'B002', 1);
+insert into CustomerOrderRegister
+values('Z20221208002004', 'F001', 10);
+insert into CustomerOrderRegister
+values('Z20221208002004', 'F002', 14);
+insert into CustomerOrderRegister
+values('Z20221208002004', 'F003', 8);
+insert into CustomerOrderRegister
+values('Z20221208002004', 'F004', 22);
+insert into CustomerOrderRegister
+values('Z20221208002004', 'S001', 13);
+insert into CustomerOrderRegister
+values('Z20221208002004', 'S002', 27);
+insert into CustomerOrderRegister
+values('Z20221208002004', 'S003', 20);
+
+insert into CustomerOrderRegister
+values('Z20221208002005', 'C001', 21);
+insert into CustomerOrderRegister
+values('Z20221208002005', 'C002', 30);
+insert into CustomerOrderRegister
+values('Z20221208002005', 'C003', 1);
+insert into CustomerOrderRegister
+values('Z20221208002005', 'C004', 12);
+insert into CustomerOrderRegister
+values('Z20221208002005', 'C005', 15);
+insert into CustomerOrderRegister
+values('Z20221208002005', 'C006', 15);
+insert into CustomerOrderRegister
+values('Z20221208002005', 'C007', 10);
+insert into CustomerOrderRegister
+values('Z20221208002005', 'C008', 3);
+insert into CustomerOrderRegister
+values('Z20221208002005', 'C009', 1);
+insert into CustomerOrderRegister
+values('Z20221208002005', 'T001', 30);
+insert into CustomerOrderRegister
+values('Z20221208002005', 'W001', 15);
+insert into CustomerOrderRegister
+values('Z20221208002005', 'W002', 14);
+insert into CustomerOrderRegister
+values('Z20221208002005', 'B001', 13);
+insert into CustomerOrderRegister
+values('Z20221208002005', 'B002', 28);
+insert into CustomerOrderRegister
+values('Z20221208002005', 'F001', 8);
+insert into CustomerOrderRegister
+values('Z20221208002005', 'F002', 14);
+insert into CustomerOrderRegister
+values('Z20221208002005', 'F003', 9);
+insert into CustomerOrderRegister
+values('Z20221208002005', 'F004', 2);
+insert into CustomerOrderRegister
+values('Z20221208002005', 'S001', 17);
+insert into CustomerOrderRegister
+values('Z20221208002005', 'S002', 20);
+insert into CustomerOrderRegister
+values('Z20221208002005', 'S003', 14);
+
+insert into CustomerOrderRegister
+values('Z20221208002006', 'C001', 12);
+insert into CustomerOrderRegister
+values('Z20221208002006', 'C002', 6);
+insert into CustomerOrderRegister
+values('Z20221208002006', 'C003', 11);
+insert into CustomerOrderRegister
+values('Z20221208002006', 'C004', 12);
+insert into CustomerOrderRegister
+values('Z20221208002006', 'C005', 25);
+insert into CustomerOrderRegister
+values('Z20221208002006', 'C006', 18);
+insert into CustomerOrderRegister
+values('Z20221208002006', 'C007', 7);
+insert into CustomerOrderRegister
+values('Z20221208002006', 'C008', 20);
+insert into CustomerOrderRegister
+values('Z20221208002006', 'C009', 26);
+insert into CustomerOrderRegister
+values('Z20221208002006', 'T001', 9);
+insert into CustomerOrderRegister
+values('Z20221208002006', 'W001', 14);
+insert into CustomerOrderRegister
+values('Z20221208002006', 'W002', 8);
+insert into CustomerOrderRegister
+values('Z20221208002006', 'B001', 18);
+insert into CustomerOrderRegister
+values('Z20221208002006', 'B002', 16);
+insert into CustomerOrderRegister
+values('Z20221208002006', 'F001', 8);
+insert into CustomerOrderRegister
+values('Z20221208002006', 'F002', 8);
+insert into CustomerOrderRegister
+values('Z20221208002006', 'F003', 28);
+insert into CustomerOrderRegister
+values('Z20221208002006', 'F004', 24);
+insert into CustomerOrderRegister
+values('Z20221208002006', 'S001', 25);
+insert into CustomerOrderRegister
+values('Z20221208002006', 'S002', 11);
+insert into CustomerOrderRegister
+values('Z20221208002006', 'S003', 12);
+
+insert into CustomerOrderRegister
+values('Z20221208002007', 'C001', 13);
+insert into CustomerOrderRegister
+values('Z20221208002007', 'C002', 27);
+insert into CustomerOrderRegister
+values('Z20221208002007', 'C003', 17);
+insert into CustomerOrderRegister
+values('Z20221208002007', 'C004', 22);
+insert into CustomerOrderRegister
+values('Z20221208002007', 'C005', 24);
+insert into CustomerOrderRegister
+values('Z20221208002007', 'C006', 28);
+insert into CustomerOrderRegister
+values('Z20221208002007', 'C007', 25);
+insert into CustomerOrderRegister
+values('Z20221208002007', 'C008', 2);
+insert into CustomerOrderRegister
+values('Z20221208002007', 'C009', 16);
+insert into CustomerOrderRegister
+values('Z20221208002007', 'T001', 16);
+insert into CustomerOrderRegister
+values('Z20221208002007', 'W001', 30);
+insert into CustomerOrderRegister
+values('Z20221208002007', 'W002', 7);
+insert into CustomerOrderRegister
+values('Z20221208002007', 'B001', 26);
+insert into CustomerOrderRegister
+values('Z20221208002007', 'B002', 7);
+insert into CustomerOrderRegister
+values('Z20221208002007', 'F001', 9);
+insert into CustomerOrderRegister
+values('Z20221208002007', 'F002', 16);
+insert into CustomerOrderRegister
+values('Z20221208002007', 'F003', 16);
+insert into CustomerOrderRegister
+values('Z20221208002007', 'F004', 23);
+insert into CustomerOrderRegister
+values('Z20221208002007', 'S001', 12);
+insert into CustomerOrderRegister
+values('Z20221208002007', 'S002', 6);
+insert into CustomerOrderRegister
+values('Z20221208002007', 'S003', 22);
+
+insert into CustomerOrderRegister
+values('Z20221208002008', 'C001', 9);
+insert into CustomerOrderRegister
+values('Z20221208002008', 'C002', 14);
+insert into CustomerOrderRegister
+values('Z20221208002008', 'C003', 14);
+insert into CustomerOrderRegister
+values('Z20221208002008', 'C004', 19);
+insert into CustomerOrderRegister
+values('Z20221208002008', 'C005', 27);
+insert into CustomerOrderRegister
+values('Z20221208002008', 'C006', 13);
+insert into CustomerOrderRegister
+values('Z20221208002008', 'C007', 6);
+insert into CustomerOrderRegister
+values('Z20221208002008', 'C008', 25);
+insert into CustomerOrderRegister
+values('Z20221208002008', 'C009', 29);
+insert into CustomerOrderRegister
+values('Z20221208002008', 'T001', 30);
+insert into CustomerOrderRegister
+values('Z20221208002008', 'W001', 30);
+insert into CustomerOrderRegister
+values('Z20221208002008', 'W002', 28);
+insert into CustomerOrderRegister
+values('Z20221208002008', 'B001', 10);
+insert into CustomerOrderRegister
+values('Z20221208002008', 'B002', 7);
+insert into CustomerOrderRegister
+values('Z20221208002008', 'F001', 30);
+insert into CustomerOrderRegister
+values('Z20221208002008', 'F002', 21);
+insert into CustomerOrderRegister
+values('Z20221208002008', 'F003', 29);
+insert into CustomerOrderRegister
+values('Z20221208002008', 'F004', 7);
+insert into CustomerOrderRegister
+values('Z20221208002008', 'S001', 3);
+insert into CustomerOrderRegister
+values('Z20221208002008', 'S002', 23);
+insert into CustomerOrderRegister
+values('Z20221208002008', 'S003', 12);
+
+insert into CustomerOrderRegister
+values('Z20221208002009', 'C001', 10);
+insert into CustomerOrderRegister
+values('Z20221208002009', 'C002', 26);
+insert into CustomerOrderRegister
+values('Z20221208002009', 'C003', 15);
+insert into CustomerOrderRegister
+values('Z20221208002009', 'C004', 11);
+insert into CustomerOrderRegister
+values('Z20221208002009', 'C005', 12);
+insert into CustomerOrderRegister
+values('Z20221208002009', 'C006', 6);
+insert into CustomerOrderRegister
+values('Z20221208002009', 'C007', 30);
+insert into CustomerOrderRegister
+values('Z20221208002009', 'C008', 26);
+insert into CustomerOrderRegister
+values('Z20221208002009', 'C009', 2);
+insert into CustomerOrderRegister
+values('Z20221208002009', 'T001', 3);
+insert into CustomerOrderRegister
+values('Z20221208002009', 'W001', 29);
+insert into CustomerOrderRegister
+values('Z20221208002009', 'W002', 23);
+insert into CustomerOrderRegister
+values('Z20221208002009', 'B001', 15);
+insert into CustomerOrderRegister
+values('Z20221208002009', 'B002', 24);
+insert into CustomerOrderRegister
+values('Z20221208002009', 'F001', 5);
+insert into CustomerOrderRegister
+values('Z20221208002009', 'F002', 5);
+insert into CustomerOrderRegister
+values('Z20221208002009', 'F003', 16);
+insert into CustomerOrderRegister
+values('Z20221208002009', 'F004', 11);
+insert into CustomerOrderRegister
+values('Z20221208002009', 'S001', 30);
+insert into CustomerOrderRegister
+values('Z20221208002009', 'S002', 30);
+insert into CustomerOrderRegister
+values('Z20221208002009', 'S003', 12);
+
+insert into CustomerOrderRegister
+values('Z20221208002010', 'C001', 21);
+insert into CustomerOrderRegister
+values('Z20221208002010', 'C002', 29);
+insert into CustomerOrderRegister
+values('Z20221208002010', 'C003', 22);
+insert into CustomerOrderRegister
+values('Z20221208002010', 'C004', 1);
+insert into CustomerOrderRegister
+values('Z20221208002010', 'C005', 1);
+insert into CustomerOrderRegister
+values('Z20221208002010', 'C006', 29);
+insert into CustomerOrderRegister
+values('Z20221208002010', 'C007', 12);
+insert into CustomerOrderRegister
+values('Z20221208002010', 'C008', 30);
+insert into CustomerOrderRegister
+values('Z20221208002010', 'C009', 24);
+insert into CustomerOrderRegister
+values('Z20221208002010', 'T001', 16);
+insert into CustomerOrderRegister
+values('Z20221208002010', 'W001', 3);
+insert into CustomerOrderRegister
+values('Z20221208002010', 'W002', 3);
+insert into CustomerOrderRegister
+values('Z20221208002010', 'B001', 20);
+insert into CustomerOrderRegister
+values('Z20221208002010', 'B002', 21);
+insert into CustomerOrderRegister
+values('Z20221208002010', 'F001', 23);
+insert into CustomerOrderRegister
+values('Z20221208002010', 'F002', 21);
+insert into CustomerOrderRegister
+values('Z20221208002010', 'F003', 9);
+insert into CustomerOrderRegister
+values('Z20221208002010', 'F004', 13);
+insert into CustomerOrderRegister
+values('Z20221208002010', 'S001', 9);
+insert into CustomerOrderRegister
+values('Z20221208002010', 'S002', 14);
+insert into CustomerOrderRegister
+values('Z20221208002010', 'S003', 14);
+
+
+insert into CustomerOrderRegister
+values('Z20221209002001', 'C001', 16);
+insert into CustomerOrderRegister
+values('Z20221209002001', 'C002', 24);
+insert into CustomerOrderRegister
+values('Z20221209002001', 'C003', 27);
+insert into CustomerOrderRegister
+values('Z20221209002001', 'C004', 4);
+insert into CustomerOrderRegister
+values('Z20221209002001', 'C005', 12);
+insert into CustomerOrderRegister
+values('Z20221209002001', 'C006', 14);
+insert into CustomerOrderRegister
+values('Z20221209002001', 'C007', 2);
+insert into CustomerOrderRegister
+values('Z20221209002001', 'C008', 22);
+insert into CustomerOrderRegister
+values('Z20221209002001', 'C009', 20);
+insert into CustomerOrderRegister
+values('Z20221209002001', 'T001', 24);
+insert into CustomerOrderRegister
+values('Z20221209002001', 'W001', 1);
+insert into CustomerOrderRegister
+values('Z20221209002001', 'W002', 12);
+insert into CustomerOrderRegister
+values('Z20221209002001', 'B001', 9);
+insert into CustomerOrderRegister
+values('Z20221209002001', 'B002', 3);
+insert into CustomerOrderRegister
+values('Z20221209002001', 'F001', 21);
+insert into CustomerOrderRegister
+values('Z20221209002001', 'F002', 26);
+insert into CustomerOrderRegister
+values('Z20221209002001', 'F003', 30);
+insert into CustomerOrderRegister
+values('Z20221209002001', 'F004', 29);
+insert into CustomerOrderRegister
+values('Z20221209002001', 'S001', 20);
+insert into CustomerOrderRegister
+values('Z20221209002001', 'S002', 11);
+insert into CustomerOrderRegister
+values('Z20221209002001', 'S003', 1);
+
+insert into CustomerOrderRegister
+values('Z20221209002002', 'C001', 1);
+insert into CustomerOrderRegister
+values('Z20221209002002', 'C002', 21);
+insert into CustomerOrderRegister
+values('Z20221209002002', 'C003', 20);
+insert into CustomerOrderRegister
+values('Z20221209002002', 'C004', 20);
+insert into CustomerOrderRegister
+values('Z20221209002002', 'C005', 19);
+insert into CustomerOrderRegister
+values('Z20221209002002', 'C006', 11);
+insert into CustomerOrderRegister
+values('Z20221209002002', 'C007', 30);
+insert into CustomerOrderRegister
+values('Z20221209002002', 'C008', 22);
+insert into CustomerOrderRegister
+values('Z20221209002002', 'C009', 26);
+insert into CustomerOrderRegister
+values('Z20221209002002', 'T001', 2);
+insert into CustomerOrderRegister
+values('Z20221209002002', 'W001', 21);
+insert into CustomerOrderRegister
+values('Z20221209002002', 'W002', 8);
+insert into CustomerOrderRegister
+values('Z20221209002002', 'B001', 20);
+insert into CustomerOrderRegister
+values('Z20221209002002', 'B002', 5);
+insert into CustomerOrderRegister
+values('Z20221209002002', 'F001', 3);
+insert into CustomerOrderRegister
+values('Z20221209002002', 'F002', 5);
+insert into CustomerOrderRegister
+values('Z20221209002002', 'F003', 25);
+insert into CustomerOrderRegister
+values('Z20221209002002', 'F004', 7);
+insert into CustomerOrderRegister
+values('Z20221209002002', 'S001', 11);
+insert into CustomerOrderRegister
+values('Z20221209002002', 'S002', 10);
+insert into CustomerOrderRegister
+values('Z20221209002002', 'S003', 9);
+
+insert into CustomerOrderRegister
+values('Z20221209002003', 'C001', 12);
+insert into CustomerOrderRegister
+values('Z20221209002003', 'C002', 30);
+insert into CustomerOrderRegister
+values('Z20221209002003', 'C003', 2);
+insert into CustomerOrderRegister
+values('Z20221209002003', 'C004', 24);
+insert into CustomerOrderRegister
+values('Z20221209002003', 'C005', 4);
+insert into CustomerOrderRegister
+values('Z20221209002003', 'C006', 18);
+insert into CustomerOrderRegister
+values('Z20221209002003', 'C007', 4);
+insert into CustomerOrderRegister
+values('Z20221209002003', 'C008', 28);
+insert into CustomerOrderRegister
+values('Z20221209002003', 'C009', 25);
+insert into CustomerOrderRegister
+values('Z20221209002003', 'T001', 11);
+insert into CustomerOrderRegister
+values('Z20221209002003', 'W001', 23);
+insert into CustomerOrderRegister
+values('Z20221209002003', 'W002', 21);
+insert into CustomerOrderRegister
+values('Z20221209002003', 'B001', 16);
+insert into CustomerOrderRegister
+values('Z20221209002003', 'B002', 15);
+insert into CustomerOrderRegister
+values('Z20221209002003', 'F001', 16);
+insert into CustomerOrderRegister
+values('Z20221209002003', 'F002', 3);
+insert into CustomerOrderRegister
+values('Z20221209002003', 'F003', 18);
+insert into CustomerOrderRegister
+values('Z20221209002003', 'F004', 2);
+insert into CustomerOrderRegister
+values('Z20221209002003', 'S001', 24);
+insert into CustomerOrderRegister
+values('Z20221209002003', 'S002', 9);
+insert into CustomerOrderRegister
+values('Z20221209002003', 'S003', 21);
+
+insert into CustomerOrderRegister
+values('Z20221209002004', 'C001', 18);
+insert into CustomerOrderRegister
+values('Z20221209002004', 'C002', 17);
+insert into CustomerOrderRegister
+values('Z20221209002004', 'C003', 13);
+insert into CustomerOrderRegister
+values('Z20221209002004', 'C004', 6);
+insert into CustomerOrderRegister
+values('Z20221209002004', 'C005', 30);
+insert into CustomerOrderRegister
+values('Z20221209002004', 'C006', 27);
+insert into CustomerOrderRegister
+values('Z20221209002004', 'C007', 8);
+insert into CustomerOrderRegister
+values('Z20221209002004', 'C008', 1);
+insert into CustomerOrderRegister
+values('Z20221209002004', 'C009', 13);
+insert into CustomerOrderRegister
+values('Z20221209002004', 'T001', 8);
+insert into CustomerOrderRegister
+values('Z20221209002004', 'W001', 29);
+insert into CustomerOrderRegister
+values('Z20221209002004', 'W002', 26);
+insert into CustomerOrderRegister
+values('Z20221209002004', 'B001', 28);
+insert into CustomerOrderRegister
+values('Z20221209002004', 'B002', 8);
+insert into CustomerOrderRegister
+values('Z20221209002004', 'F001', 19);
+insert into CustomerOrderRegister
+values('Z20221209002004', 'F002', 22);
+insert into CustomerOrderRegister
+values('Z20221209002004', 'F003', 1);
+insert into CustomerOrderRegister
+values('Z20221209002004', 'F004', 15);
+insert into CustomerOrderRegister
+values('Z20221209002004', 'S001', 21);
+insert into CustomerOrderRegister
+values('Z20221209002004', 'S002', 25);
+insert into CustomerOrderRegister
+values('Z20221209002004', 'S003', 17);
+
+insert into CustomerOrderRegister
+values('Z20221209002005', 'C001', 11);
+insert into CustomerOrderRegister
+values('Z20221209002005', 'C002', 16);
+insert into CustomerOrderRegister
+values('Z20221209002005', 'C003', 9);
+insert into CustomerOrderRegister
+values('Z20221209002005', 'C004', 22);
+insert into CustomerOrderRegister
+values('Z20221209002005', 'C005', 9);
+insert into CustomerOrderRegister
+values('Z20221209002005', 'C006', 1);
+insert into CustomerOrderRegister
+values('Z20221209002005', 'C007', 17);
+insert into CustomerOrderRegister
+values('Z20221209002005', 'C008', 14);
+insert into CustomerOrderRegister
+values('Z20221209002005', 'C009', 13);
+insert into CustomerOrderRegister
+values('Z20221209002005', 'T001', 16);
+insert into CustomerOrderRegister
+values('Z20221209002005', 'W001', 28);
+insert into CustomerOrderRegister
+values('Z20221209002005', 'W002', 22);
+insert into CustomerOrderRegister
+values('Z20221209002005', 'B001', 7);
+insert into CustomerOrderRegister
+values('Z20221209002005', 'B002', 7);
+insert into CustomerOrderRegister
+values('Z20221209002005', 'F001', 18);
+insert into CustomerOrderRegister
+values('Z20221209002005', 'F002', 23);
+insert into CustomerOrderRegister
+values('Z20221209002005', 'F003', 4);
+insert into CustomerOrderRegister
+values('Z20221209002005', 'F004', 20);
+insert into CustomerOrderRegister
+values('Z20221209002005', 'S001', 23);
+insert into CustomerOrderRegister
+values('Z20221209002005', 'S002', 16);
+insert into CustomerOrderRegister
+values('Z20221209002005', 'S003', 14);
+
+insert into CustomerOrderRegister
+values('Z20221209002006', 'C001', 13);
+insert into CustomerOrderRegister
+values('Z20221209002006', 'C002', 1);
+insert into CustomerOrderRegister
+values('Z20221209002006', 'C003', 20);
+insert into CustomerOrderRegister
+values('Z20221209002006', 'C004', 8);
+insert into CustomerOrderRegister
+values('Z20221209002006', 'C005', 5);
+insert into CustomerOrderRegister
+values('Z20221209002006', 'C006', 5);
+insert into CustomerOrderRegister
+values('Z20221209002006', 'C007', 14);
+insert into CustomerOrderRegister
+values('Z20221209002006', 'C008', 7);
+insert into CustomerOrderRegister
+values('Z20221209002006', 'C009', 12);
+insert into CustomerOrderRegister
+values('Z20221209002006', 'T001', 1);
+insert into CustomerOrderRegister
+values('Z20221209002006', 'W001', 24);
+insert into CustomerOrderRegister
+values('Z20221209002006', 'W002', 16);
+insert into CustomerOrderRegister
+values('Z20221209002006', 'B001', 22);
+insert into CustomerOrderRegister
+values('Z20221209002006', 'B002', 2);
+insert into CustomerOrderRegister
+values('Z20221209002006', 'F001', 16);
+insert into CustomerOrderRegister
+values('Z20221209002006', 'F002', 19);
+insert into CustomerOrderRegister
+values('Z20221209002006', 'F003', 29);
+insert into CustomerOrderRegister
+values('Z20221209002006', 'F004', 1);
+insert into CustomerOrderRegister
+values('Z20221209002006', 'S001', 21);
+insert into CustomerOrderRegister
+values('Z20221209002006', 'S002', 23);
+insert into CustomerOrderRegister
+values('Z20221209002006', 'S003', 5);
+
+insert into CustomerOrderRegister
+values('Z20221209002007', 'C001', 29);
+insert into CustomerOrderRegister
+values('Z20221209002007', 'C002', 20);
+insert into CustomerOrderRegister
+values('Z20221209002007', 'C003', 22);
+insert into CustomerOrderRegister
+values('Z20221209002007', 'C004', 25);
+insert into CustomerOrderRegister
+values('Z20221209002007', 'C005', 9);
+insert into CustomerOrderRegister
+values('Z20221209002007', 'C006', 13);
+insert into CustomerOrderRegister
+values('Z20221209002007', 'C007', 30);
+insert into CustomerOrderRegister
+values('Z20221209002007', 'C008', 7);
+insert into CustomerOrderRegister
+values('Z20221209002007', 'C009', 8);
+insert into CustomerOrderRegister
+values('Z20221209002007', 'T001', 29);
+insert into CustomerOrderRegister
+values('Z20221209002007', 'W001', 21);
+insert into CustomerOrderRegister
+values('Z20221209002007', 'W002', 15);
+insert into CustomerOrderRegister
+values('Z20221209002007', 'B001', 1);
+insert into CustomerOrderRegister
+values('Z20221209002007', 'B002', 1);
+insert into CustomerOrderRegister
+values('Z20221209002007', 'F001', 23);
+insert into CustomerOrderRegister
+values('Z20221209002007', 'F002', 24);
+insert into CustomerOrderRegister
+values('Z20221209002007', 'F003', 12);
+insert into CustomerOrderRegister
+values('Z20221209002007', 'F004', 7);
+insert into CustomerOrderRegister
+values('Z20221209002007', 'S001', 16);
+insert into CustomerOrderRegister
+values('Z20221209002007', 'S002', 18);
+insert into CustomerOrderRegister
+values('Z20221209002007', 'S003', 20);
+
+insert into CustomerOrderRegister
+values('Z20221209002008', 'C001', 10);
+insert into CustomerOrderRegister
+values('Z20221209002008', 'C002', 24);
+insert into CustomerOrderRegister
+values('Z20221209002008', 'C003', 28);
+insert into CustomerOrderRegister
+values('Z20221209002008', 'C004', 17);
+insert into CustomerOrderRegister
+values('Z20221209002008', 'C005', 7);
+insert into CustomerOrderRegister
+values('Z20221209002008', 'C006', 10);
+insert into CustomerOrderRegister
+values('Z20221209002008', 'C007', 27);
+insert into CustomerOrderRegister
+values('Z20221209002008', 'C008', 3);
+insert into CustomerOrderRegister
+values('Z20221209002008', 'C009', 30);
+insert into CustomerOrderRegister
+values('Z20221209002008', 'T001', 3);
+insert into CustomerOrderRegister
+values('Z20221209002008', 'W001', 9);
+insert into CustomerOrderRegister
+values('Z20221209002008', 'W002', 6);
+insert into CustomerOrderRegister
+values('Z20221209002008', 'B001', 16);
+insert into CustomerOrderRegister
+values('Z20221209002008', 'B002', 13);
+insert into CustomerOrderRegister
+values('Z20221209002008', 'F001', 13);
+insert into CustomerOrderRegister
+values('Z20221209002008', 'F002', 15);
+insert into CustomerOrderRegister
+values('Z20221209002008', 'F003', 28);
+insert into CustomerOrderRegister
+values('Z20221209002008', 'F004', 16);
+insert into CustomerOrderRegister
+values('Z20221209002008', 'S001', 16);
+insert into CustomerOrderRegister
+values('Z20221209002008', 'S002', 28);
+insert into CustomerOrderRegister
+values('Z20221209002008', 'S003', 27);
+
+insert into CustomerOrderRegister
+values('Z20221209002009', 'C001', 4);
+insert into CustomerOrderRegister
+values('Z20221209002009', 'C002', 20);
+insert into CustomerOrderRegister
+values('Z20221209002009', 'C003', 10);
+insert into CustomerOrderRegister
+values('Z20221209002009', 'C004', 10);
+insert into CustomerOrderRegister
+values('Z20221209002009', 'C005', 2);
+insert into CustomerOrderRegister
+values('Z20221209002009', 'C006', 7);
+insert into CustomerOrderRegister
+values('Z20221209002009', 'C007', 6);
+insert into CustomerOrderRegister
+values('Z20221209002009', 'C008', 30);
+insert into CustomerOrderRegister
+values('Z20221209002009', 'C009', 24);
+insert into CustomerOrderRegister
+values('Z20221209002009', 'T001', 23);
+insert into CustomerOrderRegister
+values('Z20221209002009', 'W001', 15);
+insert into CustomerOrderRegister
+values('Z20221209002009', 'W002', 25);
+insert into CustomerOrderRegister
+values('Z20221209002009', 'B001', 20);
+insert into CustomerOrderRegister
+values('Z20221209002009', 'B002', 4);
+insert into CustomerOrderRegister
+values('Z20221209002009', 'F001', 5);
+insert into CustomerOrderRegister
+values('Z20221209002009', 'F002', 28);
+insert into CustomerOrderRegister
+values('Z20221209002009', 'F003', 23);
+insert into CustomerOrderRegister
+values('Z20221209002009', 'F004', 16);
+insert into CustomerOrderRegister
+values('Z20221209002009', 'S001', 1);
+insert into CustomerOrderRegister
+values('Z20221209002009', 'S002', 13);
+insert into CustomerOrderRegister
+values('Z20221209002009', 'S003', 22);
+
+insert into CustomerOrderRegister
+values('Z20221209002010', 'C001', 4);
+insert into CustomerOrderRegister
+values('Z20221209002010', 'C002', 11);
+insert into CustomerOrderRegister
+values('Z20221209002010', 'C003', 24);
+insert into CustomerOrderRegister
+values('Z20221209002010', 'C004', 22);
+insert into CustomerOrderRegister
+values('Z20221209002010', 'C005', 28);
+insert into CustomerOrderRegister
+values('Z20221209002010', 'C006', 13);
+insert into CustomerOrderRegister
+values('Z20221209002010', 'C007', 11);
+insert into CustomerOrderRegister
+values('Z20221209002010', 'C008', 1);
+insert into CustomerOrderRegister
+values('Z20221209002010', 'C009', 25);
+insert into CustomerOrderRegister
+values('Z20221209002010', 'T001', 13);
+insert into CustomerOrderRegister
+values('Z20221209002010', 'W001', 21);
+insert into CustomerOrderRegister
+values('Z20221209002010', 'W002', 13);
+insert into CustomerOrderRegister
+values('Z20221209002010', 'B001', 14);
+insert into CustomerOrderRegister
+values('Z20221209002010', 'B002', 3);
+insert into CustomerOrderRegister
+values('Z20221209002010', 'F001', 20);
+insert into CustomerOrderRegister
+values('Z20221209002010', 'F002', 23);
+insert into CustomerOrderRegister
+values('Z20221209002010', 'F003', 2);
+insert into CustomerOrderRegister
+values('Z20221209002010', 'F004', 11);
+insert into CustomerOrderRegister
+values('Z20221209002010', 'S001', 30);
+insert into CustomerOrderRegister
+values('Z20221209002010', 'S002', 30);
+insert into CustomerOrderRegister
+values('Z20221209002010', 'S003', 4);
+
+
+insert into CustomerOrderRegister
+values('Z20221210002001', 'C001', 5);
+insert into CustomerOrderRegister
+values('Z20221210002001', 'C002', 1);
+insert into CustomerOrderRegister
+values('Z20221210002001', 'C003', 24);
+insert into CustomerOrderRegister
+values('Z20221210002001', 'C004', 26);
+insert into CustomerOrderRegister
+values('Z20221210002001', 'C005', 21);
+insert into CustomerOrderRegister
+values('Z20221210002001', 'C006', 23);
+insert into CustomerOrderRegister
+values('Z20221210002001', 'C007', 5);
+insert into CustomerOrderRegister
+values('Z20221210002001', 'C008', 20);
+insert into CustomerOrderRegister
+values('Z20221210002001', 'C009', 13);
+insert into CustomerOrderRegister
+values('Z20221210002001', 'T001', 13);
+insert into CustomerOrderRegister
+values('Z20221210002001', 'W001', 4);
+insert into CustomerOrderRegister
+values('Z20221210002001', 'W002', 27);
+insert into CustomerOrderRegister
+values('Z20221210002001', 'B001', 5);
+insert into CustomerOrderRegister
+values('Z20221210002001', 'B002', 15);
+insert into CustomerOrderRegister
+values('Z20221210002001', 'F001', 9);
+insert into CustomerOrderRegister
+values('Z20221210002001', 'F002', 9);
+insert into CustomerOrderRegister
+values('Z20221210002001', 'F003', 4);
+insert into CustomerOrderRegister
+values('Z20221210002001', 'F004', 6);
+insert into CustomerOrderRegister
+values('Z20221210002001', 'S001', 30);
+insert into CustomerOrderRegister
+values('Z20221210002001', 'S002', 18);
+insert into CustomerOrderRegister
+values('Z20221210002001', 'S003', 28);
+
+insert into CustomerOrderRegister
+values('Z20221210002002', 'C001', 8);
+insert into CustomerOrderRegister
+values('Z20221210002002', 'C002', 1);
+insert into CustomerOrderRegister
+values('Z20221210002002', 'C003', 16);
+insert into CustomerOrderRegister
+values('Z20221210002002', 'C004', 19);
+insert into CustomerOrderRegister
+values('Z20221210002002', 'C005', 10);
+insert into CustomerOrderRegister
+values('Z20221210002002', 'C006', 28);
+insert into CustomerOrderRegister
+values('Z20221210002002', 'C007', 12);
+insert into CustomerOrderRegister
+values('Z20221210002002', 'C008', 23);
+insert into CustomerOrderRegister
+values('Z20221210002002', 'C009', 28);
+insert into CustomerOrderRegister
+values('Z20221210002002', 'T001', 19);
+insert into CustomerOrderRegister
+values('Z20221210002002', 'W001', 3);
+insert into CustomerOrderRegister
+values('Z20221210002002', 'W002', 3);
+insert into CustomerOrderRegister
+values('Z20221210002002', 'B001', 24);
+insert into CustomerOrderRegister
+values('Z20221210002002', 'B002', 13);
+insert into CustomerOrderRegister
+values('Z20221210002002', 'F001', 11);
+insert into CustomerOrderRegister
+values('Z20221210002002', 'F002', 27);
+insert into CustomerOrderRegister
+values('Z20221210002002', 'F003', 6);
+insert into CustomerOrderRegister
+values('Z20221210002002', 'F004', 19);
+insert into CustomerOrderRegister
+values('Z20221210002002', 'S001', 29);
+insert into CustomerOrderRegister
+values('Z20221210002002', 'S002', 1);
+insert into CustomerOrderRegister
+values('Z20221210002002', 'S003', 2);
+
+insert into CustomerOrderRegister
+values('Z20221210002003', 'C001', 12);
+insert into CustomerOrderRegister
+values('Z20221210002003', 'C002', 9);
+insert into CustomerOrderRegister
+values('Z20221210002003', 'C003', 30);
+insert into CustomerOrderRegister
+values('Z20221210002003', 'C004', 11);
+insert into CustomerOrderRegister
+values('Z20221210002003', 'C005', 7);
+insert into CustomerOrderRegister
+values('Z20221210002003', 'C006', 28);
+insert into CustomerOrderRegister
+values('Z20221210002003', 'C007', 14);
+insert into CustomerOrderRegister
+values('Z20221210002003', 'C008', 22);
+insert into CustomerOrderRegister
+values('Z20221210002003', 'C009', 28);
+insert into CustomerOrderRegister
+values('Z20221210002003', 'T001', 24);
+insert into CustomerOrderRegister
+values('Z20221210002003', 'W001', 7);
+insert into CustomerOrderRegister
+values('Z20221210002003', 'W002', 22);
+insert into CustomerOrderRegister
+values('Z20221210002003', 'B001', 9);
+insert into CustomerOrderRegister
+values('Z20221210002003', 'B002', 14);
+insert into CustomerOrderRegister
+values('Z20221210002003', 'F001', 22);
+insert into CustomerOrderRegister
+values('Z20221210002003', 'F002', 21);
+insert into CustomerOrderRegister
+values('Z20221210002003', 'F003', 13);
+insert into CustomerOrderRegister
+values('Z20221210002003', 'F004', 27);
+insert into CustomerOrderRegister
+values('Z20221210002003', 'S001', 30);
+insert into CustomerOrderRegister
+values('Z20221210002003', 'S002', 4);
+insert into CustomerOrderRegister
+values('Z20221210002003', 'S003', 28);
+
+insert into CustomerOrderRegister
+values('Z20221210002004', 'C001', 23);
+insert into CustomerOrderRegister
+values('Z20221210002004', 'C002', 26);
+insert into CustomerOrderRegister
+values('Z20221210002004', 'C003', 21);
+insert into CustomerOrderRegister
+values('Z20221210002004', 'C004', 28);
+insert into CustomerOrderRegister
+values('Z20221210002004', 'C005', 13);
+insert into CustomerOrderRegister
+values('Z20221210002004', 'C006', 27);
+insert into CustomerOrderRegister
+values('Z20221210002004', 'C007', 8);
+insert into CustomerOrderRegister
+values('Z20221210002004', 'C008', 1);
+insert into CustomerOrderRegister
+values('Z20221210002004', 'C009', 11);
+insert into CustomerOrderRegister
+values('Z20221210002004', 'T001', 8);
+insert into CustomerOrderRegister
+values('Z20221210002004', 'W001', 3);
+insert into CustomerOrderRegister
+values('Z20221210002004', 'W002', 11);
+insert into CustomerOrderRegister
+values('Z20221210002004', 'B001', 26);
+insert into CustomerOrderRegister
+values('Z20221210002004', 'B002', 10);
+insert into CustomerOrderRegister
+values('Z20221210002004', 'F001', 25);
+insert into CustomerOrderRegister
+values('Z20221210002004', 'F002', 25);
+insert into CustomerOrderRegister
+values('Z20221210002004', 'F003', 15);
+insert into CustomerOrderRegister
+values('Z20221210002004', 'F004', 23);
+insert into CustomerOrderRegister
+values('Z20221210002004', 'S001', 22);
+insert into CustomerOrderRegister
+values('Z20221210002004', 'S002', 7);
+insert into CustomerOrderRegister
+values('Z20221210002004', 'S003', 29);
+
+insert into CustomerOrderRegister
+values('Z20221210002005', 'C001', 24);
+insert into CustomerOrderRegister
+values('Z20221210002005', 'C002', 22);
+insert into CustomerOrderRegister
+values('Z20221210002005', 'C003', 3);
+insert into CustomerOrderRegister
+values('Z20221210002005', 'C004', 2);
+insert into CustomerOrderRegister
+values('Z20221210002005', 'C005', 8);
+insert into CustomerOrderRegister
+values('Z20221210002005', 'C006', 10);
+insert into CustomerOrderRegister
+values('Z20221210002005', 'C007', 26);
+insert into CustomerOrderRegister
+values('Z20221210002005', 'C008', 3);
+insert into CustomerOrderRegister
+values('Z20221210002005', 'C009', 30);
+insert into CustomerOrderRegister
+values('Z20221210002005', 'T001', 28);
+insert into CustomerOrderRegister
+values('Z20221210002005', 'W001', 9);
+insert into CustomerOrderRegister
+values('Z20221210002005', 'W002', 12);
+insert into CustomerOrderRegister
+values('Z20221210002005', 'B001', 9);
+insert into CustomerOrderRegister
+values('Z20221210002005', 'B002', 12);
+insert into CustomerOrderRegister
+values('Z20221210002005', 'F001', 29);
+insert into CustomerOrderRegister
+values('Z20221210002005', 'F002', 21);
+insert into CustomerOrderRegister
+values('Z20221210002005', 'F003', 15);
+insert into CustomerOrderRegister
+values('Z20221210002005', 'F004', 22);
+insert into CustomerOrderRegister
+values('Z20221210002005', 'S001', 29);
+insert into CustomerOrderRegister
+values('Z20221210002005', 'S002', 4);
+insert into CustomerOrderRegister
+values('Z20221210002005', 'S003', 9);
+
+insert into CustomerOrderRegister
+values('Z20221210002006', 'C001', 26);
+insert into CustomerOrderRegister
+values('Z20221210002006', 'C002', 18);
+insert into CustomerOrderRegister
+values('Z20221210002006', 'C003', 28);
+insert into CustomerOrderRegister
+values('Z20221210002006', 'C004', 12);
+insert into CustomerOrderRegister
+values('Z20221210002006', 'C005', 14);
+insert into CustomerOrderRegister
+values('Z20221210002006', 'C006', 13);
+insert into CustomerOrderRegister
+values('Z20221210002006', 'C007', 2);
+insert into CustomerOrderRegister
+values('Z20221210002006', 'C008', 21);
+insert into CustomerOrderRegister
+values('Z20221210002006', 'C009', 7);
+insert into CustomerOrderRegister
+values('Z20221210002006', 'T001', 5);
+insert into CustomerOrderRegister
+values('Z20221210002006', 'W001', 6);
+insert into CustomerOrderRegister
+values('Z20221210002006', 'W002', 1);
+insert into CustomerOrderRegister
+values('Z20221210002006', 'B001', 29);
+insert into CustomerOrderRegister
+values('Z20221210002006', 'B002', 8);
+insert into CustomerOrderRegister
+values('Z20221210002006', 'F001', 18);
+insert into CustomerOrderRegister
+values('Z20221210002006', 'F002', 3);
+insert into CustomerOrderRegister
+values('Z20221210002006', 'F003', 5);
+insert into CustomerOrderRegister
+values('Z20221210002006', 'F004', 27);
+insert into CustomerOrderRegister
+values('Z20221210002006', 'S001', 24);
+insert into CustomerOrderRegister
+values('Z20221210002006', 'S002', 5);
+insert into CustomerOrderRegister
+values('Z20221210002006', 'S003', 23);
+
+insert into CustomerOrderRegister
+values('Z20221210002007', 'C001', 28);
+insert into CustomerOrderRegister
+values('Z20221210002007', 'C002', 9);
+insert into CustomerOrderRegister
+values('Z20221210002007', 'C003', 3);
+insert into CustomerOrderRegister
+values('Z20221210002007', 'C004', 28);
+insert into CustomerOrderRegister
+values('Z20221210002007', 'C005', 27);
+insert into CustomerOrderRegister
+values('Z20221210002007', 'C006', 21);
+insert into CustomerOrderRegister
+values('Z20221210002007', 'C007', 5);
+insert into CustomerOrderRegister
+values('Z20221210002007', 'C008', 28);
+insert into CustomerOrderRegister
+values('Z20221210002007', 'C009', 8);
+insert into CustomerOrderRegister
+values('Z20221210002007', 'T001', 12);
+insert into CustomerOrderRegister
+values('Z20221210002007', 'W001', 29);
+insert into CustomerOrderRegister
+values('Z20221210002007', 'W002', 18);
+insert into CustomerOrderRegister
+values('Z20221210002007', 'B001', 27);
+insert into CustomerOrderRegister
+values('Z20221210002007', 'B002', 5);
+insert into CustomerOrderRegister
+values('Z20221210002007', 'F001', 8);
+insert into CustomerOrderRegister
+values('Z20221210002007', 'F002', 29);
+insert into CustomerOrderRegister
+values('Z20221210002007', 'F003', 18);
+insert into CustomerOrderRegister
+values('Z20221210002007', 'F004', 11);
+insert into CustomerOrderRegister
+values('Z20221210002007', 'S001', 6);
+insert into CustomerOrderRegister
+values('Z20221210002007', 'S002', 24);
+insert into CustomerOrderRegister
+values('Z20221210002007', 'S003', 3);
+
+insert into CustomerOrderRegister
+values('Z20221210002008', 'C001', 24);
+insert into CustomerOrderRegister
+values('Z20221210002008', 'C002', 13);
+insert into CustomerOrderRegister
+values('Z20221210002008', 'C003', 24);
+insert into CustomerOrderRegister
+values('Z20221210002008', 'C004', 25);
+insert into CustomerOrderRegister
+values('Z20221210002008', 'C005', 22);
+insert into CustomerOrderRegister
+values('Z20221210002008', 'C006', 18);
+insert into CustomerOrderRegister
+values('Z20221210002008', 'C007', 21);
+insert into CustomerOrderRegister
+values('Z20221210002008', 'C008', 28);
+insert into CustomerOrderRegister
+values('Z20221210002008', 'C009', 12);
+insert into CustomerOrderRegister
+values('Z20221210002008', 'T001', 3);
+insert into CustomerOrderRegister
+values('Z20221210002008', 'W001', 1);
+insert into CustomerOrderRegister
+values('Z20221210002008', 'W002', 30);
+insert into CustomerOrderRegister
+values('Z20221210002008', 'B001', 8);
+insert into CustomerOrderRegister
+values('Z20221210002008', 'B002', 30);
+insert into CustomerOrderRegister
+values('Z20221210002008', 'F001', 14);
+insert into CustomerOrderRegister
+values('Z20221210002008', 'F002', 8);
+insert into CustomerOrderRegister
+values('Z20221210002008', 'F003', 6);
+insert into CustomerOrderRegister
+values('Z20221210002008', 'F004', 8);
+insert into CustomerOrderRegister
+values('Z20221210002008', 'S001', 24);
+insert into CustomerOrderRegister
+values('Z20221210002008', 'S002', 7);
+insert into CustomerOrderRegister
+values('Z20221210002008', 'S003', 1);
+
+insert into CustomerOrderRegister
+values('Z20221210002009', 'C001', 10);
+insert into CustomerOrderRegister
+values('Z20221210002009', 'C002', 20);
+insert into CustomerOrderRegister
+values('Z20221210002009', 'C003', 8);
+insert into CustomerOrderRegister
+values('Z20221210002009', 'C004', 3);
+insert into CustomerOrderRegister
+values('Z20221210002009', 'C005', 21);
+insert into CustomerOrderRegister
+values('Z20221210002009', 'C006', 27);
+insert into CustomerOrderRegister
+values('Z20221210002009', 'C007', 1);
+insert into CustomerOrderRegister
+values('Z20221210002009', 'C008', 21);
+insert into CustomerOrderRegister
+values('Z20221210002009', 'C009', 29);
+insert into CustomerOrderRegister
+values('Z20221210002009', 'T001', 23);
+insert into CustomerOrderRegister
+values('Z20221210002009', 'W001', 14);
+insert into CustomerOrderRegister
+values('Z20221210002009', 'W002', 19);
+insert into CustomerOrderRegister
+values('Z20221210002009', 'B001', 24);
+insert into CustomerOrderRegister
+values('Z20221210002009', 'B002', 5);
+insert into CustomerOrderRegister
+values('Z20221210002009', 'F001', 26);
+insert into CustomerOrderRegister
+values('Z20221210002009', 'F002', 27);
+insert into CustomerOrderRegister
+values('Z20221210002009', 'F003', 25);
+insert into CustomerOrderRegister
+values('Z20221210002009', 'F004', 4);
+insert into CustomerOrderRegister
+values('Z20221210002009', 'S001', 27);
+insert into CustomerOrderRegister
+values('Z20221210002009', 'S002', 19);
+insert into CustomerOrderRegister
+values('Z20221210002009', 'S003', 15);
+
+insert into CustomerOrderRegister
+values('Z20221210002010', 'C001', 17);
+insert into CustomerOrderRegister
+values('Z20221210002010', 'C002', 18);
+insert into CustomerOrderRegister
+values('Z20221210002010', 'C003', 16);
+insert into CustomerOrderRegister
+values('Z20221210002010', 'C004', 22);
+insert into CustomerOrderRegister
+values('Z20221210002010', 'C005', 17);
+insert into CustomerOrderRegister
+values('Z20221210002010', 'C006', 7);
+insert into CustomerOrderRegister
+values('Z20221210002010', 'C007', 24);
+insert into CustomerOrderRegister
+values('Z20221210002010', 'C008', 3);
+insert into CustomerOrderRegister
+values('Z20221210002010', 'C009', 9);
+insert into CustomerOrderRegister
+values('Z20221210002010', 'T001', 5);
+insert into CustomerOrderRegister
+values('Z20221210002010', 'W001', 18);
+insert into CustomerOrderRegister
+values('Z20221210002010', 'W002', 29);
+insert into CustomerOrderRegister
+values('Z20221210002010', 'B001', 10);
+insert into CustomerOrderRegister
+values('Z20221210002010', 'B002', 30);
+insert into CustomerOrderRegister
+values('Z20221210002010', 'F001', 17);
+insert into CustomerOrderRegister
+values('Z20221210002010', 'F002', 12);
+insert into CustomerOrderRegister
+values('Z20221210002010', 'F003', 23);
+insert into CustomerOrderRegister
+values('Z20221210002010', 'F004', 30);
+insert into CustomerOrderRegister
+values('Z20221210002010', 'S001', 25);
+insert into CustomerOrderRegister
+values('Z20221210002010', 'S002', 17);
+insert into CustomerOrderRegister
+values('Z20221210002010', 'S003', 11);
+
+
+insert into CustomerOrderRegister
+values('Z20221211002001', 'C001', 24);
+insert into CustomerOrderRegister
+values('Z20221211002001', 'C002', 4);
+insert into CustomerOrderRegister
+values('Z20221211002001', 'C003', 28);
+insert into CustomerOrderRegister
+values('Z20221211002001', 'C004', 2);
+insert into CustomerOrderRegister
+values('Z20221211002001', 'C005', 4);
+insert into CustomerOrderRegister
+values('Z20221211002001', 'C006', 11);
+insert into CustomerOrderRegister
+values('Z20221211002001', 'C007', 6);
+insert into CustomerOrderRegister
+values('Z20221211002001', 'C008', 9);
+insert into CustomerOrderRegister
+values('Z20221211002001', 'C009', 22);
+insert into CustomerOrderRegister
+values('Z20221211002001', 'T001', 1);
+insert into CustomerOrderRegister
+values('Z20221211002001', 'W001', 14);
+insert into CustomerOrderRegister
+values('Z20221211002001', 'W002', 9);
+insert into CustomerOrderRegister
+values('Z20221211002001', 'B001', 19);
+insert into CustomerOrderRegister
+values('Z20221211002001', 'B002', 11);
+insert into CustomerOrderRegister
+values('Z20221211002001', 'F001', 24);
+insert into CustomerOrderRegister
+values('Z20221211002001', 'F002', 6);
+insert into CustomerOrderRegister
+values('Z20221211002001', 'F003', 23);
+insert into CustomerOrderRegister
+values('Z20221211002001', 'F004', 5);
+insert into CustomerOrderRegister
+values('Z20221211002001', 'S001', 4);
+insert into CustomerOrderRegister
+values('Z20221211002001', 'S002', 11);
+insert into CustomerOrderRegister
+values('Z20221211002001', 'S003', 22);
+
+insert into CustomerOrderRegister
+values('Z20221211002002', 'C001', 9);
+insert into CustomerOrderRegister
+values('Z20221211002002', 'C002', 2);
+insert into CustomerOrderRegister
+values('Z20221211002002', 'C003', 29);
+insert into CustomerOrderRegister
+values('Z20221211002002', 'C004', 16);
+insert into CustomerOrderRegister
+values('Z20221211002002', 'C005', 10);
+insert into CustomerOrderRegister
+values('Z20221211002002', 'C006', 30);
+insert into CustomerOrderRegister
+values('Z20221211002002', 'C007', 18);
+insert into CustomerOrderRegister
+values('Z20221211002002', 'C008', 21);
+insert into CustomerOrderRegister
+values('Z20221211002002', 'C009', 1);
+insert into CustomerOrderRegister
+values('Z20221211002002', 'T001', 16);
+insert into CustomerOrderRegister
+values('Z20221211002002', 'W001', 1);
+insert into CustomerOrderRegister
+values('Z20221211002002', 'W002', 2);
+insert into CustomerOrderRegister
+values('Z20221211002002', 'B001', 20);
+insert into CustomerOrderRegister
+values('Z20221211002002', 'B002', 12);
+insert into CustomerOrderRegister
+values('Z20221211002002', 'F001', 19);
+insert into CustomerOrderRegister
+values('Z20221211002002', 'F002', 26);
+insert into CustomerOrderRegister
+values('Z20221211002002', 'F003', 22);
+insert into CustomerOrderRegister
+values('Z20221211002002', 'F004', 16);
+insert into CustomerOrderRegister
+values('Z20221211002002', 'S001', 20);
+insert into CustomerOrderRegister
+values('Z20221211002002', 'S002', 26);
+insert into CustomerOrderRegister
+values('Z20221211002002', 'S003', 7);
+
+insert into CustomerOrderRegister
+values('Z20221211002003', 'C001', 3);
+insert into CustomerOrderRegister
+values('Z20221211002003', 'C002', 13);
+insert into CustomerOrderRegister
+values('Z20221211002003', 'C003', 25);
+insert into CustomerOrderRegister
+values('Z20221211002003', 'C004', 18);
+insert into CustomerOrderRegister
+values('Z20221211002003', 'C005', 26);
+insert into CustomerOrderRegister
+values('Z20221211002003', 'C006', 12);
+insert into CustomerOrderRegister
+values('Z20221211002003', 'C007', 20);
+insert into CustomerOrderRegister
+values('Z20221211002003', 'C008', 25);
+insert into CustomerOrderRegister
+values('Z20221211002003', 'C009', 15);
+insert into CustomerOrderRegister
+values('Z20221211002003', 'T001', 19);
+insert into CustomerOrderRegister
+values('Z20221211002003', 'W001', 22);
+insert into CustomerOrderRegister
+values('Z20221211002003', 'W002', 17);
+insert into CustomerOrderRegister
+values('Z20221211002003', 'B001', 15);
+insert into CustomerOrderRegister
+values('Z20221211002003', 'B002', 9);
+insert into CustomerOrderRegister
+values('Z20221211002003', 'F001', 3);
+insert into CustomerOrderRegister
+values('Z20221211002003', 'F002', 30);
+insert into CustomerOrderRegister
+values('Z20221211002003', 'F003', 5);
+insert into CustomerOrderRegister
+values('Z20221211002003', 'F004', 14);
+insert into CustomerOrderRegister
+values('Z20221211002003', 'S001', 11);
+insert into CustomerOrderRegister
+values('Z20221211002003', 'S002', 22);
+insert into CustomerOrderRegister
+values('Z20221211002003', 'S003', 22);
+
+insert into CustomerOrderRegister
+values('Z20221211002004', 'C001', 14);
+insert into CustomerOrderRegister
+values('Z20221211002004', 'C002', 7);
+insert into CustomerOrderRegister
+values('Z20221211002004', 'C003', 30);
+insert into CustomerOrderRegister
+values('Z20221211002004', 'C004', 11);
+insert into CustomerOrderRegister
+values('Z20221211002004', 'C005', 24);
+insert into CustomerOrderRegister
+values('Z20221211002004', 'C006', 30);
+insert into CustomerOrderRegister
+values('Z20221211002004', 'C007', 11);
+insert into CustomerOrderRegister
+values('Z20221211002004', 'C008', 26);
+insert into CustomerOrderRegister
+values('Z20221211002004', 'C009', 16);
+insert into CustomerOrderRegister
+values('Z20221211002004', 'T001', 4);
+insert into CustomerOrderRegister
+values('Z20221211002004', 'W001', 3);
+insert into CustomerOrderRegister
+values('Z20221211002004', 'W002', 18);
+insert into CustomerOrderRegister
+values('Z20221211002004', 'B001', 24);
+insert into CustomerOrderRegister
+values('Z20221211002004', 'B002', 2);
+insert into CustomerOrderRegister
+values('Z20221211002004', 'F001', 25);
+insert into CustomerOrderRegister
+values('Z20221211002004', 'F002', 22);
+insert into CustomerOrderRegister
+values('Z20221211002004', 'F003', 20);
+insert into CustomerOrderRegister
+values('Z20221211002004', 'F004', 5);
+insert into CustomerOrderRegister
+values('Z20221211002004', 'S001', 18);
+insert into CustomerOrderRegister
+values('Z20221211002004', 'S002', 13);
+insert into CustomerOrderRegister
+values('Z20221211002004', 'S003', 4);
+
+insert into CustomerOrderRegister
+values('Z20221211002005', 'C001', 27);
+insert into CustomerOrderRegister
+values('Z20221211002005', 'C002', 11);
+insert into CustomerOrderRegister
+values('Z20221211002005', 'C003', 9);
+insert into CustomerOrderRegister
+values('Z20221211002005', 'C004', 23);
+insert into CustomerOrderRegister
+values('Z20221211002005', 'C005', 25);
+insert into CustomerOrderRegister
+values('Z20221211002005', 'C006', 30);
+insert into CustomerOrderRegister
+values('Z20221211002005', 'C007', 3);
+insert into CustomerOrderRegister
+values('Z20221211002005', 'C008', 26);
+insert into CustomerOrderRegister
+values('Z20221211002005', 'C009', 11);
+insert into CustomerOrderRegister
+values('Z20221211002005', 'T001', 8);
+insert into CustomerOrderRegister
+values('Z20221211002005', 'W001', 16);
+insert into CustomerOrderRegister
+values('Z20221211002005', 'W002', 18);
+insert into CustomerOrderRegister
+values('Z20221211002005', 'B001', 5);
+insert into CustomerOrderRegister
+values('Z20221211002005', 'B002', 17);
+insert into CustomerOrderRegister
+values('Z20221211002005', 'F001', 1);
+insert into CustomerOrderRegister
+values('Z20221211002005', 'F002', 24);
+insert into CustomerOrderRegister
+values('Z20221211002005', 'F003', 8);
+insert into CustomerOrderRegister
+values('Z20221211002005', 'F004', 10);
+insert into CustomerOrderRegister
+values('Z20221211002005', 'S001', 12);
+insert into CustomerOrderRegister
+values('Z20221211002005', 'S002', 4);
+insert into CustomerOrderRegister
+values('Z20221211002005', 'S003', 21);
+
+insert into CustomerOrderRegister
+values('Z20221211002006', 'C001', 21);
+insert into CustomerOrderRegister
+values('Z20221211002006', 'C002', 24);
+insert into CustomerOrderRegister
+values('Z20221211002006', 'C003', 13);
+insert into CustomerOrderRegister
+values('Z20221211002006', 'C004', 12);
+insert into CustomerOrderRegister
+values('Z20221211002006', 'C005', 18);
+insert into CustomerOrderRegister
+values('Z20221211002006', 'C006', 17);
+insert into CustomerOrderRegister
+values('Z20221211002006', 'C007', 18);
+insert into CustomerOrderRegister
+values('Z20221211002006', 'C008', 1);
+insert into CustomerOrderRegister
+values('Z20221211002006', 'C009', 19);
+insert into CustomerOrderRegister
+values('Z20221211002006', 'T001', 22);
+insert into CustomerOrderRegister
+values('Z20221211002006', 'W001', 23);
+insert into CustomerOrderRegister
+values('Z20221211002006', 'W002', 17);
+insert into CustomerOrderRegister
+values('Z20221211002006', 'B001', 5);
+insert into CustomerOrderRegister
+values('Z20221211002006', 'B002', 28);
+insert into CustomerOrderRegister
+values('Z20221211002006', 'F001', 13);
+insert into CustomerOrderRegister
+values('Z20221211002006', 'F002', 29);
+insert into CustomerOrderRegister
+values('Z20221211002006', 'F003', 30);
+insert into CustomerOrderRegister
+values('Z20221211002006', 'F004', 28);
+insert into CustomerOrderRegister
+values('Z20221211002006', 'S001', 27);
+insert into CustomerOrderRegister
+values('Z20221211002006', 'S002', 20);
+insert into CustomerOrderRegister
+values('Z20221211002006', 'S003', 7);
+
+insert into CustomerOrderRegister
+values('Z20221211002007', 'C001', 4);
+insert into CustomerOrderRegister
+values('Z20221211002007', 'C002', 23);
+insert into CustomerOrderRegister
+values('Z20221211002007', 'C003', 3);
+insert into CustomerOrderRegister
+values('Z20221211002007', 'C004', 11);
+insert into CustomerOrderRegister
+values('Z20221211002007', 'C005', 26);
+insert into CustomerOrderRegister
+values('Z20221211002007', 'C006', 19);
+insert into CustomerOrderRegister
+values('Z20221211002007', 'C007', 25);
+insert into CustomerOrderRegister
+values('Z20221211002007', 'C008', 5);
+insert into CustomerOrderRegister
+values('Z20221211002007', 'C009', 14);
+insert into CustomerOrderRegister
+values('Z20221211002007', 'T001', 2);
+insert into CustomerOrderRegister
+values('Z20221211002007', 'W001', 9);
+insert into CustomerOrderRegister
+values('Z20221211002007', 'W002', 9);
+insert into CustomerOrderRegister
+values('Z20221211002007', 'B001', 25);
+insert into CustomerOrderRegister
+values('Z20221211002007', 'B002', 28);
+insert into CustomerOrderRegister
+values('Z20221211002007', 'F001', 15);
+insert into CustomerOrderRegister
+values('Z20221211002007', 'F002', 11);
+insert into CustomerOrderRegister
+values('Z20221211002007', 'F003', 25);
+insert into CustomerOrderRegister
+values('Z20221211002007', 'F004', 11);
+insert into CustomerOrderRegister
+values('Z20221211002007', 'S001', 4);
+insert into CustomerOrderRegister
+values('Z20221211002007', 'S002', 17);
+insert into CustomerOrderRegister
+values('Z20221211002007', 'S003', 20);
+
+insert into CustomerOrderRegister
+values('Z20221211002008', 'C001', 1);
+insert into CustomerOrderRegister
+values('Z20221211002008', 'C002', 14);
+insert into CustomerOrderRegister
+values('Z20221211002008', 'C003', 11);
+insert into CustomerOrderRegister
+values('Z20221211002008', 'C004', 22);
+insert into CustomerOrderRegister
+values('Z20221211002008', 'C005', 12);
+insert into CustomerOrderRegister
+values('Z20221211002008', 'C006', 15);
+insert into CustomerOrderRegister
+values('Z20221211002008', 'C007', 10);
+insert into CustomerOrderRegister
+values('Z20221211002008', 'C008', 26);
+insert into CustomerOrderRegister
+values('Z20221211002008', 'C009', 18);
+insert into CustomerOrderRegister
+values('Z20221211002008', 'T001', 17);
+insert into CustomerOrderRegister
+values('Z20221211002008', 'W001', 3);
+insert into CustomerOrderRegister
+values('Z20221211002008', 'W002', 22);
+insert into CustomerOrderRegister
+values('Z20221211002008', 'B001', 25);
+insert into CustomerOrderRegister
+values('Z20221211002008', 'B002', 2);
+insert into CustomerOrderRegister
+values('Z20221211002008', 'F001', 15);
+insert into CustomerOrderRegister
+values('Z20221211002008', 'F002', 25);
+insert into CustomerOrderRegister
+values('Z20221211002008', 'F003', 6);
+insert into CustomerOrderRegister
+values('Z20221211002008', 'F004', 10);
+insert into CustomerOrderRegister
+values('Z20221211002008', 'S001', 28);
+insert into CustomerOrderRegister
+values('Z20221211002008', 'S002', 1);
+insert into CustomerOrderRegister
+values('Z20221211002008', 'S003', 1);
+
+insert into CustomerOrderRegister
+values('Z20221211002009', 'C001', 11);
+insert into CustomerOrderRegister
+values('Z20221211002009', 'C002', 17);
+insert into CustomerOrderRegister
+values('Z20221211002009', 'C003', 25);
+insert into CustomerOrderRegister
+values('Z20221211002009', 'C004', 15);
+insert into CustomerOrderRegister
+values('Z20221211002009', 'C005', 5);
+insert into CustomerOrderRegister
+values('Z20221211002009', 'C006', 10);
+insert into CustomerOrderRegister
+values('Z20221211002009', 'C007', 7);
+insert into CustomerOrderRegister
+values('Z20221211002009', 'C008', 3);
+insert into CustomerOrderRegister
+values('Z20221211002009', 'C009', 14);
+insert into CustomerOrderRegister
+values('Z20221211002009', 'T001', 24);
+insert into CustomerOrderRegister
+values('Z20221211002009', 'W001', 24);
+insert into CustomerOrderRegister
+values('Z20221211002009', 'W002', 11);
+insert into CustomerOrderRegister
+values('Z20221211002009', 'B001', 22);
+insert into CustomerOrderRegister
+values('Z20221211002009', 'B002', 10);
+insert into CustomerOrderRegister
+values('Z20221211002009', 'F001', 23);
+insert into CustomerOrderRegister
+values('Z20221211002009', 'F002', 15);
+insert into CustomerOrderRegister
+values('Z20221211002009', 'F003', 5);
+insert into CustomerOrderRegister
+values('Z20221211002009', 'F004', 2);
+insert into CustomerOrderRegister
+values('Z20221211002009', 'S001', 3);
+insert into CustomerOrderRegister
+values('Z20221211002009', 'S002', 2);
+insert into CustomerOrderRegister
+values('Z20221211002009', 'S003', 20);
+
+insert into CustomerOrderRegister
+values('Z20221211002010', 'C001', 4);
+insert into CustomerOrderRegister
+values('Z20221211002010', 'C002', 25);
+insert into CustomerOrderRegister
+values('Z20221211002010', 'C003', 2);
+insert into CustomerOrderRegister
+values('Z20221211002010', 'C004', 30);
+insert into CustomerOrderRegister
+values('Z20221211002010', 'C005', 23);
+insert into CustomerOrderRegister
+values('Z20221211002010', 'C006', 24);
+insert into CustomerOrderRegister
+values('Z20221211002010', 'C007', 7);
+insert into CustomerOrderRegister
+values('Z20221211002010', 'C008', 20);
+insert into CustomerOrderRegister
+values('Z20221211002010', 'C009', 18);
+insert into CustomerOrderRegister
+values('Z20221211002010', 'T001', 25);
+insert into CustomerOrderRegister
+values('Z20221211002010', 'W001', 27);
+insert into CustomerOrderRegister
+values('Z20221211002010', 'W002', 23);
+insert into CustomerOrderRegister
+values('Z20221211002010', 'B001', 13);
+insert into CustomerOrderRegister
+values('Z20221211002010', 'B002', 21);
+insert into CustomerOrderRegister
+values('Z20221211002010', 'F001', 19);
+insert into CustomerOrderRegister
+values('Z20221211002010', 'F002', 3);
+insert into CustomerOrderRegister
+values('Z20221211002010', 'F003', 18);
+insert into CustomerOrderRegister
+values('Z20221211002010', 'F004', 3);
+insert into CustomerOrderRegister
+values('Z20221211002010', 'S001', 18);
+insert into CustomerOrderRegister
+values('Z20221211002010', 'S002', 12);
+insert into CustomerOrderRegister
+values('Z20221211002010', 'S003', 3);
+
+
+
+
+
+
+
+
 insert into EmpReg
 values
-    ('A20221212001', '001', '2022/12/12'),
-    ('A20221212002', '002', '2022/12/12'),
-    ('A20221212003', '003', '2022/12/12'),
-    ('A20221212004', '004', '2022/12/12'),
-    ('A20221212005', '005', '2022/12/12'),
-    ('A20221212006', '006', '2022/12/12'),
-    ('A20221213001', '001', '2022/12/13'),
-    ('A20221213002', '002', '2022/12/13'),
-    ('A20221213003', '003', '2022/12/13'),
-    ('A20221213004', '004', '2022/12/13'),
-    ('A20221213005', '005', '2022/12/13'),
-    ('A20221213006', '006', '2022/12/13'),
-    ('A20221214001', '001', '2022/12/14'),
-    ('A20221214002', '002', '2022/12/14'),
-    ('A20221214003', '003', '2022/12/14'),
-    ('A20221214004', '004', '2022/12/14'),
-    ('A20221214005', '005', '2022/12/14'),
-    ('A20221214006', '006', '2022/12/14'),
-    ('A20221215001', '001', '2022/12/15'),
-    ('A20221215002', '002', '2022/12/15'),
-    ('A20221215003', '003', '2022/12/15'),
-    ('A20221215004', '004', '2022/12/15'),
-    ('A20221215005', '005', '2022/12/15'),
-    ('A20221215006', '006', '2022/12/15');;
-use DB
-delete from EmployeeRegister
+
+    ('A20221208001', '001', '2022/12/08'),
+    ('A20221208002', '002', '2022/12/08'),
+    ('A20221209001', '001', '2022/12/09'),
+    ('A20221209002', '002', '2022/12/09'),
+    ('A20221210001', '001', '2022/12/10'),
+    ('A20221210002', '002', '2022/12/10'),
+    ('A20221211001', '001', '2022/12/11'),
+    ('A20221211002', '002', '2022/12/11')
+
 insert into EmployeeRegister
 values
-    ('A20221212001', 'U001001', 8, 'udees umnu'),
-    ('A20221212002', 'U002001', 8, 'udees hoish'),
-    ('A20221212003', 'U003001', 8, 'udees umnu'),
-    ('A20221212004', 'U004001', 8, 'udees hoish'),
-    ('A20221212001', 'M001001', 8, 'udees hoish'),
-    ('A20221212002', 'M002001', 8, 'udees umnu'),
-    ('A20221212003', 'M003001', 8, 'udees hoish'),
-    ('A20221212004', 'M004001', 8, 'udees umnu'),
-    ('A20221212005', 'M005001', 8, 'udees hoish'),
-    ('A20221212006', 'M006001', 8, 'udees umnu'),
-    ('A20221212001', 'N001001', 8, 'udees umnu'),
-    ('A20221212002', 'N002001', 8, 'udees hoish'),
-    ('A20221212003', 'N003001', 8, 'udees hoish'),
-    ('A20221212004', 'N004001', 8, 'udees umnu'),
-    ('A20221212005', 'N005001', 8, 'udees hoish'),
-    ('A20221212006', 'N006001', 8, 'udees umnu'),
-    ('A20221212001', 'T001001', 8, 'udees hoish'),
-    ('A20221212002', 'T002001', 8, 'udees umnu'),
-    ('A20221212001', 'T001002', 8, 'udees hoish'),
-    ('A20221212002', 'T002002', 8, 'udees hoish'),
-    ('A20221213001', 'U001001', 8, 'udees umnu'),
-    ('A20221213002', 'U002001', 8, 'udees hoish'),
-    ('A20221213003', 'U003001', 8, 'udees umnu'),
-    ('A20221213004', 'U004001', 8, 'udees hoish'),
-    ('A20221213001', 'M001001', 8, 'udees hoish'),
-    ('A20221213002', 'M002001', 8, 'udees umnu'),
-    ('A20221213003', 'M003001', 8, 'udees hoish'),
-    ('A20221213004', 'M004001', 8, 'udees umnu'),
-    ('A20221213005', 'M005001', 8, 'udees hoish'),
-    ('A20221213006', 'M006001', 8, 'udees umnu'),
-    ('A20221213001', 'N001001', 8, 'udees umnu'),
-    ('A20221213002', 'N002001', 8, 'udees hoish'),
-    ('A20221213003', 'N003001', 8, 'udees hoish'),
-    ('A20221213004', 'N004001', 8, 'udees umnu'),
-    ('A20221213005', 'N005001', 8, 'udees hoish'),
-    ('A20221213006', 'N006001', 8, 'udees umnu'),
-    ('A20221213001', 'T001001', 8, 'udees hoish'),
-    ('A20221213002', 'T002001', 8, 'udees umnu'),
-    ('A20221213001', 'T001002', 8, 'udees hoish'),
-    ('A20221213002', 'T002002', 8, 'udees hoish'),
-    ('A20221214001', 'U001001', 8, 'udees umnu'),
-    ('A20221214002', 'U002001', 8, 'udees hoish'),
-    ('A20221214003', 'U003001', 8, 'udees umnu'),
-    ('A20221214004', 'U004001', 8, 'udees hoish'),
-    ('A20221214001', 'M001001', 8, 'udees hoish'),
-    ('A20221214002', 'M002001', 8, 'udees umnu'),
-    ('A20221214003', 'M003001', 8, 'udees hoish'),
-    ('A20221214004', 'M004001', 8, 'udees umnu'),
-    ('A20221214005', 'M005001', 8, 'udees hoish'),
-    ('A20221214006', 'M006001', 8, 'udees umnu'),
-    ('A20221214001', 'N001001', 8, 'udees umnu'),
-    ('A20221214002', 'N002001', 8, 'udees hoish'),
-    ('A20221214003', 'N003001', 8, 'udees hoish'),
-    ('A20221214004', 'N004001', 8, 'udees umnu'),
-    ('A20221214005', 'N005001', 8, 'udees hoish'),
-    ('A20221214006', 'N006001', 8, 'udees umnu'),
-    ('A20221214001', 'T001001', 8, 'udees hoish'),
-    ('A20221214002', 'T002001', 8, 'udees umnu'),
-    ('A20221214001', 'T001002', 8, 'udees hoish'),
-    ('A20221214002', 'T002002', 8, 'udees hoish'),
-    ('A20221215001', 'U001001', 8, 'udees umnu'),
-    ('A20221215002', 'U002001', 8, 'udees hoish'),
-    ('A20221215003', 'U003001', 8, 'udees umnu'),
-    ('A20221215004', 'U004001', 8, 'udees hoish'),
-    ('A20221215001', 'M001001', 8, 'udees hoish'),
-    ('A20221215002', 'M002001', 8, 'udees umnu'),
-    ('A20221215003', 'M003001', 8, 'udees hoish'),
-    ('A20221215004', 'M004001', 8, 'udees umnu'),
-    ('A20221215005', 'M005001', 8, 'udees hoish'),
-    ('A20221215006', 'M006001', 8, 'udees umnu'),
-    ('A20221215001', 'N001001', 8, 'udees umnu'),
-    ('A20221215002', 'N002001', 8, 'udees hoish'),
-    ('A20221215003', 'N003001', 8, 'udees hoish'),
-    ('A20221215004', 'N004001', 8, 'udees umnu'),
-    ('A20221215005', 'N005001', 8, 'udees hoish'),
-    ('A20221215006', 'N006001', 8, 'udees umnu'),
-    ('A20221215001', 'T001001', 8, 'udees hoish'),
-    ('A20221215002', 'T002001', 8, 'udees umnu'),
-    ('A20221215001', 'T001002', 8, 'udees hoish'),
-    ('A20221215002', 'T002002', 8, 'udees hoish')
+
+    ('A20221208001', 'U001001', 8, 'udees umnu'),
+    ('A20221208001', 'U001002', 8, 'udees hoish'),
+    ('A20221208001', 'T001001', 8, 'udees umnu'),
+    ('A20221208001', 'T001002', 8, 'udees hoish'),
+    ('A20221208002', 'U002001', 8, 'udees hoish'),
+    ('A20221208002', 'U002002', 8, 'udees umnu'),
+    ('A20221208002', 'T002001', 8, 'udees hoish'),
+    ('A20221208002', 'T002002', 8, 'udees umnu'),
+    ('A20221209001', 'U001001', 8, 'udees hoish'),
+    ('A20221209001', 'U001002', 8, 'udees umnu'),
+    ('A20221209001', 'T001001', 8, 'udees umnu'),
+    ('A20221209001', 'T001002', 8, 'udees hoish'),
+    ('A20221209002', 'U002001', 8, 'udees hoish'),
+    ('A20221209002', 'U002002', 8, 'udees umnu'),
+    ('A20221209002', 'T002001', 8, 'udees hoish'),
+    ('A20221209002', 'T002002', 8, 'udees umnu'),
+    ('A20221210001', 'U001001', 8, 'udees hoish'),
+    ('A20221210001', 'U001002', 8, 'udees umnu'),
+    ('A20221210001', 'T001001', 8, 'udees hoish'),
+    ('A20221210001', 'T001002', 8, 'udees hoish'),
+    ('A20221210002', 'U002001', 8, 'udees umnu'),
+    ('A20221210002', 'U002002', 8, 'udees hoish'),
+    ('A20221210002', 'T002001', 8, 'udees umnu'),
+    ('A20221210002', 'T002002', 8, 'udees hoish'),
+    ('A20221211001', 'U001001', 8, 'udees hoish'),
+    ('A20221211001', 'U001002', 8, 'udees umnu'),
+    ('A20221211001', 'T001001', 8, 'udees hoish'),
+    ('A20221211001', 'T001002', 8, 'udees umnu'),
+    ('A20221211002', 'U002001', 8, 'udees hoish'),
+    ('A20221211002', 'U002002', 8, 'udees umnu'),
+    ('A20221211002', 'T002001', 8, 'udees umnu'),
+    ('A20221211002', 'T002002', 8, 'udees hoish')
 ;
 
-insert into Finance
-values
 
-    ('S20221212001', '001', '2022/12/12'),
-    ('S20221212002', '002', '2022/12/12'),
-    ('S20221213003', '003', '2022/12/13'),
-    ('S20221213004', '004', '2022/12/13'),
-    ('S20221213001', '001', '2022/12/13'),
-    ('S20221213002', '002', '2022/12/13'),
-    ('S20221214003', '003', '2022/12/14'),
-    ('S20221214004', '004', '2022/12/14'),
-    ('S20221214005', '005', '2022/12/14'),
-    ('S20221214006', '006', '2022/12/14'),
-    ('S20221215001', '001', '2022/12/15'),
-    ('S20221215002', '002', '2022/12/15'),
-    ('S20221215003', '003', '2022/12/15'),
-    ('S20221215004', '004', '2022/12/15'),
-    ('S20221216005', '005', '2022/12/16'),
-    ('S20221216006', '006', '2022/12/16'),
-    ('S20221216001', '001', '2022/12/16'),
-    ('S20221216002', '002', '2022/12/16'),
-    ('S20221217003', '003', '2022/12/17'),
-    ('S20221217004', '004', '2022/12/17');
 
-delete from Output
 insert into Output
 values
-    ('S20221212002', 'tog', 120000),
-    ('S20221213003', 'ayga', 20000),
-    ('S20221213004', 'coffee chanagch', 140000),
-    ('S20221214005', 'tog', 130000),
-    ('S20221215001', 'mini hurgugch', 400000),
-    ('S20221215002', 'halbaga seree', 30000),
-    ('S20221215003', 'salfetka', 20000),
-    ('S20221216001', 'coffeenii ur', 50000)
+    ('S20221208001', 'tog', 120000),
+    ('S20221208001', 'ayga', 20000),
+    ('S20221208001', 'coffee chanagch', 140000),
+    ('S20221208001', 'tog', 130000),
+    ('S20221208002', 'mini hurgugch', 400000),
+    ('S20221208002', 'halbaga seree', 30000),
+    ('S20221208002', 'salfetka', 20000),
+    ('S20221208002', 'coffeenii ur', 50000)
 
-delete from SalaryRegister
-delete from Salary
 insert into Salary
 values
-    ('T20221212001', '001', '2022/12/12'),
-    ('T20221212002', '002', '2022/12/12'),
-    ('T20221212003', '003', '2022/12/12'),
-    ('T20221213004', '004', '2022/12/13'),
-    ('T20221213001', '001', '2022/12/13'),
-    ('T20221213002', '002', '2022/12/13'),
-    ('T20221213003', '003', '2022/12/13'),
-    ('T20221214004', '004', '2022/12/14'),
-    ('T20221214005', '005', '2022/12/14'),
-    ('T20221214006', '006', '2022/12/14'),
-    ('T20221215001', '001', '2022/12/15'),
-    ('T20221215002', '002', '2022/12/15'),
-    ('T20221215003', '003', '2022/12/15'),
-    ('T20221216004', '004', '2022/12/16'),
-    ('T20221216005', '005', '2022/12/16'),
-    ('T20221216006', '006', '2022/12/16'),
-    ('T20221216001', '001', '2022/12/16'),
-    ('T20221217002', '001', '2022/12/17'),
-    ('T20221217003', '001', '2022/12/17'),
-    ('T20221217004', '001', '2022/12/17');
-insert into SalaryRegister
-values
-    ('T20221212001', 'U001001', 8, 100000),
-    ('T20221212002', 'U002001', 8, 120000),
-    ('T20221212003', 'U003001', 8, 120000),
-    ('T20221213004', 'U004001', 8, 120000),
-    ('T20221213001', 'U001001', 8, 50000),
-    ('T20221213002', 'U002001', 8, 120000),
-    ('T20221213003', 'U003001', 8, 100000),
-    ('T20221214004', 'U004001', 8, 120000),
-    ('T20221215001', 'U001001', 8, 70000),
-    ('T20221215002', 'U002001', 8, 80000),
-    ('T20221215003', 'U003001', 8, 120000),
-    ('T20221216004', 'U004001', 8, 130000),
-    ('T20221216001', 'U001001', 8, 120000),
-    ('T20221212001', 'T001001', 6, 5000),
-    ('T20221212001', 'T001002', 8, 6000),
-    ('T20221213001', 'T001001', 7, 3000),
-    ('T20221213001', 'T001002', 5, 2500),
-    ('T20221217002', 'U002001', 8, 120000),
-    ('T20221217003', 'U003001', 8, 120000),
-    ('T20221217004', 'U004001', 8, 90000);
-    
-    INSERT INTO SupponceOrderRegister VALUES
+    ('T20221208001', '001', '2022/12/08'),
+    ('T20221208002', '002', '2022/12/08'),
+    ('T20221209001', '001', '2022/12/09'),
+    ('T20221209002', '002', '2022/12/09'),
+    ('T20221210001', '001', '2022/12/10'),
+    ('T20221210002', '002', '2022/12/10'),
+    ('T20221211001', '001', '2022/12/11'),
+    ('T20221211002', '002', '2022/12/11')
 
-('Z20221208001001', 'C005', 5),
-('Z20221208001001', 'T003', 3),
-('Z20221208002002', 'B012', 12),
-('Z20221209002002', 'F013', 13),
-('Z20221209002002', 'A009', 9),
-('Z20221209002002', 'M004', 4),
-('Z20221210003003', 'C012', 12),
-('Z20221210003003', 'H003', 3),
-('Z20221210003003', 'O015', 15),
-('Z20221211004004', 'W005', 5),
-('Z20221211004004', 'C017', 17),
-('Z20221211004004', 'T019', 19),
-('Z20221212001001', 'C020', 20),
-('Z20221212001001', 'M008', 8),
-('Z20221212001001', 'S023', 23),
-('Z20221213002002', 'H022', 22),
-('Z20221213002002', 'C011', 11),
-('Z20221213003003', 'W017', 17);
+
+
+
+insert into SalaryRegister
+values('T20221208001', 'U001001', 8, 400)
+insert into SalaryRegister
+values('T20221208001', 'U001002', 8, 700)
+insert into SalaryRegister
+values('T20221208001', 'T001001', 8, 2700)
+insert into SalaryRegister
+values('T20221208001', 'T001002', 8, 200)
+insert into SalaryRegister
+values('T20221208002', 'U002001', 8, 2100)
+insert into SalaryRegister
+values('T20221208002', 'U002002', 8, 2000)
+insert into SalaryRegister
+values('T20221208002', 'T002001', 8, 2700)
+insert into SalaryRegister
+values('T20221208002', 'T002002', 8, 400)
+insert into SalaryRegister
+values('T20221209001', 'U001001', 8, 1000)
+insert into SalaryRegister
+values('T20221209001', 'U001002', 8, 1700)
+insert into SalaryRegister
+values('T20221209001', 'T001001', 8, 2800)
+insert into SalaryRegister
+values('T20221209001', 'T001002', 8, 100)
+insert into SalaryRegister
+values('T20221209002', 'U002001', 8, 700)
+insert into SalaryRegister
+values('T20221209002', 'U002002', 6, 300)
+insert into SalaryRegister
+values('T20221209002', 'T002001', 8, 800)
+insert into SalaryRegister
+values('T20221209002', 'T002002', 7, 2400)
+insert into SalaryRegister
+values('T20221210001', 'U001001', 8, 2700)
+insert into SalaryRegister
+values('T20221210001', 'U001002', 8, 2000)
+insert into SalaryRegister
+values('T20221210001', 'T001001', 8, 300)
+insert into SalaryRegister
+values('T20221210001', 'T001002', 8, 600)
+insert into SalaryRegister
+values('T20221210002', 'U002001', 8, 2500)
+insert into SalaryRegister
+values('T20221210002', 'U002002', 8, 2100)
+insert into SalaryRegister
+values('T20221210002', 'T002001', 8, 1300)
+insert into SalaryRegister
+values('T20221210002', 'T002002', 8, 1400)
+insert into SalaryRegister
+values('T20221210001', 'U001001', 8, 800)
+insert into SalaryRegister
+values('T20221210001', 'U001002', 8, 1600)
+insert into SalaryRegister
+values('T20221210001', 'T001001', 8, 2300)
+insert into SalaryRegister
+values('T20221210001', 'T001002', 8, 2700)
+insert into SalaryRegister
+values('T20221210002', 'U002001', 8, 2800)
+insert into SalaryRegister
+values('T20221210002', 'U002002', 6, 2000)
+insert into SalaryRegister
+values('T20221210002', 'T002001', 8, 1400)
+insert into SalaryRegister
+values('T20221210002', 'T002002', 7, 900)
+
+insert into SalaryRegister
+values('T20221211001', 'U001001', 8, 2700)
+insert into SalaryRegister
+values('T20221211001', 'U001002', 8, 2000)
+insert into SalaryRegister
+values('T20221211001', 'T001001', 8, 300)
+insert into SalaryRegister
+values('T20221211001', 'T001002', 8, 600)
+insert into SalaryRegister
+values('T20221211002', 'U002001', 8, 2500)
+insert into SalaryRegister
+values('T20221211002', 'U002002', 8, 2100)
+insert into SalaryRegister
+values('T20221211002', 'T002001', 8, 1300)
+insert into SalaryRegister
+values('T20221211002', 'T002002', 8, 1400)
+insert into SalaryRegister
+values('T20221211001', 'U001001', 8, 800)
+insert into SalaryRegister
+values('T20221211001', 'U001002', 8, 1600)
+insert into SalaryRegister
+values('T20221211001', 'T001001', 8, 2300)
+insert into SalaryRegister
+values('T20221211001', 'T001002', 8, 2700)
+insert into SalaryRegister
+values('T20221211002', 'U002001', 8, 2800)
+insert into SalaryRegister
+values('T20221211002', 'U002002', 6, 2000)
+insert into SalaryRegister
+values('T20221211002', 'T002001', 8, 1400)
+insert into SalaryRegister
+values('T20221211002', 'T002002', 7, 900)
+
+
+
+insert into ItemOr
+values
+    ('B20221208001001', '001', '2022/12/08', 'Speedwagon Foundation'),
+    ('B20221208002001', '002', '2022/12/08', 'Speedwagon Foundation'),
+    ('B20221209001001', '001', '2022/12/09', 'Speedwagon Foundation'),
+    ('B20221209002001', '002', '2022/12/09', 'Speedwagon Foundation'),
+    ('B20221210001001', '001', '2022/12/10', 'Speedwagon Foundation'),
+    ('B20221210002001', '002', '2022/12/10', 'Speedwagon Foundation'),
+    ('B20221211001001', '001', '2022/12/11', 'Speedwagon Foundation'),
+    ('B20221211002001', '002', '2022/12/11', 'Speedwagon Foundation'),
+
+    ('B20221208001002', '001', '2022/12/08', 'Ultimate'),
+    ('B20221208002002', '002', '2022/12/08', 'Ultimate'),
+    ('B20221209001002', '001', '2022/12/09', 'Ultimate'),
+    ('B20221209002002', '002', '2022/12/09', 'Ultimate'),
+    ('B20221210001002', '001', '2022/12/10', 'Ultimate'),
+    ('B20221210002002', '002', '2022/12/10', 'Ultimate'),
+    ('B20221211001002', '001', '2022/12/11', 'Ultimate'),
+    ('B20221211002002', '002', '2022/12/11', 'Ultimate')
+
+insert into ItemOrderRegister
+values
+    ('B20221208001001', 'C001', 20),
+    ('B20221208001001', 'C002', 10),
+    ('B20221208001001', 'C003', 27),
+    ('B20221208001001', 'C004', 19),
+    ('B20221208001001', 'C005', 37),
+    ('B20221208001001', 'C006', 17),
+    ('B20221208001001', 'C007', 10),
+    ('B20221208001001', 'C008', 49),
+    ('B20221208001001', 'C009', 26),
+    ('B20221208001001', 'T001', 22),
+    ('B20221208001001', 'W001', 37),
+    ('B20221208001001', 'W002', 11),
+    ('B20221208001001', 'B001', 27),
+    ('B20221208001001', 'B002', 10),
+    ('B20221208001001', 'F001', 25),
+    ('B20221208001001', 'F002', 11),
+    ('B20221208001001', 'F003', 45),
+    ('B20221208001001', 'F004', 19),
+    ('B20221208001001', 'S001', 26),
+    ('B20221208001001', 'S002', 37),
+    ('B20221208001001', 'S003', 24),
+
+    ('B20221208001002', 'C001', 48),
+    ('B20221208001002', 'C002', 17),
+    ('B20221208001002', 'C003', 38),
+    ('B20221208001002', 'C004', 35),
+    ('B20221208001002', 'C005', 16),
+    ('B20221208001002', 'C006', 31),
+    ('B20221208001002', 'C007', 43),
+    ('B20221208001002', 'C008', 47),
+    ('B20221208001002', 'C009', 32),
+    ('B20221208001002', 'T001', 18),
+    ('B20221208001002', 'W001', 36),
+    ('B20221208001002', 'W002', 41),
+    ('B20221208001002', 'B001', 44),
+    ('B20221208001002', 'B002', 45),
+    ('B20221208001002', 'F001', 26),
+    ('B20221208001002', 'F002', 27),
+    ('B20221208001002', 'F003', 33),
+    ('B20221208001002', 'F004', 20),
+    ('B20221208001002', 'S001', 15),
+    ('B20221208001002', 'S002', 37),
+    ('B20221208001002', 'S003', 24),
+
+
+    ('B20221209001001', 'C001', 17),
+    ('B20221209001001', 'C002', 37),
+    ('B20221209001001', 'C003', 32),
+    ('B20221209001001', 'C004', 21),
+    ('B20221209001001', 'C005', 16),
+    ('B20221209001001', 'C006', 10),
+    ('B20221209001001', 'C007', 12),
+    ('B20221209001001', 'C008', 16),
+    ('B20221209001001', 'C009', 18),
+    ('B20221209001001', 'T001', 35),
+    ('B20221209001001', 'W001', 11),
+    ('B20221209001001', 'W002', 43),
+    ('B20221209001001', 'B001', 40),
+    ('B20221209001001', 'B002', 31),
+    ('B20221209001001', 'F001', 13),
+    ('B20221209001001', 'F002', 22),
+    ('B20221209001001', 'F003', 30),
+    ('B20221209001001', 'F004', 21),
+    ('B20221209001001', 'S001', 13),
+    ('B20221209001001', 'S002', 16),
+    ('B20221209001001', 'S003', 43),
+
+    ('B20221209001002', 'C001', 39),
+    ('B20221209001002', 'C002', 44),
+    ('B20221209001002', 'C003', 23),
+    ('B20221209001002', 'C004', 29),
+    ('B20221209001002', 'C005', 25),
+    ('B20221209001002', 'C006', 44),
+    ('B20221209001002', 'C007', 18),
+    ('B20221209001002', 'C008', 34),
+    ('B20221209001002', 'C009', 37),
+    ('B20221209001002', 'T001', 47),
+    ('B20221209001002', 'W001', 20),
+    ('B20221209001002', 'W002', 28),
+    ('B20221209001002', 'B001', 33),
+    ('B20221209001002', 'B002', 42),
+    ('B20221209001002', 'F001', 11),
+    ('B20221209001002', 'F002', 37),
+    ('B20221209001002', 'F003', 12),
+    ('B20221209001002', 'F004', 44),
+    ('B20221209001002', 'S001', 26),
+    ('B20221209001002', 'S002', 12),
+    ('B20221209001002', 'S003', 20),
+
+
+    ('B20221210001001', 'C001', 35),
+    ('B20221210001001', 'C002', 28),
+    ('B20221210001001', 'C003', 38),
+    ('B20221210001001', 'C004', 44),
+    ('B20221210001001', 'C005', 42),
+    ('B20221210001001', 'C006', 43),
+    ('B20221210001001', 'C007', 24),
+    ('B20221210001001', 'C008', 12),
+    ('B20221210001001', 'C009', 11),
+    ('B20221210001001', 'T001', 16),
+    ('B20221210001001', 'W001', 44),
+    ('B20221210001001', 'W002', 17),
+    ('B20221210001001', 'B001', 27),
+    ('B20221210001001', 'B002', 43),
+    ('B20221210001001', 'F001', 43),
+    ('B20221210001001', 'F002', 23),
+    ('B20221210001001', 'F003', 14),
+    ('B20221210001001', 'F004', 20),
+    ('B20221210001001', 'S001', 26),
+    ('B20221210001001', 'S002', 12),
+    ('B20221210001001', 'S003', 25),
+
+    ('B20221210001002', 'C001', 43),
+    ('B20221210001002', 'C002', 23),
+    ('B20221210001002', 'C003', 22),
+    ('B20221210001002', 'C004', 23),
+    ('B20221210001002', 'C005', 30),
+    ('B20221210001002', 'C006', 46),
+    ('B20221210001002', 'C007', 40),
+    ('B20221210001002', 'C008', 45),
+    ('B20221210001002', 'C009', 49),
+    ('B20221210001002', 'T001', 31),
+    ('B20221210001002', 'W001', 33),
+    ('B20221210001002', 'W002', 18),
+    ('B20221210001002', 'B001', 27),
+    ('B20221210001002', 'B002', 10),
+    ('B20221210001002', 'F001', 21),
+    ('B20221210001002', 'F002', 41),
+    ('B20221210001002', 'F003', 30),
+    ('B20221210001002', 'F004', 38),
+    ('B20221210001002', 'S001', 33),
+    ('B20221210001002', 'S002', 34),
+    ('B20221210001002', 'S003', 31),
+
+
+    ('B20221211001001', 'C001', 46),
+    ('B20221211001001', 'C002', 49),
+    ('B20221211001001', 'C003', 32),
+    ('B20221211001001', 'C004', 47),
+    ('B20221211001001', 'C005', 14),
+    ('B20221211001001', 'C006', 36),
+    ('B20221211001001', 'C007', 27),
+    ('B20221211001001', 'C008', 49),
+    ('B20221211001001', 'C009', 44),
+    ('B20221211001001', 'T001', 26),
+    ('B20221211001001', 'W001', 49),
+    ('B20221211001001', 'W002', 45),
+    ('B20221211001001', 'B001', 26),
+    ('B20221211001001', 'B002', 13),
+    ('B20221211001001', 'F001', 16),
+    ('B20221211001001', 'F002', 44),
+    ('B20221211001001', 'F003', 43),
+    ('B20221211001001', 'F004', 46),
+    ('B20221211001001', 'S001', 24),
+    ('B20221211001001', 'S002', 45),
+    ('B20221211001001', 'S003', 12),
+
+    ('B20221211001002', 'C001', 33),
+    ('B20221211001002', 'C002', 31),
+    ('B20221211001002', 'C003', 24),
+    ('B20221211001002', 'C004', 13),
+    ('B20221211001002', 'C005', 35),
+    ('B20221211001002', 'C006', 12),
+    ('B20221211001002', 'C007', 25),
+    ('B20221211001002', 'C008', 16),
+    ('B20221211001002', 'C009', 11),
+    ('B20221211001002', 'T001', 32),
+    ('B20221211001002', 'W001', 46),
+    ('B20221211001002', 'W002', 33),
+    ('B20221211001002', 'B001', 23),
+    ('B20221211001002', 'B002', 26),
+    ('B20221211001002', 'F001', 36),
+    ('B20221211001002', 'F002', 38),
+    ('B20221211001002', 'F003', 49),
+    ('B20221211001002', 'F004', 10),
+    ('B20221211001002', 'S001', 32),
+    ('B20221211001002', 'S002', 42),
+    ('B20221211001002', 'S003', 42),
+
+
+    ('B20221208002001', 'C001', 27),
+    ('B20221208002001', 'C002', 21),
+    ('B20221208002001', 'C003', 36),
+    ('B20221208002001', 'C004', 44),
+    ('B20221208002001', 'C005', 44),
+    ('B20221208002001', 'C006', 20),
+    ('B20221208002001', 'C007', 38),
+    ('B20221208002001', 'C008', 22),
+    ('B20221208002001', 'C009', 38),
+    ('B20221208002001', 'T001', 36),
+    ('B20221208002001', 'W001', 33),
+    ('B20221208002001', 'W002', 29),
+    ('B20221208002001', 'B001', 14),
+    ('B20221208002001', 'B002', 42),
+    ('B20221208002001', 'F001', 39),
+    ('B20221208002001', 'F002', 26),
+    ('B20221208002001', 'F003', 14),
+    ('B20221208002001', 'F004', 14),
+    ('B20221208002001', 'S001', 25),
+    ('B20221208002001', 'S002', 29),
+    ('B20221208002001', 'S003', 43),
+
+    ('B20221208002002', 'C001', 39),
+    ('B20221208002002', 'C002', 41),
+    ('B20221208002002', 'C003', 38),
+    ('B20221208002002', 'C004', 12),
+    ('B20221208002002', 'C005', 46),
+    ('B20221208002002', 'C006', 25),
+    ('B20221208002002', 'C007', 18),
+    ('B20221208002002', 'C008', 30),
+    ('B20221208002002', 'C009', 31),
+    ('B20221208002002', 'T001', 18),
+    ('B20221208002002', 'W001', 24),
+    ('B20221208002002', 'W002', 40),
+    ('B20221208002002', 'B001', 22),
+    ('B20221208002002', 'B002', 40),
+    ('B20221208002002', 'F001', 29),
+    ('B20221208002002', 'F002', 11),
+    ('B20221208002002', 'F003', 14),
+    ('B20221208002002', 'F004', 12),
+    ('B20221208002002', 'S001', 21),
+    ('B20221208002002', 'S002', 25),
+    ('B20221208002002', 'S003', 48),
+
+
+    ('B20221209002001', 'C001', 18),
+    ('B20221209002001', 'C002', 27),
+    ('B20221209002001', 'C003', 19),
+    ('B20221209002001', 'C004', 18),
+    ('B20221209002001', 'C005', 21),
+    ('B20221209002001', 'C006', 19),
+    ('B20221209002001', 'C007', 19),
+    ('B20221209002001', 'C008', 30),
+    ('B20221209002001', 'C009', 39),
+    ('B20221209002001', 'T001', 22),
+    ('B20221209002001', 'W001', 17),
+    ('B20221209002001', 'W002', 20),
+    ('B20221209002001', 'B001', 45),
+    ('B20221209002001', 'B002', 30),
+    ('B20221209002001', 'F001', 36),
+    ('B20221209002001', 'F002', 34),
+    ('B20221209002001', 'F003', 33),
+    ('B20221209002001', 'F004', 42),
+    ('B20221209002001', 'S001', 15),
+    ('B20221209002001', 'S002', 43),
+    ('B20221209002001', 'S003', 26),
+
+    ('B20221209002002', 'C001', 35),
+    ('B20221209002002', 'C002', 47),
+    ('B20221209002002', 'C003', 22),
+    ('B20221209002002', 'C004', 10),
+    ('B20221209002002', 'C005', 40),
+    ('B20221209002002', 'C006', 10),
+    ('B20221209002002', 'C007', 18),
+    ('B20221209002002', 'C008', 47),
+    ('B20221209002002', 'C009', 40),
+    ('B20221209002002', 'T001', 34),
+    ('B20221209002002', 'W001', 46),
+    ('B20221209002002', 'W002', 12),
+    ('B20221209002002', 'B001', 15),
+    ('B20221209002002', 'B002', 33),
+    ('B20221209002002', 'F001', 29),
+    ('B20221209002002', 'F002', 48),
+    ('B20221209002002', 'F003', 42),
+    ('B20221209002002', 'F004', 15),
+    ('B20221209002002', 'S001', 33),
+    ('B20221209002002', 'S002', 31),
+    ('B20221209002002', 'S003', 22),
+
+
+    ('B20221210002001', 'C001', 34),
+    ('B20221210002001', 'C002', 15),
+    ('B20221210002001', 'C003', 16),
+    ('B20221210002001', 'C004', 21),
+    ('B20221210002001', 'C005', 22),
+    ('B20221210002001', 'C006', 45),
+    ('B20221210002001', 'C007', 47),
+    ('B20221210002001', 'C008', 19),
+    ('B20221210002001', 'C009', 29),
+    ('B20221210002001', 'T001', 15),
+    ('B20221210002001', 'W001', 12),
+    ('B20221210002001', 'W002', 40),
+    ('B20221210002001', 'B001', 49),
+    ('B20221210002001', 'B002', 15),
+    ('B20221210002001', 'F001', 20),
+    ('B20221210002001', 'F002', 39),
+    ('B20221210002001', 'F003', 48),
+    ('B20221210002001', 'F004', 46),
+    ('B20221210002001', 'S001', 14),
+    ('B20221210002001', 'S002', 39),
+    ('B20221210002001', 'S003', 38),
+
+    ('B20221210002002', 'C001', 46),
+    ('B20221210002002', 'C002', 40),
+    ('B20221210002002', 'C003', 23),
+    ('B20221210002002', 'C004', 49),
+    ('B20221210002002', 'C005', 19),
+    ('B20221210002002', 'C006', 42),
+    ('B20221210002002', 'C007', 15),
+    ('B20221210002002', 'C008', 49),
+    ('B20221210002002', 'C009', 26),
+    ('B20221210002002', 'T001', 43),
+    ('B20221210002002', 'W001', 20),
+    ('B20221210002002', 'W002', 47),
+    ('B20221210002002', 'B001', 39),
+    ('B20221210002002', 'B002', 20),
+    ('B20221210002002', 'F001', 29),
+    ('B20221210002002', 'F002', 24),
+    ('B20221210002002', 'F003', 21),
+    ('B20221210002002', 'F004', 18),
+    ('B20221210002002', 'S001', 44),
+    ('B20221210002002', 'S002', 49),
+    ('B20221210002002', 'S003', 34),
+
+
+    ('B20221211002001', 'C001', 48),
+    ('B20221211002001', 'C002', 23),
+    ('B20221211002001', 'C003', 13),
+    ('B20221211002001', 'C004', 25),
+    ('B20221211002001', 'C005', 12),
+    ('B20221211002001', 'C006', 32),
+    ('B20221211002001', 'C007', 13),
+    ('B20221211002001', 'C008', 20),
+    ('B20221211002001', 'C009', 48),
+    ('B20221211002001', 'T001', 17),
+    ('B20221211002001', 'W001', 48),
+    ('B20221211002001', 'W002', 49),
+    ('B20221211002001', 'B001', 12),
+    ('B20221211002001', 'B002', 20),
+    ('B20221211002001', 'F001', 11),
+    ('B20221211002001', 'F002', 12),
+    ('B20221211002001', 'F003', 18),
+    ('B20221211002001', 'F004', 34),
+    ('B20221211002001', 'S001', 10),
+    ('B20221211002001', 'S002', 46),
+    ('B20221211002001', 'S003', 10),
+
+    ('B20221211002002', 'C001', 10),
+    ('B20221211002002', 'C002', 39),
+    ('B20221211002002', 'C003', 37),
+    ('B20221211002002', 'C004', 16),
+    ('B20221211002002', 'C005', 28),
+    ('B20221211002002', 'C006', 26),
+    ('B20221211002002', 'C007', 28),
+    ('B20221211002002', 'C008', 18),
+    ('B20221211002002', 'C009', 38),
+    ('B20221211002002', 'T001', 43),
+    ('B20221211002002', 'W001', 20),
+    ('B20221211002002', 'W002', 22),
+    ('B20221211002002', 'B001', 40),
+    ('B20221211002002', 'B002', 28),
+    ('B20221211002002', 'F001', 42),
+    ('B20221211002002', 'F002', 36),
+    ('B20221211002002', 'F003', 19),
+    ('B20221211002002', 'F004', 18),
+    ('B20221211002002', 'S001', 19),
+    ('B20221211002002', 'S002', 31),
+    ('B20221211002002', 'S003', 15)
+
+
+
+insert into SupOrder
+values
+    ('N20221208001001', '001', 'U001001', '2022/12/08', 'B20221208001001'),
+    ('N20221208001002', '001', 'U001001', '2022/12/08', 'B20221208001002'),
+    ('N20221208002001', '002', 'U002001', '2022/12/08', 'B20221208002001'),
+    ('N20221208002002', '002', 'U002001', '2022/12/08', 'B20221208002002'),
+    ('N20221209001001', '001', 'U001001', '2022/12/09', 'B20221209001001'),
+    ('N20221209001002', '001', 'U001001', '2022/12/09', 'B20221209001002'),
+    ('N20221209002001', '002', 'U002001', '2022/12/09', 'B20221209002001'),
+    ('N20221209002002', '002', 'U002001', '2022/12/09', 'B20221209002002'),
+    ('N20221210001001', '001', 'U001001', '2022/12/10', 'B20221210001001'),
+    ('N20221210001002', '001', 'U001001', '2022/12/10', 'B20221210001002'),
+    ('N20221210002001', '002', 'U002001', '2022/12/10', 'B20221210002001'),
+    ('N20221210002002', '002', 'U002001', '2022/12/10', 'B20221210002002'),
+    ('N20221211001001', '001', 'U001001', '2022/12/11', 'B20221211001001'),
+    ('N20221211001002', '001', 'U001001', '2022/12/11', 'B20221211001002'),
+    ('N20221211002001', '002', 'U002001', '2022/12/11', 'B20221211002001'),
+    ('N20221211002002', '002', 'U002001', '2022/12/11', 'B20221211002002')
+
+
+insert into SupponceOrderRegister
+values('N20221208001001', 'C001', 20)
+insert into SupponceOrderRegister
+values('N20221208001001', 'C002', 10)
+insert into SupponceOrderRegister
+values('N20221208001001', 'C003', 27)
+insert into SupponceOrderRegister
+values('N20221208001001', 'C004', 19)
+insert into SupponceOrderRegister
+values('N20221208001001', 'C005', 37)
+insert into SupponceOrderRegister
+values('N20221208001001', 'C006', 17)
+insert into SupponceOrderRegister
+values('N20221208001001', 'C007', 10)
+insert into SupponceOrderRegister
+values('N20221208001001', 'C008', 49)
+insert into SupponceOrderRegister
+values('N20221208001001', 'C009', 26)
+insert into SupponceOrderRegister
+values('N20221208001001', 'T001', 22)
+insert into SupponceOrderRegister
+values('N20221208001001', 'W001', 37)
+insert into SupponceOrderRegister
+values('N20221208001001', 'W002', 11)
+insert into SupponceOrderRegister
+values('N20221208001001', 'B001', 27)
+insert into SupponceOrderRegister
+values('N20221208001001', 'B002', 10)
+insert into SupponceOrderRegister
+values('N20221208001001', 'F001', 25)
+insert into SupponceOrderRegister
+values('N20221208001001', 'F002', 11)
+insert into SupponceOrderRegister
+values('N20221208001001', 'F003', 45)
+insert into SupponceOrderRegister
+values('N20221208001001', 'F004', 19)
+insert into SupponceOrderRegister
+values('N20221208001001', 'S001', 26)
+insert into SupponceOrderRegister
+values('N20221208001001', 'S002', 37)
+insert into SupponceOrderRegister
+values('N20221208001001', 'S003', 24)
+insert into SupponceOrderRegister
+values('N20221208001002', 'C001', 48)
+insert into SupponceOrderRegister
+values('N20221208001002', 'C002', 17)
+insert into SupponceOrderRegister
+values('N20221208001002', 'C003', 38)
+insert into SupponceOrderRegister
+values('N20221208001002', 'C004', 35)
+insert into SupponceOrderRegister
+values('N20221208001002', 'C005', 16)
+insert into SupponceOrderRegister
+values('N20221208001002', 'C006', 31)
+insert into SupponceOrderRegister
+values('N20221208001002', 'C007', 43)
+insert into SupponceOrderRegister
+values('N20221208001002', 'C008', 47)
+insert into SupponceOrderRegister
+values('N20221208001002', 'C009', 32)
+insert into SupponceOrderRegister
+values('N20221208001002', 'T001', 18)
+insert into SupponceOrderRegister
+values('N20221208001002', 'W001', 36)
+insert into SupponceOrderRegister
+values('N20221208001002', 'W002', 41)
+insert into SupponceOrderRegister
+values('N20221208001002', 'B001', 44)
+insert into SupponceOrderRegister
+values('N20221208001002', 'B002', 45)
+insert into SupponceOrderRegister
+values('N20221208001002', 'F001', 26)
+insert into SupponceOrderRegister
+values('N20221208001002', 'F002', 27)
+insert into SupponceOrderRegister
+values('N20221208001002', 'F003', 33)
+insert into SupponceOrderRegister
+values('N20221208001002', 'F004', 20)
+insert into SupponceOrderRegister
+values('N20221208001002', 'S001', 15)
+insert into SupponceOrderRegister
+values('N20221208001002', 'S002', 37)
+insert into SupponceOrderRegister
+values('N20221208001002', 'S003', 24)
+insert into SupponceOrderRegister
+values('N20221209001001', 'C001', 17)
+insert into SupponceOrderRegister
+values('N20221209001001', 'C002', 37)
+insert into SupponceOrderRegister
+values('N20221209001001', 'C003', 32)
+insert into SupponceOrderRegister
+values('N20221209001001', 'C004', 21)
+insert into SupponceOrderRegister
+values('N20221209001001', 'C005', 16)
+insert into SupponceOrderRegister
+values('N20221209001001', 'C006', 10)
+insert into SupponceOrderRegister
+values('N20221209001001', 'C007', 12)
+insert into SupponceOrderRegister
+values('N20221209001001', 'C008', 16)
+insert into SupponceOrderRegister
+values('N20221209001001', 'C009', 18)
+insert into SupponceOrderRegister
+values('N20221209001001', 'T001', 35)
+insert into SupponceOrderRegister
+values('N20221209001001', 'W001', 11)
+insert into SupponceOrderRegister
+values('N20221209001001', 'W002', 43)
+insert into SupponceOrderRegister
+values('N20221209001001', 'B001', 40)
+insert into SupponceOrderRegister
+values('N20221209001001', 'B002', 31)
+insert into SupponceOrderRegister
+values('N20221209001001', 'F001', 13)
+insert into SupponceOrderRegister
+values('N20221209001001', 'F002', 22)
+insert into SupponceOrderRegister
+values('N20221209001001', 'F003', 30)
+insert into SupponceOrderRegister
+values('N20221209001001', 'F004', 21)
+insert into SupponceOrderRegister
+values('N20221209001001', 'S001', 13)
+insert into SupponceOrderRegister
+values('N20221209001001', 'S002', 16)
+insert into SupponceOrderRegister
+values('N20221209001001', 'S003', 43)
+insert into SupponceOrderRegister
+values('N20221209001002', 'C001', 39)
+insert into SupponceOrderRegister
+values('N20221209001002', 'C002', 44)
+insert into SupponceOrderRegister
+values('N20221209001002', 'C003', 23)
+insert into SupponceOrderRegister
+values('N20221209001002', 'C004', 29)
+insert into SupponceOrderRegister
+values('N20221209001002', 'C005', 25)
+insert into SupponceOrderRegister
+values('N20221209001002', 'C006', 44)
+insert into SupponceOrderRegister
+values('N20221209001002', 'C007', 18)
+insert into SupponceOrderRegister
+values('N20221209001002', 'C008', 34)
+insert into SupponceOrderRegister
+values('N20221209001002', 'C009', 37)
+insert into SupponceOrderRegister
+values('N20221209001002', 'T001', 47)
+insert into SupponceOrderRegister
+values('N20221209001002', 'W001', 20)
+insert into SupponceOrderRegister
+values('N20221209001002', 'W002', 28)
+insert into SupponceOrderRegister
+values('N20221209001002', 'B001', 33)
+insert into SupponceOrderRegister
+values('N20221209001002', 'B002', 42)
+insert into SupponceOrderRegister
+values('N20221209001002', 'F001', 11)
+insert into SupponceOrderRegister
+values('N20221209001002', 'F002', 37)
+insert into SupponceOrderRegister
+values('N20221209001002', 'F003', 12)
+insert into SupponceOrderRegister
+values('N20221209001002', 'F004', 44)
+insert into SupponceOrderRegister
+values('N20221209001002', 'S001', 26)
+insert into SupponceOrderRegister
+values('N20221209001002', 'S002', 12)
+insert into SupponceOrderRegister
+values('N20221209001002', 'S003', 20)
+insert into SupponceOrderRegister
+values('N20221210001001', 'C001', 35)
+insert into SupponceOrderRegister
+values('N20221210001001', 'C002', 28)
+insert into SupponceOrderRegister
+values('N20221210001001', 'C003', 38)
+insert into SupponceOrderRegister
+values('N20221210001001', 'C004', 44)
+insert into SupponceOrderRegister
+values('N20221210001001', 'C005', 42)
+insert into SupponceOrderRegister
+values('N20221210001001', 'C006', 43)
+insert into SupponceOrderRegister
+values('N20221210001001', 'C007', 24)
+insert into SupponceOrderRegister
+values('N20221210001001', 'C008', 12)
+insert into SupponceOrderRegister
+values('N20221210001001', 'C009', 11)
+insert into SupponceOrderRegister
+values('N20221210001001', 'T001', 16)
+insert into SupponceOrderRegister
+values('N20221210001001', 'W001', 44)
+insert into SupponceOrderRegister
+values('N20221210001001', 'W002', 17)
+insert into SupponceOrderRegister
+values('N20221210001001', 'B001', 27)
+insert into SupponceOrderRegister
+values('N20221210001001', 'B002', 43)
+insert into SupponceOrderRegister
+values('N20221210001001', 'F001', 43)
+insert into SupponceOrderRegister
+values('N20221210001001', 'F002', 23)
+insert into SupponceOrderRegister
+values('N20221210001001', 'F003', 14)
+insert into SupponceOrderRegister
+values('N20221210001001', 'F004', 20)
+insert into SupponceOrderRegister
+values('N20221210001001', 'S001', 26)
+insert into SupponceOrderRegister
+values('N20221210001001', 'S002', 12)
+insert into SupponceOrderRegister
+values('N20221210001001', 'S003', 25)
+insert into SupponceOrderRegister
+values('N20221210001002', 'C001', 43)
+insert into SupponceOrderRegister
+values('N20221210001002', 'C002', 23)
+insert into SupponceOrderRegister
+values('N20221210001002', 'C003', 22)
+insert into SupponceOrderRegister
+values('N20221210001002', 'C004', 23)
+insert into SupponceOrderRegister
+values('N20221210001002', 'C005', 30)
+insert into SupponceOrderRegister
+values('N20221210001002', 'C006', 46)
+insert into SupponceOrderRegister
+values('N20221210001002', 'C007', 40)
+insert into SupponceOrderRegister
+values('N20221210001002', 'C008', 45)
+insert into SupponceOrderRegister
+values('N20221210001002', 'C009', 49)
+insert into SupponceOrderRegister
+values('N20221210001002', 'T001', 31)
+insert into SupponceOrderRegister
+values('N20221210001002', 'W001', 33)
+insert into SupponceOrderRegister
+values('N20221210001002', 'W002', 18)
+insert into SupponceOrderRegister
+values('N20221210001002', 'B001', 27)
+insert into SupponceOrderRegister
+values('N20221210001002', 'B002', 10)
+insert into SupponceOrderRegister
+values('N20221210001002', 'F001', 21)
+insert into SupponceOrderRegister
+values('N20221210001002', 'F002', 41)
+insert into SupponceOrderRegister
+values('N20221210001002', 'F003', 30)
+insert into SupponceOrderRegister
+values('N20221210001002', 'F004', 38)
+insert into SupponceOrderRegister
+values('N20221210001002', 'S001', 33)
+insert into SupponceOrderRegister
+values('N20221210001002', 'S002', 34)
+insert into SupponceOrderRegister
+values('N20221210001002', 'S003', 31)
+insert into SupponceOrderRegister
+values('N20221211001001', 'C001', 46)
+insert into SupponceOrderRegister
+values('N20221211001001', 'C002', 49)
+insert into SupponceOrderRegister
+values('N20221211001001', 'C003', 32)
+insert into SupponceOrderRegister
+values('N20221211001001', 'C004', 47)
+insert into SupponceOrderRegister
+values('N20221211001001', 'C005', 14)
+insert into SupponceOrderRegister
+values('N20221211001001', 'C006', 36)
+insert into SupponceOrderRegister
+values('N20221211001001', 'C007', 27)
+insert into SupponceOrderRegister
+values('N20221211001001', 'C008', 49)
+insert into SupponceOrderRegister
+values('N20221211001001', 'C009', 44)
+insert into SupponceOrderRegister
+values('N20221211001001', 'T001', 26)
+insert into SupponceOrderRegister
+values('N20221211001001', 'W001', 49)
+insert into SupponceOrderRegister
+values('N20221211001001', 'W002', 45)
+insert into SupponceOrderRegister
+values('N20221211001001', 'B001', 26)
+insert into SupponceOrderRegister
+values('N20221211001001', 'B002', 13)
+insert into SupponceOrderRegister
+values('N20221211001001', 'F001', 16)
+insert into SupponceOrderRegister
+values('N20221211001001', 'F002', 44)
+insert into SupponceOrderRegister
+values('N20221211001001', 'F003', 43)
+insert into SupponceOrderRegister
+values('N20221211001001', 'F004', 46)
+insert into SupponceOrderRegister
+values('N20221211001001', 'S001', 24)
+insert into SupponceOrderRegister
+values('N20221211001001', 'S002', 45)
+insert into SupponceOrderRegister
+values('N20221211001001', 'S003', 12)
+insert into SupponceOrderRegister
+values('N20221211001002', 'C001', 33)
+insert into SupponceOrderRegister
+values('N20221211001002', 'C002', 31)
+insert into SupponceOrderRegister
+values('N20221211001002', 'C003', 24)
+insert into SupponceOrderRegister
+values('N20221211001002', 'C004', 13)
+insert into SupponceOrderRegister
+values('N20221211001002', 'C005', 35)
+insert into SupponceOrderRegister
+values('N20221211001002', 'C006', 12)
+insert into SupponceOrderRegister
+values('N20221211001002', 'C007', 25)
+insert into SupponceOrderRegister
+values('N20221211001002', 'C008', 16)
+insert into SupponceOrderRegister
+values('N20221211001002', 'C009', 11)
+insert into SupponceOrderRegister
+values('N20221211001002', 'T001', 32)
+insert into SupponceOrderRegister
+values('N20221211001002', 'W001', 46)
+insert into SupponceOrderRegister
+values('N20221211001002', 'W002', 33)
+insert into SupponceOrderRegister
+values('N20221211001002', 'B001', 23)
+insert into SupponceOrderRegister
+values('N20221211001002', 'B002', 26)
+insert into SupponceOrderRegister
+values('N20221211001002', 'F001', 36)
+insert into SupponceOrderRegister
+values('N20221211001002', 'F002', 38)
+insert into SupponceOrderRegister
+values('N20221211001002', 'F003', 49)
+insert into SupponceOrderRegister
+values('N20221211001002', 'F004', 10)
+insert into SupponceOrderRegister
+values('N20221211001002', 'S001', 32)
+insert into SupponceOrderRegister
+values('N20221211001002', 'S002', 42)
+insert into SupponceOrderRegister
+values('N20221211001002', 'S003', 42)
+insert into SupponceOrderRegister
+values('N20221208002001', 'C001', 27)
+insert into SupponceOrderRegister
+values('N20221208002001', 'C002', 21)
+insert into SupponceOrderRegister
+values('N20221208002001', 'C003', 36)
+insert into SupponceOrderRegister
+values('N20221208002001', 'C004', 44)
+insert into SupponceOrderRegister
+values('N20221208002001', 'C005', 44)
+insert into SupponceOrderRegister
+values('N20221208002001', 'C006', 20)
+insert into SupponceOrderRegister
+values('N20221208002001', 'C007', 38)
+insert into SupponceOrderRegister
+values('N20221208002001', 'C008', 22)
+insert into SupponceOrderRegister
+values('N20221208002001', 'C009', 38)
+insert into SupponceOrderRegister
+values('N20221208002001', 'T001', 36)
+insert into SupponceOrderRegister
+values('N20221208002001', 'W001', 33)
+insert into SupponceOrderRegister
+values('N20221208002001', 'W002', 29)
+insert into SupponceOrderRegister
+values('N20221208002001', 'B001', 14)
+insert into SupponceOrderRegister
+values('N20221208002001', 'B002', 42)
+insert into SupponceOrderRegister
+values('N20221208002001', 'F001', 39)
+insert into SupponceOrderRegister
+values('N20221208002001', 'F002', 26)
+insert into SupponceOrderRegister
+values('N20221208002001', 'F003', 14)
+insert into SupponceOrderRegister
+values('N20221208002001', 'F004', 14)
+insert into SupponceOrderRegister
+values('N20221208002001', 'S001', 25)
+insert into SupponceOrderRegister
+values('N20221208002001', 'S002', 29)
+insert into SupponceOrderRegister
+values('N20221208002001', 'S003', 43)
+insert into SupponceOrderRegister
+values('N20221208002002', 'C001', 39)
+insert into SupponceOrderRegister
+values('N20221208002002', 'C002', 41)
+insert into SupponceOrderRegister
+values('N20221208002002', 'C003', 38)
+insert into SupponceOrderRegister
+values('N20221208002002', 'C004', 12)
+insert into SupponceOrderRegister
+values('N20221208002002', 'C005', 46)
+insert into SupponceOrderRegister
+values('N20221208002002', 'C006', 25)
+insert into SupponceOrderRegister
+values('N20221208002002', 'C007', 18)
+insert into SupponceOrderRegister
+values('N20221208002002', 'C008', 30)
+insert into SupponceOrderRegister
+values('N20221208002002', 'C009', 31)
+insert into SupponceOrderRegister
+values('N20221208002002', 'T001', 18)
+insert into SupponceOrderRegister
+values('N20221208002002', 'W001', 24)
+insert into SupponceOrderRegister
+values('N20221208002002', 'W002', 40)
+insert into SupponceOrderRegister
+values('N20221208002002', 'B001', 22)
+insert into SupponceOrderRegister
+values('N20221208002002', 'B002', 40)
+insert into SupponceOrderRegister
+values('N20221208002002', 'F001', 29)
+insert into SupponceOrderRegister
+values('N20221208002002', 'F002', 11)
+insert into SupponceOrderRegister
+values('N20221208002002', 'F003', 14)
+insert into SupponceOrderRegister
+values('N20221208002002', 'F004', 12)
+insert into SupponceOrderRegister
+values('N20221208002002', 'S001', 21)
+insert into SupponceOrderRegister
+values('N20221208002002', 'S002', 25)
+insert into SupponceOrderRegister
+values('N20221208002002', 'S003', 48)
+insert into SupponceOrderRegister
+values('N20221209002001', 'C001', 18)
+insert into SupponceOrderRegister
+values('N20221209002001', 'C002', 27)
+insert into SupponceOrderRegister
+values('N20221209002001', 'C003', 19)
+insert into SupponceOrderRegister
+values('N20221209002001', 'C004', 18)
+insert into SupponceOrderRegister
+values('N20221209002001', 'C005', 21)
+insert into SupponceOrderRegister
+values('N20221209002001', 'C006', 19)
+insert into SupponceOrderRegister
+values('N20221209002001', 'C007', 19)
+insert into SupponceOrderRegister
+values('N20221209002001', 'C008', 30)
+insert into SupponceOrderRegister
+values('N20221209002001', 'C009', 39)
+insert into SupponceOrderRegister
+values('N20221209002001', 'T001', 22)
+insert into SupponceOrderRegister
+values('N20221209002001', 'W001', 17)
+insert into SupponceOrderRegister
+values('N20221209002001', 'W002', 20)
+insert into SupponceOrderRegister
+values('N20221209002001', 'B001', 45)
+insert into SupponceOrderRegister
+values('N20221209002001', 'B002', 30)
+insert into SupponceOrderRegister
+values('N20221209002001', 'F001', 36)
+insert into SupponceOrderRegister
+values('N20221209002001', 'F002', 34)
+insert into SupponceOrderRegister
+values('N20221209002001', 'F003', 33)
+insert into SupponceOrderRegister
+values('N20221209002001', 'F004', 42)
+insert into SupponceOrderRegister
+values('N20221209002001', 'S001', 15)
+insert into SupponceOrderRegister
+values('N20221209002001', 'S002', 43)
+insert into SupponceOrderRegister
+values('N20221209002001', 'S003', 26)
+insert into SupponceOrderRegister
+values('N20221209002002', 'C001', 35)
+insert into SupponceOrderRegister
+values('N20221209002002', 'C002', 47)
+insert into SupponceOrderRegister
+values('N20221209002002', 'C003', 22)
+insert into SupponceOrderRegister
+values('N20221209002002', 'C004', 10)
+insert into SupponceOrderRegister
+values('N20221209002002', 'C005', 40)
+insert into SupponceOrderRegister
+values('N20221209002002', 'C006', 10)
+insert into SupponceOrderRegister
+values('N20221209002002', 'C007', 18)
+insert into SupponceOrderRegister
+values('N20221209002002', 'C008', 47)
+insert into SupponceOrderRegister
+values('N20221209002002', 'C009', 40)
+insert into SupponceOrderRegister
+values('N20221209002002', 'T001', 34)
+insert into SupponceOrderRegister
+values('N20221209002002', 'W001', 46)
+insert into SupponceOrderRegister
+values('N20221209002002', 'W002', 12)
+insert into SupponceOrderRegister
+values('N20221209002002', 'B001', 15)
+insert into SupponceOrderRegister
+values('N20221209002002', 'B002', 33)
+insert into SupponceOrderRegister
+values('N20221209002002', 'F001', 29)
+insert into SupponceOrderRegister
+values('N20221209002002', 'F002', 48)
+insert into SupponceOrderRegister
+values('N20221209002002', 'F003', 42)
+insert into SupponceOrderRegister
+values('N20221209002002', 'F004', 15)
+insert into SupponceOrderRegister
+values('N20221209002002', 'S001', 33)
+insert into SupponceOrderRegister
+values('N20221209002002', 'S002', 31)
+insert into SupponceOrderRegister
+values('N20221209002002', 'S003', 22)
+insert into SupponceOrderRegister
+values('N20221210002001', 'C001', 34)
+insert into SupponceOrderRegister
+values('N20221210002001', 'C002', 15)
+insert into SupponceOrderRegister
+values('N20221210002001', 'C003', 16)
+insert into SupponceOrderRegister
+values('N20221210002001', 'C004', 21)
+insert into SupponceOrderRegister
+values('N20221210002001', 'C005', 22)
+insert into SupponceOrderRegister
+values('N20221210002001', 'C006', 45)
+insert into SupponceOrderRegister
+values('N20221210002001', 'C007', 47)
+insert into SupponceOrderRegister
+values('N20221210002001', 'C008', 19)
+insert into SupponceOrderRegister
+values('N20221210002001', 'C009', 29)
+insert into SupponceOrderRegister
+values('N20221210002001', 'T001', 15)
+insert into SupponceOrderRegister
+values('N20221210002001', 'W001', 12)
+insert into SupponceOrderRegister
+values('N20221210002001', 'W002', 40)
+insert into SupponceOrderRegister
+values('N20221210002001', 'B001', 49)
+insert into SupponceOrderRegister
+values('N20221210002001', 'B002', 15)
+insert into SupponceOrderRegister
+values('N20221210002001', 'F001', 20)
+insert into SupponceOrderRegister
+values('N20221210002001', 'F002', 39)
+insert into SupponceOrderRegister
+values('N20221210002001', 'F003', 48)
+insert into SupponceOrderRegister
+values('N20221210002001', 'F004', 46)
+insert into SupponceOrderRegister
+values('N20221210002001', 'S001', 14)
+insert into SupponceOrderRegister
+values('N20221210002001', 'S002', 39)
+insert into SupponceOrderRegister
+values('N20221210002001', 'S003', 38)
+insert into SupponceOrderRegister
+values('N20221210002002', 'C001', 46)
+insert into SupponceOrderRegister
+values('N20221210002002', 'C002', 40)
+insert into SupponceOrderRegister
+values('N20221210002002', 'C003', 23)
+insert into SupponceOrderRegister
+values('N20221210002002', 'C004', 49)
+insert into SupponceOrderRegister
+values('N20221210002002', 'C005', 19)
+insert into SupponceOrderRegister
+values('N20221210002002', 'C006', 42)
+insert into SupponceOrderRegister
+values('N20221210002002', 'C007', 15)
+insert into SupponceOrderRegister
+values('N20221210002002', 'C008', 49)
+insert into SupponceOrderRegister
+values('N20221210002002', 'C009', 26)
+insert into SupponceOrderRegister
+values('N20221210002002', 'T001', 43)
+insert into SupponceOrderRegister
+values('N20221210002002', 'W001', 20)
+insert into SupponceOrderRegister
+values('N20221210002002', 'W002', 47)
+insert into SupponceOrderRegister
+values('N20221210002002', 'B001', 39)
+insert into SupponceOrderRegister
+values('N20221210002002', 'B002', 20)
+insert into SupponceOrderRegister
+values('N20221210002002', 'F001', 29)
+insert into SupponceOrderRegister
+values('N20221210002002', 'F002', 24)
+insert into SupponceOrderRegister
+values('N20221210002002', 'F003', 21)
+insert into SupponceOrderRegister
+values('N20221210002002', 'F004', 18)
+insert into SupponceOrderRegister
+values('N20221210002002', 'S001', 44)
+insert into SupponceOrderRegister
+values('N20221210002002', 'S002', 49)
+insert into SupponceOrderRegister
+values('N20221210002002', 'S003', 34)
+insert into SupponceOrderRegister
+values('N20221211002001', 'C001', 48)
+insert into SupponceOrderRegister
+values('N20221211002001', 'C002', 23)
+insert into SupponceOrderRegister
+values('N20221211002001', 'C003', 13)
+insert into SupponceOrderRegister
+values('N20221211002001', 'C004', 25)
+insert into SupponceOrderRegister
+values('N20221211002001', 'C005', 12)
+insert into SupponceOrderRegister
+values('N20221211002001', 'C006', 32)
+insert into SupponceOrderRegister
+values('N20221211002001', 'C007', 13)
+insert into SupponceOrderRegister
+values('N20221211002001', 'C008', 20)
+insert into SupponceOrderRegister
+values('N20221211002001', 'C009', 48)
+insert into SupponceOrderRegister
+values('N20221211002001', 'T001', 17)
+insert into SupponceOrderRegister
+values('N20221211002001', 'W001', 48)
+insert into SupponceOrderRegister
+values('N20221211002001', 'W002', 49)
+insert into SupponceOrderRegister
+values('N20221211002001', 'B001', 12)
+insert into SupponceOrderRegister
+values('N20221211002001', 'B002', 20)
+insert into SupponceOrderRegister
+values('N20221211002001', 'F001', 11)
+insert into SupponceOrderRegister
+values('N20221211002001', 'F002', 12)
+insert into SupponceOrderRegister
+values('N20221211002001', 'F003', 18)
+insert into SupponceOrderRegister
+values('N20221211002001', 'F004', 34)
+insert into SupponceOrderRegister
+values('N20221211002001', 'S001', 10)
+insert into SupponceOrderRegister
+values('N20221211002001', 'S002', 46)
+insert into SupponceOrderRegister
+values('N20221211002001', 'S003', 10)
+insert into SupponceOrderRegister
+values('N20221211002002', 'C001', 10)
+insert into SupponceOrderRegister
+values('N20221211002002', 'C002', 39)
+insert into SupponceOrderRegister
+values('N20221211002002', 'C003', 37)
+insert into SupponceOrderRegister
+values('N20221211002002', 'C004', 16)
+insert into SupponceOrderRegister
+values('N20221211002002', 'C005', 28)
+insert into SupponceOrderRegister
+values('N20221211002002', 'C006', 26)
+insert into SupponceOrderRegister
+values('N20221211002002', 'C007', 28)
+insert into SupponceOrderRegister
+values('N20221211002002', 'C008', 18)
+insert into SupponceOrderRegister
+values('N20221211002002', 'C009', 38)
+insert into SupponceOrderRegister
+values('N20221211002002', 'T001', 43)
+insert into SupponceOrderRegister
+values('N20221211002002', 'W001', 20)
+insert into SupponceOrderRegister
+values('N20221211002002', 'W002', 22)
+insert into SupponceOrderRegister
+values('N20221211002002', 'B001', 40)
+insert into SupponceOrderRegister
+values('N20221211002002', 'B002', 28)
+insert into SupponceOrderRegister
+values('N20221211002002', 'F001', 42)
+insert into SupponceOrderRegister
+values('N20221211002002', 'F002', 36)
+insert into SupponceOrderRegister
+values('N20221211002002', 'F003', 19)
+insert into SupponceOrderRegister
+values('N20221211002002', 'F004', 18)
+insert into SupponceOrderRegister
+values('N20221211002002', 'S001', 19)
+insert into SupponceOrderRegister
+values('N20221211002002', 'S002', 31)
+insert into SupponceOrderRegister
+values('N20221211002002', 'S003', 15)

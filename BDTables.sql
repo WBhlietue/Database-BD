@@ -3,6 +3,45 @@ create database DB;
 use DB;
 
 
+drop table SupponceOrderRegister
+drop table SupOrder
+drop table ItemOrderRegister
+drop table ItemOr
+drop table SalaryRegister
+drop table Salary
+drop table Output
+drop table Input
+drop table Finance
+drop table EmployeeRegister
+drop table EmpReg
+drop table CustomerOrderRegister
+drop table CusOrder
+drop table Employee
+drop table Items
+drop table Depart
+
+delete from SupponceOrderRegister
+delete from SupOrder
+delete from ItemOrderRegister
+delete from ItemOr
+delete from SalaryRegister
+delete from Salary
+delete from Output
+delete from Input
+delete from Finance
+delete from EmployeeRegister
+delete from EmpReg
+delete from CustomerOrderRegister
+delete from CusOrder
+delete from Employee
+delete from Items
+delete from Depart
+
+
+
+
+
+
 create table Depart
 (
     dep_code char(3) primary key,
@@ -45,9 +84,6 @@ create table CustomerOrderRegister
     foreign key (order_num) references CusOrder(order_num),
     foreign key (item_code) references Items(item_code)
 )
-
-
-
 
 create table EmpReg
 (
@@ -119,8 +155,14 @@ create table ItemOr
     suppName varchar(50),
     foreign key (dep_code) references Depart(dep_code)
 )
-
-
+create table ItemOrderRegister
+(
+    itemOrderCode char(15),
+    item_code char(4),
+    num integer,
+    foreign key (itemOrderCode) references ItemOr(itemOrderCode),
+    foreign key (item_code) references Items(item_code)
+)
 
 create table SupOrder
 (
@@ -129,7 +171,6 @@ create table SupOrder
     emp_code char(7),
     order_date char(10),
     itemOrderCode char(15),
-    suppName varchar(50),
     foreign key (itemOrderCode) references ItemOr(itemOrderCode),
     foreign key (dep_code) references Depart(dep_code),
     foreign key(emp_code) references Employee(emp_code)

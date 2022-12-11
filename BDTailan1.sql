@@ -67,10 +67,11 @@ begin
     where salary_date = @date and dep_code = @depCode
 end
 
+select * from Input
 
 use DB;
 
-exec FinanceTailan1 '2022/12/12', '002'
+exec FinanceTailan1 '2022/12/08', '002'
 
 exec FinanceTailanOutput '2022/12/12', '002'
 
