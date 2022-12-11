@@ -20,22 +20,22 @@ drop table Employee
 drop table Items
 drop table Depart
 
-delete from SupponceOrderRegister
-delete from SupOrder
-delete from ItemOrderRegister
-delete from ItemOr
-delete from SalaryRegister
-delete from Salary
-delete from Output
-delete from Input
-delete from Finance
-delete from EmployeeRegister
-delete from EmpReg
-delete from CustomerOrderRegister
-delete from CusOrder
-delete from Employee
-delete from Items
-delete from Depart
+-- delete from SupponceOrderRegister
+-- delete from SupOrder
+-- delete from ItemOrderRegister
+-- delete from ItemOr
+-- delete from SalaryRegister
+-- delete from Salary
+-- delete from Output
+-- delete from Input
+-- delete from Finance
+-- delete from EmployeeRegister
+-- delete from EmpReg
+-- delete from CustomerOrderRegister
+-- delete from CusOrder
+-- delete from Employee
+-- delete from Items
+-- delete from Depart
 
 
 

@@ -1,6 +1,6 @@
 -- Sanhiigiin tailan
 
-create proc FinanceTailan1
+alter proc FinanceTailan1
     (@date char(10),
     @depCode char(3))
 as
@@ -33,6 +33,10 @@ begin
     from Output
         join Finance on Finance.finance_code = Output.finance_code
     where financeDate = @date and dep_code = @depCode
+    select sum( output_value) as 'Total'
+    from Output
+        join Finance on Finance.finance_code = Output.finance_code
+    where financeDate = @date and dep_code = @depCode
 end
 
 go
@@ -43,6 +47,10 @@ as
 begin
     select @date as 'Date', @depCode as 'Depart'
     select input_name, input_value
+    from Input
+        join Finance on Finance.finance_code = Input.finance_code
+    where financeDate = @date and dep_code = @depCode
+    select sum(input_value) as 'Total'
     from Input
         join Finance on Finance.finance_code = Input.finance_code
     where financeDate = @date and dep_code = @depCode
@@ -60,21 +68,21 @@ begin
         join SalaryRegister on SalaryRegister.salary_code = Salary.salary_code
         join Employee on SalaryRegister.emp_code = Employee.emp_code
     where salary_date = @date and dep_code = @depCode
-    select  sum(bonus + emp_salary) as 'Total'
+    select sum(bonus + emp_salary) as 'Total'
     from Salary
         join SalaryRegister on SalaryRegister.salary_code = Salary.salary_code
         join Employee on SalaryRegister.emp_code = Employee.emp_code
     where salary_date = @date and dep_code = @depCode
 end
 
-select * from Input
+select *
+from Input
 
-use DB;
 
-exec FinanceTailan1 '2022/12/08', '002'
+exec FinanceTailan1 '2022/12/10', '002'
 
-exec FinanceTailanOutput '2022/12/12', '002'
+exec FinanceTailanOutput '2022/12/10', '002'
 
-exec FinanceTailanInput '2022/12/12', '002'
+exec FinanceTailanInput '2022/12/10', '002'
 
-exec FinanceTailanSalary '2022/12/12', '001'
+exec FinanceTailanSalary '2022/12/10', '001'
