@@ -130,9 +130,3 @@ begin
     end
 
 end
-
-
-
-select * from Output 
-order by finance_code 
-

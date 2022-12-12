@@ -81,7 +81,7 @@ end
 select *
 from Input
 
-
+use DB;
 exec FinanceTailan1 '2022/12/10', '002'
 
 exec FinanceTailanOutput '2022/12/10', '002'

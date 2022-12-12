@@ -19,7 +19,6 @@ begin
     order by empReg_date
 end
 
-use DB;
 
 
 exec GetTimeTable 'U001001'
