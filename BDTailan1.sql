@@ -1,5 +1,14 @@
 -- Sanhiigiin tailan
+use DB;
+go;
+create view FinanceView
+as
+    select Finance.finance_code, input_name, input_value, output_name, output_value, financeDate, dep_code
+    from Finance
+        join Output on Finance.finance_code = Output.finance_code
+        join Input on  Finance.finance_code = Input.finance_code
 
+go;
 alter proc FinanceTailan1
     (@date char(10),
     @depCode char(3))
@@ -8,15 +17,13 @@ begin
     select @date as 'Date', @depCode as 'Depart'
     declare @orlogo int;
     select @orlogo =  sum(input_value)
-    from Input
-        join Finance on Finance.finance_code = Input.finance_code
+    from FinanceView
     where financeDate = @date and dep_code = @depCode
 
 
     declare @zarlaga int;
     select @zarlaga = sum(output_value)
-    from Output
-        join Finance on Finance.finance_code = Output.finance_code
+    from FinanceView
     where financeDate = @date and dep_code = @depCode
     select @orlogo as 'Orlogo', @zarlaga as 'Zarlaga', (@orlogo - @zarlaga) as 'Ashig'
 end
@@ -30,12 +37,10 @@ as
 begin
     select @date as 'Date', @depCode as 'Depart'
     select output_name, output_value
-    from Output
-        join Finance on Finance.finance_code = Output.finance_code
+    from FinanceView
     where financeDate = @date and dep_code = @depCode
     select sum( output_value) as 'Total'
-    from Output
-        join Finance on Finance.finance_code = Output.finance_code
+    from FinanceView
     where financeDate = @date and dep_code = @depCode
 end
 
@@ -47,12 +52,10 @@ as
 begin
     select @date as 'Date', @depCode as 'Depart'
     select input_name, input_value
-    from Input
-        join Finance on Finance.finance_code = Input.finance_code
+    from FinanceView
     where financeDate = @date and dep_code = @depCode
     select sum(input_value) as 'Total'
-    from Input
-        join Finance on Finance.finance_code = Input.finance_code
+    from FinanceView
     where financeDate = @date and dep_code = @depCode
 end
 
@@ -63,7 +66,7 @@ alter proc FinanceTailanSalary
 as
 begin
     select @date as 'Date', @depCode as 'Depart'
-    select emp_position, Employee.emp_code, emp_lName, emp_fName, emp_salary, workTime , bonus, (bonus + emp_salary) as 'Total'
+    select emp_position, Employee.emp_code, emp_lName, emp_fName, emp_salary, workTime , bonus, (bonus + emp_salary*workTime) as 'Total'
     from Salary
         join SalaryRegister on SalaryRegister.salary_code = Salary.salary_code
         join Employee on SalaryRegister.emp_code = Employee.emp_code
