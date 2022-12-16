@@ -1,7 +1,7 @@
 -- Sanhiigiin tailan
 use DB;
 go;
-create view FinanceView
+alter view FinanceView
 as
     select Finance.finance_code, input_name, input_value, output_name, output_value, financeDate, dep_code
     from Finance
@@ -81,7 +81,6 @@ end
 select *
 from Input
 
-use DB;
 exec FinanceTailan1 '2022/12/10', '002'
 
 exec FinanceTailanOutput '2022/12/10', '002'

@@ -2,7 +2,9 @@ use DB;
 
 
 go
-create trigger addCustomerOrder 
+
+
+alter trigger addCustomerOrder 
 on CustomerOrderRegister
 for insert 
 as 
@@ -28,7 +30,7 @@ begin
     select @addedPrice = num * item_price
     from inserted join Items
         on inserted.item_code = Items.item_code
-
+1
 
     if ((select count(*)
     from Input
@@ -46,7 +48,7 @@ end
 
 
 go
-create trigger addSalary 
+alter trigger addSalary 
 on SalaryRegister
 for insert 
 as 
@@ -89,7 +91,7 @@ begin
 end
 
 go
-create trigger addSupponser 
+alter trigger addSupponser 
 on SupponceOrderRegister
 for insert 
 as 
@@ -125,7 +127,7 @@ begin
     end
     else
     begin
-        insert into [Output]
+        insert into Output
         values(@sanhuuCode, 'order from supponser', @addedPrice)
     end
 

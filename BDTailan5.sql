@@ -1,5 +1,6 @@
 -- Ajilchdiin tsagiin huvaari
-
+use DB;
+go
 create proc GetTimeTable
     (@empCode char(7))
 as

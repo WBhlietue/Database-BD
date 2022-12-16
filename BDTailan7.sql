@@ -51,3 +51,5 @@ end
 
 exec CustomerZahialgaTailan  '2022/12/08', '001'
 exec CustomerZahialgaWithDugaar 'Z20221209001001'
+
+select * from CustomerZahialga
