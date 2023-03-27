@@ -1,4 +1,4 @@
-create database DB;
+create database if exists DB;
 
 use DB;
 
